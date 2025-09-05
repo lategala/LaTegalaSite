@@ -3,76 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>La Tegala — La Parte Que Falta</title>
-  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <title>La Tegala — Compañía teatral</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    body{margin:0;font-family:Arial, sans-serif;background:#070707;color:#f7f7f7}
-    header{padding:20px;background:#111;text-align:center}
-    nav a{margin:0 10px;color:#ccc;text-decoration:none}
-    nav a:hover{color:#fff}
-    section{padding:40px;max-width:900px;margin:auto}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
-    .gallery img{width:100%;border-radius:6px}
-    footer{background:#111;color:#aaa;text-align:center;padding:20px}
-    .btn{display:inline-block;margin:6px;padding:10px 16px;border-radius:6px;text-decoration:none;background:#d81b2a;color:white}
+    :root{--bg:#070707;--paper:#f7f7f7;--accent:#d81b2a;--muted:#bdbdbd;--gold:#d4af37;}
+    body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--paper);}
+    header{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.6);position:sticky;top:0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px}
+    nav a{color:var(--muted);margin-left:12px;text-decoration:none}
+    nav a:hover{color:var(--paper)}
+    main{max-width:980px;margin:30px auto;padding:0 18px}
+    .hero{display:flex;align-items:center;justify-content:center;min-height:52vh;position:relative}
+    .hero img{max-width:70%;height:auto}
+    .phrase{position:absolute;bottom:20px;font-size:1.2rem;color:var(--gold);opacity:0;transition:opacity 0.6s;text-align:center}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px;cursor:pointer}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+    footer{padding:20px;text-align:center;color:var(--muted);font-size:14px}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:200}
+    .lightbox img{max-width:90%;max-height:90%}
+    .close-btn{position:absolute;top:20px;right:24px;color:white;font-size:22px;cursor:pointer}
+    #mapa{max-width:100%;margin-top:12px}
   </style>
 </head>
 <body>
 <header>
-  <img src="logo.jpg" alt="La Tegala" height="60"><br>
+  <div class="brand"><img src="logo.jpg"><div style="font-weight:700">La Tegala</div></div>
   <nav>
-    <a href="#quienes">Quiénes somos</a>
-    <a href="#espectaculo">Espectáculo</a>
-    <a href="#galeria">Galería</a>
-    <a href="#prensa">Prensa</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes somos</a>
+    <a href="espectaculos.html">Espectáculos</a>
+    <a href="galeria.html">Galería</a>
+    <a href="prensa.html">Prensa</a>
+    <a href="contacto.html">Contacto</a>
   </nav>
 </header>
+<main>
 
-<section id="inicio">
-  <h1>La Parte Que Falta</h1>
-  <img src="poster.jpg" alt="Cartel La Parte Que Falta" style="max-width:100%;border-radius:8px">
-  <p>Un círculo incompleto emprende la búsqueda de su parte perdida. Teatro de marionetas, luz negra y hilos de neón que hablan de identidad, amor y plenitud.</p>
+<section class="hero" onmouseover="mostrarFrase()" onmouseout="ocultarFrase()">
+ <img src="logo.jpg">
+ <div id="frase" class="phrase"></div>
 </section>
+<section><h2>La compañía</h2><p class="muted">Fundada en 2024 en Haría (Lanzarote).</p><p><a class="btn" href="espectaculos.html">Ver espectáculos</a></p></section>
 
-<section id="quienes">
-  <h2>Quiénes somos</h2>
-  <p>La Tegala nace en 2024 en Haría, Lanzarote, bajo la dirección de Antonio D. G. Orellana. Somos un espacio de creación y comunidad, donde tradición y experimentación se encuentran.</p>
-</section>
-
-<section id="espectaculo">
-  <h2>Espectáculo</h2>
-  <p><strong>La Parte Que Falta</strong> — Adaptación de Shel Silverstein. Estreno: 18 de octubre 2024 en el Festival Harionetas. Duración: 55 min. Público recomendado: +6 años.</p>
-</section>
-
-<section id="galeria">
-  <h2>Galería</h2>
-  <div class="gallery">
-    <img src="gal1.jpg" alt="Escena 1">
-    <img src="gal2.jpg" alt="Escena 2">
-    <img src="gal3.jpg" alt="Escena 3">
-    <img src="gal5.jpg" alt="Escena 4">
-  </div>
-</section>
-
-<section id="prensa">
-  <h2>Prensa</h2>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=9adp6qDEkeQ" target="_blank">Vídeo resumen</a></li>
-    <li><a href="https://www.biosferadigital.com/articulo/biosferatv/compania-teatral-tegala-estrena-harionetas/20241016120721144931.html" target="_blank">BiosferaTV</a></li>
-    <li><a href="https://harionetas.com/project/antonio-orellana-la-parte-que-falta/" target="_blank">Harionetas</a></li>
-    <li><a href="https://www.masscultura.com/antonio-daniel-garcia-orellana-la-parte-que-falta/" target="_blank">MassCultura</a></li>
-  </ul>
-  <p><a class="btn" href="dossier.pdf" download>Descargar dossier PDF</a></p>
-</section>
-
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Correo: <a href="mailto:antoniodaniel3@hotmail.com">antoniodaniel3@hotmail.com</a></p>
-</section>
-
-<footer>
-  © La Tegala 2025 — Haría, Lanzarote
-</footer>
-</body>
-</html>
+</main>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+ <div class="close-btn" onclick="closeLightbox();event.stopPropagation()">✕</div>
+ <img id="lightbox-img" src="">
+</div>
+<footer>La Tegala — Compañía teatral · Haría, Lanzarote · <a href="mailto:antoniodaniel3@hotmail.com" style="color:var(--muted)">antoniodaniel3@hotmail.com</a><br>© La Tegala 2025</footer>
+<script>
+function openLightbox(src){document.getElementById('lightbox').style.display='flex';document.getElementById('lightbox-img').src=src;}
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+</script>
+<script>
+const frases=["“Cuando el teatro es necesario, no hay nada más necesario” — Peter Brook", "“El mundo es un gran escenario” — William Shakespeare", "“Las luces cuentan secretos” — Anónimo", "“El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma” — Arthur Miller", "“El teatro es poesía que se sale del libro para hacerse humana” — Federico García Lorca"];let i=0;const f=document.getElementById('frase');
+function mostrarFrase(){f.textContent=frases[i];f.style.opacity=1;i=(i+1)%frases.length;}
+function ocultarFrase(){f.style.opacity=0;}
+</script></body></html>

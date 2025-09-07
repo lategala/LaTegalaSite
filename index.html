@@ -1,43 +1,24 @@
-<!doctype html>
-<html lang='es'>
-<head>
-<meta charset='utf-8'/>
-<meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>La Tegala · Compañía Teatral</title>
-<link rel='icon' type='image/png' href='assets/favicon.png'>
-<link rel='shortcut icon' href='favicon.ico'>
-<link rel='preconnect' href='https://fonts.googleapis.com'>
-<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'>
-<link rel='stylesheet' href='style.css'>
-</head>
-<body>
-<header class='container'><nav><a href='index.html'>Inicio</a><a href='quienes.html'>¿Quiénes somos?</a><a href='espectaculos.html'>Espectáculos</a><a href='galeria.html'>Galería</a><a href='prensa.html'>Prensa</a><a href='contacto.html'>Contacto</a></nav></header>
-
+<!doctype html><html lang='es'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>La Tegala · Compañía teatral</title><link rel='icon' type='image/png' href='assets/favicon.png'><link rel='shortcut icon' href='favicon.ico'><link rel='preconnect' href='https://fonts.googleapis.com'><link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'><link rel='stylesheet' href='style.css'></head><body><header class='container'><nav><a href='index.html'>Inicio</a><a href='espectaculos.html'>Espectáculos</a><a href='quienes.html'>Quiénes somos</a><a href='galeria.html'>Galería</a><a href='prensa.html'>Prensa</a><a href='contacto.html'>Contacto</a></nav></header>
 <section class="hero">
-  <img class="logo" src="assets/logo2.jpg" alt="La Tegala logo">
-  <div class="intro">Compañía Teatral La Tegala.<br/>Fundada en 2024 en Haría (Lanzarote).</div>
-  <div class="phrase-area" id="phraseArea"><div class="phrase" id="phrase"></div></div>
+  <img class="logo" src="assets/logo2.jpg" alt="La Tegala">
+  <div class="intro">Compañía Teatral La Tegala.<br>Fundada en 2024 en Haría (Lanzarote).</div>
+  <div class="section"><span class="quote" id="q"></span></div>
 </section>
-<div class="container grid">
-  <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3>Espectáculos</h3><p>Explora nuestras obras: La Parte Que Falta, Caleidoscopio y Ligazón.</p></a>
-  <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3>¿Quiénes somos?</h3><p>Origen, valores y dirección artística.</p></a>
-  <a class="card" href="galeria.html"><img src="assets/gal2.jpg" alt="Galería"><h3>Galería</h3><p>Imágenes de escena, procesos y objetos.</p></a>
-</div>
 <script>
-const phrases=[
+const frases=[
 "“Cuando el teatro es necesario, no hay nada más necesario” — Peter Brook",
 "“El mundo es un gran escenario” — William Shakespeare",
 "“Las luces cuentan secretos” — Anónimo",
 "“El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma” — Arthur Miller",
-"“El teatro es poesía que se sale del libro para hacerse humana” — Federico García Lorca"
+"“El teatro es poesía que se sale del libro para hacerse humana” — F. G. Lorca"
 ];
-let idx=0,timer=null;const area=document.getElementById('phraseArea');const el=document.getElementById('phrase');
-function showPhrase(){el.textContent=phrases[idx%phrases.length];el.classList.add('show');idx++;}
-function hidePhrase(){el.classList.remove('show');}
-area.addEventListener('mouseenter',()=>{showPhrase();timer=setInterval(showPhrase,3000);});
-area.addEventListener('mouseleave',()=>{hidePhrase();if(timer)clearInterval(timer);});
+const q=document.getElementById('q');let i=0;const hero=document.querySelector('.hero');
+hero.addEventListener('mouseenter',()=>{q.textContent=frases[i%frases.length];i++;});
+hero.addEventListener('mouseleave',()=>{q.textContent='';});
 </script>
-
-<footer class='container'><div>La Tegala — Compañía teatral · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></div><div class='small'>© La Tegala 2025</div></footer>
-</body>
-</html>
+<div class="container grid">
+  <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3>Espectáculos</h3></a>
+  <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3>¿Quiénes somos?</h3></a>
+  <a class="card" href="galeria.html"><img src="assets/gal3.jpg" alt="Galería"><h3>Galería</h3></a>
+</div>
+<footer class='container small'>© La Tegala · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></footer></body></html>

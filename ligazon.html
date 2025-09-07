@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>Ligazón · La Tegala</title>
+<link rel='icon' type='image/png' href='assets/favicon.png'>
+<link rel='shortcut icon' href='favicon.ico'>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header class='container'><nav><a href='index.html'>Inicio</a><a href='quienes.html'>¿Quiénes somos?</a><a href='espectaculos.html'>Espectáculos</a><a href='galeria.html'>Galería</a><a href='prensa.html'>Prensa</a><a href='contacto.html'>Contacto</a></nav></header>
+
+<div class="container">
+  <h1>Ligazón</h1>
+  <p><strong>Estreno:</strong> 19 de abril de 2024, Escénica 2024 (Haría).</p>
+  <h3>Sinopsis</h3>
+  <p>Una mozuela de una aldea se rebela contra el deseo de su tía y de su madre de vender su cuerpo a un rico judío. La joven meiga engatusa a una afiladora de caminos...</p>
+  <h3>Ficha artística y técnica</h3>
+  <div class="card">
+    <p><strong>Reparto:</strong> La Tegala</p>
+    <ul>
+      <li><strong>Bulto de manta y retaco:</strong> Agustín Salvago</li>
+      <li><strong>La Mozuela:</strong> Antonella Siano</li>
+      <li><strong>La Raposa:</strong> Fefa Toledo</li>
+      <li><strong>La Ventera:</strong> Longa González</li>
+      <li><strong>La Afiladora:</strong> Eva García</li>
+    </ul>
+    <p><strong>Vestuario:</strong> Mª Antonia Landa</p>
+    <p><strong>Maquillaje y peluquería:</strong> Escuela de Teatro de Haría</p>
+    <p><strong>Escenografía:</strong> Manoli Fernández, Longa González, Fefa Toledo</p>
+    <p><strong>Iluminación y sonido:</strong> Antonio Orellana</p>
+    <p><strong>Música:</strong> Banco libre de Internet</p>
+    <p><strong>Autor:</strong> Ramón Mª del Valle-Inclán</p>
+    <p><strong>Producción:</strong> La Tegala</p>
+    <p><strong>Dramaturgia y dirección:</strong> Antonio Orellana</p>
+  </div>
+  <h3 style="margin-top:18px">Galería</h3>
+  <div class="grid lightbox">
+    <img src="assets/ligazon_poster.jpg" alt="Cartel Ligazón">
+    <img src="assets/ligazon1.jpg" alt="Ligazón escena 1">
+    <img src="assets/ligazon2.jpg" alt="Ligazón escena 2">
+    <img src="assets/ligazon3.jpg" alt="Ligazón escena 3">
+    <img src="assets/ligazon4.jpg" alt="Ligazón escena 4">
+    <img src="assets/ligazon5.jpg" alt="Ligazón escena 5">
+  </div>
+</div>
+<script>
+document.querySelectorAll('.lightbox img').forEach(img=>{img.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const big=document.createElement('img');big.src=img.src;m.appendChild(big);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});
+</script>
+
+<footer class='container'><div>La Tegala — Compañía teatral · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></div><div class='small'>© La Tegala 2025</div></footer>
+</body>
+</html>

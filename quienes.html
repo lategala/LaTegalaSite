@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>¿Quiénes somos? · La Tegala</title>
+<link rel='icon' type='image/png' href='assets/favicon.png'>
+<link rel='shortcut icon' href='favicon.ico'>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header class='container'><nav><a href='index.html'>Inicio</a><a href='quienes.html'>¿Quiénes somos?</a><a href='espectaculos.html'>Espectáculos</a><a href='galeria.html'>Galería</a><a href='prensa.html'>Prensa</a><a href='contacto.html'>Contacto</a></nav></header>
+
+<div class="container">
+  <h1>¿Quiénes somos?</h1>
+  <div class="grid">
+    <div class="card"><img src="assets/director1.jpg" alt="Antonio Orellana"></div>
+    <div class="card"><img src="assets/director2.jpg" alt="Equipo La Tegala"></div>
+  </div>
+  <div class="card" style="margin-top:16px; white-space:pre-wrap">Compañía teatral  LA TEGALA — Dirección ANTONIO ORELLANA
+La Tegala fundada en 2024 en Haría, Lanzarote, toma su nombre de una palabra de origen prehispánico que representa un redil o refugio improvisado de piedra para vigilancia y reguardo del viento. Esta esencia simbólica refleja los valores fundamentales de la compañía: ser un espacio de protección, reunión y creación donde el arte escénico pueda desarrollarse.
+(...)</div>
+  <h2 style="margin-top:28px">Mapa escénico</h2>
+  <div class="map" id="map">
+    <svg width="320" height="260" viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" style="max-width:100%">
+      <g fill="#fff"><path d="M60,220 C20,190 20,150 40,120 C55,95 70,80 95,70 C130,55 160,50 190,65 C220,80 235,105 245,130 C255,155 255,190 230,210 C210,225 180,235 150,235 C115,236 90,235 60,220 Z"/></g>
+      <circle id="haria" cx="210" cy="95" r="7" fill="#d4af37"/>
+    </svg>
+    <div class="tooltip" id="tt">Aquí late La Tegala: un redil de viento convertido en refugio teatral.</div>
+  </div>
+</div>
+<script>
+const map=document.getElementById('map');const tt=document.getElementById('tt');const haria=map.querySelector('#haria');
+map.addEventListener('mousemove',(e)=>{const rect=map.getBoundingClientRect();const x=e.clientX-rect.left,y=e.clientY-rect.top;const hr=haria.getBoundingClientRect();const hx=(hr.left+hr.right)/2-rect.left, hy=(hr.top+hr.bottom)/2-rect.top;const d=Math.hypot(x-hx,y-hy); if(d<26){tt.style.left=hx+'px';tt.style.top=hy+'px';tt.style.opacity=1;} else tt.style.opacity=0;});
+</script>
+
+<footer class='container'><div>La Tegala — Compañía teatral · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></div><div class='small'>© La Tegala 2025</div></footer>
+</body>
+</html>

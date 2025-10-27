@@ -1,23 +1,24 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&display=swap');
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#0b0b0b;color:#f4f4f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;line-height:1.6}
 a{color:#d4af37} a:hover{opacity:.95}
 .container{max-width:980px;margin:0 auto;padding:16px}
 
 header{position:sticky;top:0;z-index:10;background:#111;border-bottom:1px solid #222}
-header .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 nav a{margin-right:14px;text-decoration:none;color:#eee} nav a:hover{color:#fff}
+
+#langTop{margin-left:auto;display:flex;align-items:center;gap:8px}
+#langSelTop{appearance:none;padding:6px 10px;border-radius:10px;border:1px solid #444;background:#111;color:#f4f4f4;cursor:pointer}
+#langSelTop option{color:#f4f4f4;background:#111} /* legibilidad en desplegable */
 
 .brand{color:#d11a1a;font-weight:700}
 .hero{text-align:center;padding:32px 16px 8px}
-.logo{width:266px;height:auto;filter:drop-shadow(0 0 10px rgba(0,0,0,.35))}
-.tagline{font-family:'Cinzel', serif;font-size:26px;margin-top:10px;letter-spacing:.3px}
-.tagline2{display:block;margin-top:.2em;font-size:20px;color:#ddd}
+.logo{width:322px;height:auto;filter:drop-shadow(0 0 10px rgba(0,0,0,.35))} /* +21% */
+.tagline{font-family:'Bodoni Moda', serif;font-size:28px;margin-top:10px;letter-spacing:.2px}
+.tagline2{display:block;margin-top:.2em;font-size:21px;color:#ddd}
 .quote{margin-top:12px;color:#d4af37;font-style:italic;min-height:1.5em}
-
-#langHome{margin:10px auto 0;display:inline-flex;gap:8px;align-items:center;background:#0b0b0b;border:1px solid #222;border-radius:10px;padding:6px 10px}
-#langSelHome{background:transparent;color:#f4f4f4;border:none;outline:none}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
 .card{background:#121212;border:1px solid #222;border-radius:14px;padding:10px}
@@ -30,10 +31,11 @@ nav a{margin-right:14px;text-decoration:none;color:#eee} nav a:hover{color:#fff}
 .home-grid .card img{width:80%;margin:0 auto} /* portada 20% más pequeñas */
 
 .quienes .two-col img.card{max-width:50%;margin:0 auto;display:block}
+.quienes .two-col img.bigger15{max-width:57.5%} /* +15% en la segunda imagen */
 .quienes .two-col{align-items:start}
 
-.lpqf .two-col{grid-template-columns:1.35fr .65fr}  /* texto más ancho, foto más pequeña */
-.lpqf .two-col img.card{max-width:88%;margin:0 auto} /* imagen contenida en columna estrecha */
+.lpqf .two-col{grid-template-columns:1.4fr .6fr}  /* texto más ancho, foto más pequeña */
+.lpqf .two-col img.card{max-width:72%;margin:0 auto} /* reducir más la imagen */
 .lpqf .card.text{font-size:0.97rem} /* compacto */
 
 .thumb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:10px}

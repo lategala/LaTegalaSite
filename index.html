@@ -12,6 +12,18 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
+
+    <div id="langTop">
+      <span aria-hidden="true">🌐</span>
+      <select id="langSelTop" aria-label="Idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+      </select>
+    </div>
+    
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -30,18 +42,6 @@ function applyI18n(dict, lang){
     <span data-i18n="tagline_line1">Compañía Teatral <span class='brand'>La Tegala</span></span>
     <span class="tagline2" data-i18n="tagline_line2">Lanzarote</span>
   </div>
-
-  <div id="langHome">
-    <span>🌐</span>
-    <select id="langSelHome">
-      <option value="es">Español</option>
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-      <option value="de">Deutsch</option>
-      <option value="it">Italiano</option>
-    </select>
-  </div>
-
   <div class="quote" id="quote"></div>
 </section>
 
@@ -104,9 +104,9 @@ var DICT={
         tagline_line1:"Compagnia Teatrale <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Spettacoli",cta_about:"Chi siamo",cta_gallery:"Galleria"}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 
-var sel = document.getElementById('langSelHome');
-sel.value = localStorage.getItem('lang') || 'es';
-sel.addEventListener('change', function(){
+var selTop = document.getElementById('langSelTop');
+selTop.value = localStorage.getItem('lang') || 'es';
+selTop.addEventListener('change', function(){
   localStorage.setItem('lang', this.value);
   location.reload();
 });

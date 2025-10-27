@@ -29,7 +29,7 @@ function applyI18n(dict, lang){
 
   <div class="two-col section">
     <img class="card poster" src="assets/ligazon_poster.jpg" alt="Ligazón cartel">
-    <div class="card text" data-i18n="lig_text">
+    <div class="card text">
       Estreno el 19 de abril de 2024, en el Festival de teatro y danza «Escénica 2024», Haría.<br><br>
       <strong>Sinopsis</strong><br>
       Una mozuela de una aldea se rebela contra el deseo de su tía y de su madre de vender su cuerpo a un rico judío.
@@ -70,11 +70,12 @@ function applyI18n(dict, lang){
 <script>
 function lightbox(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const im=document.createElement('img');im.src=el.src;m.appendChild(im);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});}
 lightbox('.thumb');
-var DICT={{ 
-  es: {{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto"}},
-  en: {{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact"}},
-  fr: {{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact"}},
-  de: {{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt"}}
+var DICT={ 
+  es:{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto"},
+  en:{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact"},
+  fr:{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact"},
+  de:{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt"},
+  it:{nav_home:"Inizio",nav_shows:"Spettacoli",nav_about:"Chi siamo",nav_gallery:"Galleria",nav_press:"Stampa",nav_contact:"Contatti"}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 

@@ -33,8 +33,8 @@ function applyI18n(dict, lang){
   </div>
 
   <div class="card text">
-    <p data-i18n="about_header"><strong>Compañía teatral LA TEGALA</strong> &nbsp; Dirección ANTONIO ORELLANA</p>
-    <p class="spaced" data-i18n="about_main">
+    <p><strong>Compañía teatral LA TEGALA</strong> &nbsp; Dirección ANTONIO ORELLANA</p>
+    <p class="spaced">
       La Tegala Escénica fundada en 2024 en Haría, Lanzarote, toma su nombre de una palabra de origen prehispánico
       que representa un redil o refugio improvisado de piedra para vigilancia y resguardo del viento. Esta esencia simbólica
       refleja los valores fundamentales de la compañía: ser un espacio de protección, reunión y creación donde el arte escénico
@@ -51,30 +51,22 @@ function applyI18n(dict, lang){
       y comprometido. Este proyecto se erige como un círculo artístico que acoge, crea y transforma, consolidándose como un nuevo
       referente teatral en Lanzarote y las Islas Canarias.
     </p>
-    <p class="small muted" style="margin-top:1.2em;" data-i18n="about_note">
-      <em>* Licenciado en Filología Hispánica y Máster en Artes del Espectáculo Vivo (Premio Extraordinario) por la
-      Universidad de Sevilla, completó su formación en el Instituto del Teatro de Sevilla y La Sapienza de Roma, trabajando
-      bajo la guía de reconocidos maestros internacionales. A lo largo de su carrera, ha fundado y dirigido compañías
-      teatrales en Madrid, País Vasco, Andalucía y Canarias, consolidando un perfil profesional polifacético que abarca
-      la actuación, la dramaturgia y la dirección. Recibió el Premio de Letras Canarias Benito Pérez Armas, además de los
-      premios nacionales Esperpento, ASSITEJ‑España, Escuela Navarra de Teatro, y más reconocimientos por su labor
-      dramatúrgica y actoral como los premios de la Universidad de Sevilla 'Rafael de Cózar' y la Universidad de Cádiz ‘El Drag’.
-      Como autor, ha publicado, estrenado y traducido a varios idiomas, más de 15 obras de teatro.</em>
-    </p>
   </div>
 </div>
 
 <script>
-var DICT={{ 
-  es: {{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
-        about_title:"¿Quiénes somos?"}},
-  en: {{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
-        about_title:"About"}},
-  fr: {{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
-        about_title:"Qui sommes‑nous ?"}},
-  de: {{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-        about_title:"Über uns"}}
-}};applyI18n(DICT, localStorage.getItem('lang')||'es');
+var DICT={ 
+  es:{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
+      about_title:"¿Quiénes somos?"},
+  en:{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
+      about_title:"About"},
+  fr:{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
+      about_title:"Qui sommes‑nous ?"},
+  de:{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
+      about_title:"Über uns"},
+  it:{nav_home:"Inizio",nav_shows:"Spettacoli",nav_about:"Chi siamo",nav_gallery:"Galleria",nav_press:"Stampa",nav_contact:"Contatti",
+      about_title:"Chi siamo"}
+};applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>

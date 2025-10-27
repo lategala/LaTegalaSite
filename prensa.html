@@ -26,9 +26,7 @@ function applyI18n(dict, lang){
 
 <div class="container">
   <h1 data-i18n="press_title">Prensa</h1>
-  <p>
-    <a class="button-red" data-i18n="press_download" href="assets/dossier_lpqf_2026.pdf" download>Descargar dossier PDF de <em>La Parte Que Falta</em></a>
-  </p>
+  <p><a class="button-red" data-i18n="press_download" href="assets/dossier_lpqf_2026.pdf" download>Descargar dossier PDF de <em>La Parte Que Falta</em></a></p>
   <ul>
     <li><a target="_blank" rel="noopener" href="https://www.masscultura.com/antonio-daniel-garcia-orellana-la-parte-que-falta/">MassCultura — Entrevista/Reportaje</a></li>
     <li><a target="_blank" rel="noopener" href="https://harionetas.com/project/antonio-orellana-la-parte-que-falta/">Harionetas — Ficha del espectáculo</a></li>
@@ -45,7 +43,9 @@ var DICT={
   fr:{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
       press_title:"Presse", press_download:"Télécharger le dossier PDF de <em>La Partie Manquante</em>"},
   de:{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-      press_title:"Presse", press_download:"PDF-Dossier von <em>Das Fehlende Stück</em> herunterladen"}
+      press_title:"Presse", press_download:"PDF-Dossier von <em>Das Fehlende Stück</em> herunterladen"},
+  it:{nav_home:"Inizio",nav_shows:"Spettacoli",nav_about:"Chi siamo",nav_gallery:"Galleria",nav_press:"Stampa",nav_contact:"Contatti",
+      press_title:"Stampa", press_download:"Scarica il dossier PDF di <em>La Parte Mancante</em>"}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 

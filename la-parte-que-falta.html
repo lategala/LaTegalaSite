@@ -28,8 +28,7 @@ function applyI18n(dict, lang){
   <h1 data-i18n="lpqf_title">La Parte Que Falta</h1>
 
   <div class="two-col section">
-    <img class="card" src="assets/poster.jpg" alt="Cartel La Parte Que Falta">
-    <div class="card text" data-i18n="lpqf_intro">
+    <div class="card text" data-i18n="lpqf_intro_es">
       La Parte Que Falta se estrenó el 18 de octubre de 2024 en el Festival de Teatro de Títeres Harionetas.<br>
       Es un espectáculo teatral familiar, para la infancia y la adolescencia, que combina lo mejor de la narración visual y emocional.<br>
       Esta adaptación teatral de la obra gráfica de Shel Silverstein, invita a una reflexión íntima sobre la felicidad, el amor y la autenticidad personal.<br>
@@ -38,22 +37,23 @@ function applyI18n(dict, lang){
       <strong>Público Objetivo</strong><br>• Familiares: a partir de 6 años<br>• Escolares: a partir de 8 años<br>
       • Ideal para espacios culturales, festivales o eventos educativos<br>• <strong>Duración</strong>: 55 minutos
     </div>
+    <img class="card" src="assets/poster.jpg" alt="Cartel La Parte Que Falta">
   </div>
 
   <div class="two-col section">
+    <img class="card" src="assets/gal2.jpg" alt="Escena">
     <div class="card text">
       <strong data-i18n="lpqf_syn_title">Sinopsis</strong><br>
       <span data-i18n="lpqf_synopsis">Un Círculo incompleto emprende un viaje creyendo que necesita otra parte para ser feliz, hasta descubrir que la autenticidad y el camino importan más que la meta. En otro lugar, la Parte Que Falta espera encajar en alguien, incluso en las criaturas completas. Descubre que sentirse plenos no se consigue añadiendo algo externo, sino cultivando nuestro interior.</span>
     </div>
-    <img class="card" src="assets/gal2.jpg" alt="Escena">
   </div>
 
   <div class="two-col section">
-    <img class="card" src="assets/gal3.jpg" alt="Escena">
     <div class="card text" data-i18n="lpqf_para2">
       Es una metáfora de la vida y las relaciones humanas, tan sencilla como poderosa, que habla de la libertad y el respeto hacia las personas. Hay partes que no quieren ser de nadie y prefieren caminar solas. Partes que no se sujetan bien y se pierden, otras que se sujetan con demasiada fuerza y se rompen. Partes que por más que se insista no encajan. Otras que no están dispuestas a perder su identidad.<br><br>
       La puesta en escena habla con tanta economía que interpretas el camino que más te conviene: puede abordar temas como la búsqueda, el amor, la amistad, las relaciones, proyección, idealización, soledad, rechazo, superación, aspiraciones, deseos, necesidades, consciencia, plenitud, simplicidad, pone en tela de juicio la cultura del éxito; exigencias atemporales y modernas que tanto saturan a adultos y a niños de hoy. En lo profundo, a nadie le faltan partes. Todos somos seres valiosos y completos.
     </div>
+    <img class="card" src="assets/gal3.jpg" alt="Escena">
   </div>
 
   <div class="section">
@@ -69,15 +69,32 @@ function applyI18n(dict, lang){
 function lightbox(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const im=document.createElement('img');im.src=el.src;m.appendChild(im);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});}
 lightbox('.thumb');
 
-var DICT={{ 
-  es: {{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
-        lpqf_title:"La Parte Que Falta",lpqf_syn_title:"Sinopsis"}},
-  en: {{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
-        lpqf_title:"The Missing Piece",lpqf_syn_title:"Synopsis"}},
-  fr: {{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
-        lpqf_title:"La Partie Manquante",lpqf_syn_title:"Synopsis"}},
-  de: {{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-        lpqf_title:"Das Fehlende Stück",lpqf_syn_title:"Handlung"}}
+var DICT={ 
+  es:{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
+      lpqf_title:"La Parte Que Falta",lpqf_syn_title:"Sinopsis",
+      lpqf_intro_es:document.querySelector('[data-i18n=lpqf_intro_es]').innerHTML, /* queda igual en ES */ 
+      lpqf_synopsis:document.querySelector('[data-i18n=lpqf_synopsis]').innerHTML, 
+      lpqf_para2:document.querySelector('[data-i18n=lpqf_para2]').innerHTML},
+  en:{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
+      lpqf_title:"The Missing Piece",lpqf_syn_title:"Synopsis",
+      lpqf_intro_es:"<em>The Missing Piece</em> premiered on 18 October 2024 at the Harionetas Puppet Theatre Festival.<br>A family show for children and teens that blends visual and emotional storytelling.<br>This stage adaptation of Shel Silverstein’s picture book invites an intimate reflection on happiness, love and personal authenticity.<br>A scenic proposal of object theatre and negative light. Conceived with neon threads and blacklight, it adds an extra dimension of beauty and originality, turning the book’s visual poetry into a minimalist stage language.<br><br><strong>Target Audience</strong><br>• Family shows: 6+<br>• School performances: 8+<br>• Ideal for cultural venues, festivals and educational events<br>• <strong>Running time</strong>: 55 minutes",
+      lpqf_synopsis:"An incomplete Circle sets off believing it needs another piece to be happy, only to discover that authenticity — and the path — matter more than the goal. Elsewhere, the Missing Piece longs to fit into someone, even into complete beings. It discovers that fulfilment is not achieved by adding something external, but by cultivating our inner self.",
+      lpqf_para2:"A metaphor of life and human relationships: simple yet powerful — about freedom and respect. Some pieces don’t want to belong to anyone and walk alone. Some slip away; others are held too tightly and break. Some never fit, no matter how hard you try; others refuse to lose their identity.<br><br>The staging speaks with such economy that the audience completes the journey that suits them best. It touches on search, love, friendship, relationships, projection, idealisation, loneliness, rejection, resilience, aspirations, desires, needs, awareness, fulfilment and simplicity — questioning the culture of success that overwhelms both adults and children today. Deep down, no one is missing pieces. We are all valuable and complete."},
+  fr:{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
+      lpqf_title:"La Partie Manquante",lpqf_syn_title:"Synopsis",
+      lpqf_intro_es:"<em>La Partie Manquante</em> a été créée le 18 octobre 2024 au Festival Harionetas. Spectacle familial mêlant narration visuelle et émotionnelle. Cette adaptation du livre de Shel Silverstein invite à une réflexion intime sur le bonheur, l’amour et l’authenticité personnelle. Théâtre d’objets et lumière en négatif, conçu avec des fils néon et la lumière noire, pour une poésie scénique minimaliste.<br><br><strong>Public</strong><br>• Familial : dès 6 ans<br>• Scolaire : dès 8 ans<br>• Idéal pour lieux culturels, festivals et événements éducatifs<br>• <strong>Durée</strong> : 55 minutes",
+      lpqf_synopsis:"Un Cercle incomplet part en quête pensant avoir besoin d’une autre partie pour être heureux, mais découvre que l’authenticité — et le chemin — comptent plus que la destination. Ailleurs, la Partie Manquante veut s’emboîter dans quelqu’un, même chez les êtres « complets ». Elle découvre que la plénitude ne vient pas d’un ajout extérieur, mais d’un travail intérieur.",
+      lpqf_para2:"Une métaphore de la vie et des relations humaines : simple et puissante — sur la liberté et le respect. Certaines « parties » ne veulent appartenir à personne et avancent seules ; d’autres glissent ou, serrées trop fort, se brisent. D’autres encore n’entrent jamais, quoi qu’on tente ; certaines refusent de perdre leur identité.<br><br>La mise en scène parle avec une telle économie que chacun complète le voyage à sa manière. Elle aborde la quête, l’amour, l’amitié, les relations, la projection, l’idéalisation, la solitude, le rejet, le dépassement, les aspirations, les désirs, les besoins, la conscience, la plénitude, la simplicité — et interroge la culture de la réussite qui sature adultes et enfants. Au fond, il ne manque de « parties » à personne. Nous sommes tous précieux et complets."},
+  de:{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
+      lpqf_title:"Das Fehlende Stück",lpqf_syn_title:"Handlung",
+      lpqf_intro_es:"<em>Das Fehlende Stück</em> wurde am 18. Oktober 2024 beim Harionetas‑Festival uraufgeführt. Ein Familienspektakel, das visuelles und emotionales Erzählen verbindet. Diese Bühnenadaption des Bilderbuchs von Shel Silverstein lädt zu einer intimen Reflexion über Glück, Liebe und Authentizität ein. Objekttheater und Negativ‑Licht mit Neonfäden und Schwarzlicht, als minimalistische Bühnensprache.<br><br><strong>Zielpublikum</strong><br>• Familienvorstellungen: ab 6<br>• Schülervorstellungen: ab 8<br>• Ideal für Kulturorte, Festivals und Bildungs‑Events<br>• <strong>Dauer</strong>: 55 Minuten",
+      lpqf_synopsis:"Ein unvollständiger Kreis macht sich auf den Weg, überzeugt, ein weiteres Teil zu brauchen, um glücklich zu sein — und erkennt, dass Authentizität und der Weg wichtiger sind als das Ziel. Anderswo möchte das Fehlende Stück in jemanden passen, sogar in „vollständige“ Wesen. Es erkennt, dass Fülle nicht durch etwas Äußeres entsteht, sondern durch innere Kultivierung.",
+      lpqf_para2:"Eine Metapher für das Leben und die menschlichen Beziehungen: schlicht und doch kraftvoll — über Freiheit und Respekt. Manche „Teile“ wollen niemandem gehören und gehen allein; manche entgleiten, andere zerbrechen, wenn man sie zu fest hält. Manche passen trotz aller Versuche nicht; andere wollen ihre Identität nicht verlieren.<br><br>Die Inszenierung spricht mit solcher Ökonomie, dass das Publikum den Weg selbst ergänzt. Themen: Suche, Liebe, Freundschaft, Beziehungen, Projektion, Idealisierung, Einsamkeit, Zurückweisung, Überwindung, Ziele, Wünsche, Bedürfnisse, Bewusstsein, Erfüllung, Einfachheit — und eine Infragestellung der Erfolgskultur, die Kinder wie Erwachsene überfordert. Tief im Innern fehlt niemandem etwas. Wir sind alle wertvoll und vollständig."},
+  it:{nav_home:"Inizio",nav_shows:"Spettacoli",nav_about:"Chi siamo",nav_gallery:"Galleria",nav_press:"Stampa",nav_contact:"Contatti",
+      lpqf_title:"La Parte Mancante",lpqf_syn_title:"Sinossi",
+      lpqf_intro_es:"<em>La Parte Mancante</em> ha debuttato il 18 ottobre 2024 al Festival Harionetas. Spettacolo familiare per infanzia e adolescenza che unisce narrazione visiva ed emotiva. Questa versione scenica del libro illustrato di Shel Silverstein invita a riflettere su felicità, amore e autenticità personale. Teatro di oggetti e luce in negativo; fili al neon e luce nera aggiungono una dimensione di bellezza e originalità, trasformando la poesia visiva in un linguaggio scenico minimalista.<br><br><strong>Pubblico</strong><br>• Familiare: dai 6 anni<br>• Scolastico: dagli 8 anni<br>• Ideale per spazi culturali, festival ed eventi educativi<br>• <strong>Durata</strong>: 55 minuti",
+      lpqf_synopsis:"Un Cerchio incompleto parte credendo di aver bisogno di un altro pezzo per essere felice, ma scopre che l’autenticità — e il cammino — contano più della meta. Altrove, la Parte Mancante desidera incastrarsi in qualcuno, persino negli esseri completi. Scopre che la pienezza non si ottiene aggiungendo qualcosa di esterno, ma coltivando il nostro interno.",
+      lpqf_para2:"Una metafora della vita e delle relazioni umane: semplice e potente, parla di libertà e rispetto. Ci sono pezzi che non vogliono appartenere a nessuno e camminano da soli; pezzi che scivolano via; altri che, stretti troppo forte, si spezzano. Alcuni non combaciano mai, per quanto ci si provi; altri rifiutano di perdere la propria identità.<br><br>La messa in scena parla con tale economia che ciascuno completa il viaggio che più gli si addice. Temi: ricerca, amore, amicizia, relazioni, proiezione, idealizzazione, solitudine, rifiuto, superamento, aspirazioni, desideri, bisogni, consapevolezza, pienezza, semplicità — mettendo in discussione la cultura del successo che sovraccarica adulti e bambini. In fondo, a nessuno mancano pezzi: siamo tutti preziosi e completi."}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 

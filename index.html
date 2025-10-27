@@ -27,7 +27,7 @@ function applyI18n(dict, lang){
 <section class="hero">
   <img class="logo" src="assets/logo2.jpg" alt="La Tegala">
   <div class="tagline">
-    <span data-i18n="tagline_line1">Compañía Teatral <span class="brand">La Tegala</span></span>
+    <span data-i18n="tagline_line1">Compañía Teatral <span class='brand'>La Tegala</span></span>
     <span class="tagline2" data-i18n="tagline_line2">Lanzarote</span>
   </div>
 
@@ -38,6 +38,7 @@ function applyI18n(dict, lang){
       <option value="en">English</option>
       <option value="fr">Français</option>
       <option value="de">Deutsch</option>
+      <option value="it">Italiano</option>
     </select>
   </div>
 
@@ -78,6 +79,13 @@ de:[
 "„Lichter flüstern Geheimnisse.“ — Anonym",
 "„Das Theater kann nicht verschwinden: Dort stellt sich die Menschheit sich selbst.“ — Arthur Miller",
 "„Theater ist Poesie, die das Buch verlässt, um menschlich zu werden.“ — Federico García Lorca"
+],
+it:[
+"«Quando il teatro è necessario, non c’è nulla di più necessario.» — Peter Brook",
+"«Tutto il mondo è un palcoscenico.» — William Shakespeare",
+"«Le luci sussurrano segreti.» — Anonimo",
+"«Il teatro non può scomparire: è dove l’umanità si confronta con sé stessa.» — Arthur Miller",
+"«Il teatro è poesia che esce dal libro per farsi umana.» — Federico García Lorca"
 ]};
 const q=document.getElementById('quote');let i=0;
 function show(){var lang=localStorage.getItem('lang')||'es';var arr=Q[lang]||Q.es;q.textContent=arr[i%arr.length];i++;}
@@ -91,10 +99,11 @@ var DICT={
   fr: {nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
         tagline_line1:"Compagnie Théâtrale <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Spectacles",cta_about:"Qui sommes‑nous ?",cta_gallery:"Galerie"},
   de: {nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-        tagline_line1:"Theaterkompanie <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Stücke",cta_about:"Über uns",cta_gallery:"Galerie"}
+        tagline_line1:"Theaterkompanie <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Stücke",cta_about:"Über uns",cta_gallery:"Galerie"},
+  it: {nav_home:"Inizio",nav_shows:"Spettacoli",nav_about:"Chi siamo",nav_gallery:"Galleria",nav_press:"Stampa",nav_contact:"Contatti",
+        tagline_line1:"Compagnia Teatrale <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Spettacoli",cta_about:"Chi siamo",cta_gallery:"Galleria"}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 
-// Selector en inicio
 var sel = document.getElementById('langSelHome');
 sel.value = localStorage.getItem('lang') || 'es';
 sel.addEventListener('change', function(){

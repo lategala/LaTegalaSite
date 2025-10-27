@@ -3,34 +3,100 @@
 <title>La Tegala · Compañía teatral</title>
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css"></head><body>
-<header><div class="container"><nav>
-<a href="index.html">Inicio</a>
-<a href="espectaculos.html">Espectáculos</a>
-<a href="quienes.html">¿Quiénes somos?</a>
-<a href="galeria.html">Galería</a>
-<a href="prensa.html">Prensa</a>
-<a href="contacto.html">Contacto</a>
-</nav></div></header>
+<header><div class="container">
+<nav>
+  <a data-i18n="nav_home" href="index.html">Inicio</a>
+  <a data-i18n="nav_shows" href="espectaculos.html">Espectáculos</a>
+  <a data-i18n="nav_about" href="quienes.html">¿Quiénes somos?</a>
+  <a data-i18n="nav_gallery" href="galeria.html">Galería</a>
+  <a data-i18n="nav_press" href="prensa.html">Prensa</a>
+  <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
+</nav>
+<div class="lang-switch">
+  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
+  <select id="langSel" aria-label="Seleccionar idioma">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+  </select>
+</div>
+</div></header>
+<script>
+function applyI18n(dict, lang){
+  if(!dict[lang]) return;
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(dict[lang][key]) el.innerHTML = dict[lang][key];
+  });
+}
+(function(){
+  var sel = document.getElementById('langSel');
+  var saved = localStorage.getItem('lang') || 'es';
+  sel.value = saved;
+  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
+})();
+</script>
 
 <section class="hero">
   <img class="logo" src="assets/logo2.jpg" alt="La Tegala">
-  <div class="tagline">Compañía Teatral <span class="brand">La Tegala</span>, Lanzarote.</div>
+  <div class="tagline">
+    <span data-i18n="tagline_line1">Compañía Teatral <span class="brand">La Tegala</span></span>
+    <span class="tagline2" data-i18n="tagline_line2">Lanzarote</span>
+  </div>
   <div class="quote" id="quote"></div>
 </section>
+
 <div class="container grid home-grid">
-  <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3>Espectáculos</h3></a>
-  <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3>¿Quiénes somos?</h3></a>
-  <a class="card" href="galeria.html"><img src="assets/gal3.jpg" alt="Galería"><h3>Galería</h3></a>
+  <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3 data-i18n="cta_shows">Espectáculos</h3></a>
+  <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3 data-i18n="cta_about">¿Quiénes somos?</h3></a>
+  <a class="card" href="galeria.html"><img src="assets/gal3.jpg" alt="Galería"><h3 data-i18n="cta_gallery">Galería</h3></a>
 </div>
+
 <script>
-const quotes=[
-"“Cuando el teatro es necesario, no hay nada más necesario” — Peter Brook",
-"“El mundo es un gran escenario” — William Shakespeare",
-"“Las luces cuentan secretos” — Anónimo",
-"“El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma” — Arthur Miller",
-"“El teatro es poesía que se sale del libro para hacerse humana” — F. G. Lorca",
-];
-const q=document.getElementById('quote');let i=0;function show(){q.textContent=quotes[i%quotes.length];i++;}show();setInterval(show,3200);
+var Q={es:[
+"«Cuando el teatro es necesario, no hay nada más necesario» — Peter Brook",
+"«El mundo es un gran escenario» — William Shakespeare",
+"«Las luces cuentan secretos» — Anónimo",
+"«El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma» — Arthur Miller",
+"«El teatro es poesía que se sale del libro para hacerse humana» — Federico García Lorca"
+],
+en:[
+"“When theatre is necessary, nothing is more necessary.” — Peter Brook",
+"“All the world’s a stage.” — William Shakespeare",
+"“Lights whisper secrets.” — Anonymous",
+"“The theatre cannot vanish: it is where humanity faces itself.” — Arthur Miller",
+"“Theatre is poetry that leaves the book to become human.” — Federico García Lorca"
+],
+fr:[
+"« Quand le théâtre est nécessaire, rien n’est plus nécessaire. » — Peter Brook",
+"« Le monde entier est une scène. » — William Shakespeare",
+"« Les lumières murmurent des secrets. » — Anonyme",
+"« Le théâtre ne peut pas disparaître : c’est là que l’humanité se confronte à elle-même. » — Arthur Miller",
+"« Le théâtre est une poésie qui sort du livre pour devenir humaine. » — Federico García Lorca"
+],
+de:[
+"„Wenn Theater nötig ist, gibt es nichts Notwendigeres.“ — Peter Brook",
+"„Die ganze Welt ist eine Bühne.“ — William Shakespeare",
+"„Lichter flüstern Geheimnisse.“ — Anonym",
+"„Das Theater kann nicht verschwinden: Dort stellt sich die Menschheit sich selbst.“ — Arthur Miller",
+"„Theater ist Poesie, die das Buch verlässt, um menschlich zu werden.“ — Federico García Lorca"
+]};
+const q=document.getElementById('quote');let i=0;
+function show(){var lang=localStorage.getItem('lang')||'es';var arr=Q[lang]||Q.es;q.textContent=arr[i%arr.length];i++;}
+show();setInterval(show, 3800);
+
+var DICT={ 
+  es: {nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
+        tagline_line1:"Compañía Teatral <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Espectáculos",cta_about:"¿Quiénes somos?",cta_gallery:"Galería"},
+  en: {nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
+        tagline_line1:"<span class='brand'>La Tegala</span> Theatre Company",tagline_line2:"Lanzarote",cta_shows:"Shows",cta_about:"About",cta_gallery:"Gallery"},
+  fr: {nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
+        tagline_line1:"Compagnie Théâtrale <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Spectacles",cta_about:"Qui sommes‑nous ?",cta_gallery:"Galerie"},
+  de: {nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
+        tagline_line1:"Theaterkompanie <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Stücke",cta_about:"Über uns",cta_gallery:"Galerie"}
+};applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>

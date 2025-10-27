@@ -3,16 +3,56 @@
 <title>Caleidoscopio · La Tegala</title>
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css"></head><body>
-<header><div class="container"><nav>
-<a href="index.html">Inicio</a>
-<a href="espectaculos.html">Espectáculos</a>
-<a href="quienes.html">¿Quiénes somos?</a>
-<a href="galeria.html">Galería</a>
-<a href="prensa.html">Prensa</a>
-<a href="contacto.html">Contacto</a>
-</nav></div></header>
+<header><div class="container">
+<nav>
+  <a data-i18n="nav_home" href="index.html">Inicio</a>
+  <a data-i18n="nav_shows" href="espectaculos.html">Espectáculos</a>
+  <a data-i18n="nav_about" href="quienes.html">¿Quiénes somos?</a>
+  <a data-i18n="nav_gallery" href="galeria.html">Galería</a>
+  <a data-i18n="nav_press" href="prensa.html">Prensa</a>
+  <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
+</nav>
+<div class="lang-switch">
+  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
+  <select id="langSel" aria-label="Seleccionar idioma">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+  </select>
+</div>
+</div></header>
+<script>
+function applyI18n(dict, lang){
+  if(!dict[lang]) return;
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(dict[lang][key]) el.innerHTML = dict[lang][key];
+  });
+}
+(function(){
+  var sel = document.getElementById('langSel');
+  var saved = localStorage.getItem('lang') || 'es';
+  sel.value = saved;
+  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
+})();
+</script>
 
-<div class="container"><h1>Caleidoscopio</h1><img class="card" src="assets/caleido_poster.jpg" alt="Caleidoscopio"><p class="small">Próximamente.</p></div>
+<div class="container">
+  <h1>Caleidoscopio</h1>
+  <img class="card" src="assets/caleido_poster.jpg" alt="Caleidoscopio">
+  <p class="small" data-i18n="soon">Próximamente.</p>
+</div>
+
+<script>
+var DICT={
+  es:{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",soon:"Próximamente."},
+  en:{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",soon:"Coming soon."},
+  fr:{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",soon:"Bientôt."},
+  de:{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",soon:"Demnächst."}
+};applyI18n(DICT, localStorage.getItem('lang')||'es');
+</script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>
 </body></html>

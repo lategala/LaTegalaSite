@@ -1,39 +1,26 @@
-<!doctype html><html lang='es'><head>
-<meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>La Tegala · Compañía teatral</title>
-<link rel='icon' type='image/png' href='assets/favicon.png'><link rel='shortcut icon' href='favicon.ico'>
-<link rel='preconnect' href='https://fonts.googleapis.com'>
-<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'>
-<link rel='stylesheet' href='style.css'></head><body>
-<header class='container'><nav>
-<a href='index.html'>Inicio</a>
-<a href='espectaculos.html'>Espectáculos</a>
-<a href='quienes.html'>¿Quiénes somos?</a>
-<a href='galeria.html'>Galería</a>
-<a href='prensa.html'>Prensa</a>
-<a href='contacto.html'>Contacto</a>
-</nav></header>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="container"><nav>
+<a href="index.html">Inicio</a>
+<a href="espectaculos.html">Espectáculos</a>
+<a href="quienes.html">¿Quiénes somos?</a>
+<a href="galeria.html">Galería</a>
+<a href="prensa.html">Prensa</a>
+<a href="contacto.html">Contacto</a>
+</nav></div></header>
+
 <section class="hero">
   <img class="logo" src="assets/logo2.jpg" alt="La Tegala">
-  <div class="intro">Compañía Teatral La Tegala.<br>Fundada en 2024 en Haría (Lanzarote).</div>
-  <div class="section"><span class="quote" id="q"></span></div>
+  <div class="tagline">Compañía Teatral <span class="brand">La Tegala</span>, Lanzarote.</div>
 </section>
-<script>
-const frases=[
-"“Cuando el teatro es necesario, no hay nada más necesario” — Peter Brook",
-"“El mundo es un gran escenario” — William Shakespeare",
-"“Las luces cuentan secretos” — Anónimo",
-"“El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma” — Arthur Miller",
-"“El teatro es poesía que se sale del libro para hacerse humana” — F. G. Lorca"
-];
-const q=document.getElementById('q');let i=0;
-const hero=document.querySelector('.hero');
-hero.addEventListener('mouseenter',()=>{q.textContent=frases[i%frases.length];i++;});
-hero.addEventListener('mouseleave',()=>{q.textContent='';});
-</script>
 <div class="container grid">
   <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3>Espectáculos</h3></a>
   <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3>¿Quiénes somos?</h3></a>
   <a class="card" href="galeria.html"><img src="assets/gal3.jpg" alt="Galería"><h3>Galería</h3></a>
 </div>
-<footer class='container small'>© La Tegala · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></footer></body></html>
+
+<footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>
+</body></html>

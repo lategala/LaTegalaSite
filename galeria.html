@@ -1,37 +1,35 @@
-<!doctype html><html lang='es'><head>
-<meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Galería · La Tegala</title>
-<link rel='icon' type='image/png' href='assets/favicon.png'><link rel='shortcut icon' href='favicon.ico'>
-<link rel='preconnect' href='https://fonts.googleapis.com'>
-<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap' rel='stylesheet'>
-<link rel='stylesheet' href='style.css'></head><body>
-<header class='container'><nav>
-<a href='index.html'>Inicio</a>
-<a href='espectaculos.html'>Espectáculos</a>
-<a href='quienes.html'>¿Quiénes somos?</a>
-<a href='galeria.html'>Galería</a>
-<a href='prensa.html'>Prensa</a>
-<a href='contacto.html'>Contacto</a>
-</nav></header>
-<div class="container">
-  <h1>Galería</h1>
-  <div class="thumb-grid"><img class='thumb' src='assets/caleido_poster.jpg' alt='caleido_poster.jpg'>
-<img class='thumb' src='assets/director1.jpg' alt='director1.jpg'>
-<img class='thumb' src='assets/director2.jpg' alt='director2.jpg'>
-<img class='thumb' src='assets/gal2.jpg' alt='gal2.jpg'>
-<img class='thumb' src='assets/gal3.jpg' alt='gal3.jpg'>
-<img class='thumb' src='assets/gal5.jpg' alt='gal5.jpg'>
-<img class='thumb' src='assets/ligazon1.jpg' alt='ligazon1.jpg'>
-<img class='thumb' src='assets/ligazon2.jpg' alt='ligazon2.jpg'>
-<img class='thumb' src='assets/ligazon5.jpg' alt='ligazon5.jpg'>
-<img class='thumb' src='assets/ligazon6.jpg' alt='ligazon6.jpg'>
-<img class='thumb' src='assets/ligazon7.jpg' alt='ligazon7.jpg'>
-<img class='thumb' src='assets/ligazon_poster.jpg' alt='ligazon_poster.jpg'>
-<img class='thumb' src='assets/poster.jpg' alt='poster.jpg'></div>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="container"><nav>
+<a href="index.html">Inicio</a>
+<a href="espectaculos.html">Espectáculos</a>
+<a href="quienes.html">¿Quiénes somos?</a>
+<a href="galeria.html">Galería</a>
+<a href="prensa.html">Prensa</a>
+<a href="contacto.html">Contacto</a>
+</nav></div></header>
+
+<div class="container"><h1>Galería</h1>
+<div class="thumb-grid">
+  <img class="thumb" src="assets/gal2.jpg" alt="gal2">
+  <img class="thumb" src="assets/gal3.jpg" alt="gal3">
+  <img class="thumb" src="assets/gal5.jpg" alt="gal5">
+  <img class="thumb" src="assets/ligazon1.jpg" alt="ligazon1">
+  <img class="thumb" src="assets/ligazon2.jpg" alt="ligazon2">
+  <img class="thumb" src="assets/ligazon3.jpg" alt="ligazon3">
+  <img class="thumb" src="assets/ligazon4.jpg" alt="ligazon4">
+  <img class="thumb" src="assets/ligazon5.jpg" alt="ligazon5">
+  <img class="thumb" src="assets/ligazon6.jpg" alt="ligazon6">
+  <img class="thumb" src="assets/ligazon7.jpg" alt="ligazon7">
+</div>
 </div>
 <script>
-
-function enableLightbox(selector){document.querySelectorAll(selector).forEach(img=>{img.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const big=document.createElement('img');big.src=img.src;m.appendChild(big);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});}
-enableLightbox('.thumb');
+function lb(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const big=document.createElement('img');big.src=el.src;m.appendChild(big);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});}
+lb('.thumb');
 </script>
-<footer class='container small'>© La Tegala · Haría, Lanzarote · <a href='mailto:antoniodaniel3@hotmail.com'>antoniodaniel3@hotmail.com</a></footer></body></html>
+
+<footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>
+</body></html>

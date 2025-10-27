@@ -12,15 +12,6 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
-<div class="lang-switch">
-  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
-  <select id="langSel" aria-label="Seleccionar idioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="de">Deutsch</option>
-  </select>
-</div>
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -31,12 +22,6 @@ function applyI18n(dict, lang){
     if(dict[lang][key]) el.innerHTML = dict[lang][key];
   });
 }
-(function(){
-  var sel = document.getElementById('langSel');
-  var saved = localStorage.getItem('lang') || 'es';
-  sel.value = saved;
-  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
-})();
 </script>
 
 <section class="hero">
@@ -45,6 +30,17 @@ function applyI18n(dict, lang){
     <span data-i18n="tagline_line1">Compañía Teatral <span class="brand">La Tegala</span></span>
     <span class="tagline2" data-i18n="tagline_line2">Lanzarote</span>
   </div>
+
+  <div id="langHome">
+    <span>🌐</span>
+    <select id="langSelHome">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+
   <div class="quote" id="quote"></div>
 </section>
 
@@ -73,7 +69,7 @@ fr:[
 "« Quand le théâtre est nécessaire, rien n’est plus nécessaire. » — Peter Brook",
 "« Le monde entier est une scène. » — William Shakespeare",
 "« Les lumières murmurent des secrets. » — Anonyme",
-"« Le théâtre ne peut pas disparaître : c’est là que l’humanité se confronte à elle-même. » — Arthur Miller",
+"« Le théâtre ne peut pas disparaître : c’est là que l’humanité se confronte à elle‑même. » — Arthur Miller",
 "« Le théâtre est une poésie qui sort du livre pour devenir humaine. » — Federico García Lorca"
 ],
 de:[
@@ -97,6 +93,14 @@ var DICT={
   de: {nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
         tagline_line1:"Theaterkompanie <span class='brand'>La Tegala</span>",tagline_line2:"Lanzarote",cta_shows:"Stücke",cta_about:"Über uns",cta_gallery:"Galerie"}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
+
+// Selector en inicio
+var sel = document.getElementById('langSelHome');
+sel.value = localStorage.getItem('lang') || 'es';
+sel.addEventListener('change', function(){
+  localStorage.setItem('lang', this.value);
+  location.reload();
+});
 </script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>

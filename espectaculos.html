@@ -12,15 +12,6 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
-<div class="lang-switch">
-  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
-  <select id="langSel" aria-label="Seleccionar idioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="de">Deutsch</option>
-  </select>
-</div>
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -31,12 +22,6 @@ function applyI18n(dict, lang){
     if(dict[lang][key]) el.innerHTML = dict[lang][key];
   });
 }
-(function(){
-  var sel = document.getElementById('langSel');
-  var saved = localStorage.getItem('lang') || 'es';
-  sel.value = saved;
-  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
-})();
 </script>
 
 <div class="container grid">

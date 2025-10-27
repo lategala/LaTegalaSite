@@ -12,15 +12,6 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
-<div class="lang-switch">
-  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
-  <select id="langSel" aria-label="Seleccionar idioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="de">Deutsch</option>
-  </select>
-</div>
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -31,20 +22,22 @@ function applyI18n(dict, lang){
     if(dict[lang][key]) el.innerHTML = dict[lang][key];
   });
 }
-(function(){
-  var sel = document.getElementById('langSel');
-  var saved = localStorage.getItem('lang') || 'es';
-  sel.value = saved;
-  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
-})();
 </script>
 
-<div class="container">
+<div class="container lpqf">
   <h1 data-i18n="lpqf_title">La Parte Que Falta</h1>
 
   <div class="two-col section">
     <img class="card" src="assets/poster.jpg" alt="Cartel La Parte Que Falta">
-    <div class="card text" data-i18n="lpqf_intro">La Parte Que Falta se estrenó el 18 de octubre de 2024 en el Festival de Teatro de Títeres Harionetas.<br>Es un espectáculo teatral familiar, para la infancia y la adolescencia, que combina lo mejor de la narración visual y emocional.<br>Esta adaptación teatral de la obra gráfica de Shel Silverstein, invita a una reflexión íntima sobre la felicidad, el amor y la autenticidad personal.<br>Una propuesta escénica de teatro de objetos y luz en negativo. Concebida con hilos de neón y luz negra, aporta una dimensión adicional de belleza y originalidad, transformando la poesía visual del libro en un lenguaje escénico minimalista.<br><br><strong>Público Objetivo</strong><br>• Familiares: a partir de 6 años<br>• Escolares: a partir de 8 años<br>• Ideal para espacios culturales, festivales o eventos educativos<br>• <strong>Duración</strong>: 55 minutos</div>
+    <div class="card text" data-i18n="lpqf_intro">
+      La Parte Que Falta se estrenó el 18 de octubre de 2024 en el Festival de Teatro de Títeres Harionetas.<br>
+      Es un espectáculo teatral familiar, para la infancia y la adolescencia, que combina lo mejor de la narración visual y emocional.<br>
+      Esta adaptación teatral de la obra gráfica de Shel Silverstein, invita a una reflexión íntima sobre la felicidad, el amor y la autenticidad personal.<br>
+      Una propuesta escénica de teatro de objetos y luz en negativo. Concebida con hilos de neón y luz negra, aporta una dimensión adicional de belleza y originalidad,
+      transformando la poesía visual del libro en un lenguaje escénico minimalista.<br><br>
+      <strong>Público Objetivo</strong><br>• Familiares: a partir de 6 años<br>• Escolares: a partir de 8 años<br>
+      • Ideal para espacios culturales, festivales o eventos educativos<br>• <strong>Duración</strong>: 55 minutos
+    </div>
   </div>
 
   <div class="two-col section">
@@ -57,7 +50,10 @@ function applyI18n(dict, lang){
 
   <div class="two-col section">
     <img class="card" src="assets/gal3.jpg" alt="Escena">
-    <div class="card text" data-i18n="lpqf_para2">Es una metáfora de la vida y las relaciones humanas, tan sencilla como poderosa, que habla de la libertad y el respeto hacia las personas. Hay partes que no quieren ser de nadie y prefieren caminar solas. Partes que no se sujetan bien y se pierden, otras que se sujetan con demasiada fuerza y se rompen. Partes que por más que se insista no encajan. Otras que no están dispuestas a perder su identidad.<br><br>La puesta en escena habla con tanta economía que interpretas el camino que más te conviene: puede abordar temas como la búsqueda, el amor, la amistad, las relaciones, proyección, idealización, soledad, rechazo, superación, aspiraciones, deseos, necesidades, consciencia, plenitud, simplicidad, pone en tela de juicio la cultura del éxito; exigencias atemporales y modernas que tanto saturan a adultos y a niños de hoy. En lo profundo, a nadie le faltan partes. Todos somos seres valiosos y completos.</div>
+    <div class="card text" data-i18n="lpqf_para2">
+      Es una metáfora de la vida y las relaciones humanas, tan sencilla como poderosa, que habla de la libertad y el respeto hacia las personas. Hay partes que no quieren ser de nadie y prefieren caminar solas. Partes que no se sujetan bien y se pierden, otras que se sujetan con demasiada fuerza y se rompen. Partes que por más que se insista no encajan. Otras que no están dispuestas a perder su identidad.<br><br>
+      La puesta en escena habla con tanta economía que interpretas el camino que más te conviene: puede abordar temas como la búsqueda, el amor, la amistad, las relaciones, proyección, idealización, soledad, rechazo, superación, aspiraciones, deseos, necesidades, consciencia, plenitud, simplicidad, pone en tela de juicio la cultura del éxito; exigencias atemporales y modernas que tanto saturan a adultos y a niños de hoy. En lo profundo, a nadie le faltan partes. Todos somos seres valiosos y completos.
+    </div>
   </div>
 
   <div class="section">
@@ -67,26 +63,21 @@ function applyI18n(dict, lang){
       <img class="thumb" src="assets/gal5.jpg" alt="gal5">
     </div>
   </div>
-
-  <div class="card section text">
-    <strong data-i18n="lpqf_ficha_title">FICHA ARTÍSTICA</strong><br><br>
-    <span data-i18n="lpqf_ficha">EQUIPO ARTÍSTICO<br> Narrador y voces (off) — Jesús Alves Reguera, Antonio Orellana<br> Manipuladores — Agustín Salvago, J. Carlos Sánchez, Antonella Siano, Fefa Toledo<br><br>EQUIPO TÉCNICO<br> diseño y construcción de marionetas — José Antonio Reguera<br> atrezzo/escenografía — Nadezhda Neyra Cano<br> música — Alba Rapela, IA generation<br> sonidos — «Lanzarote» Antonio Orellana<br> costura — Mª Antonia Landa<br> diseño gráfico — Daniel García<br> fotografía — Felipe de la Cruz<br><br> producción — <span class='brand'>Asociación Cultural LA TEGALA ESCÉNICA</span><br> dirección y adaptación — ANTONIO ORELLANA</span>
-  </div>
 </div>
 
 <script>
 function lightbox(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('click',()=>{const m=document.createElement('div');m.className='lightbox-modal show';const im=document.createElement('img');im.src=el.src;m.appendChild(im);m.addEventListener('click',()=>m.remove());document.body.appendChild(m);});});}
 lightbox('.thumb');
 
-var DICT={ 
-  es: {nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
-        lpqf_title:"La Parte Que Falta",lpqf_intro:`La Parte Que Falta se estrenó el 18 de octubre de 2024 en el Festival de Teatro de Títeres Harionetas.<br>Es un espectáculo teatral familiar, para la infancia y la adolescencia, que combina lo mejor de la narración visual y emocional.<br>Esta adaptación teatral de la obra gráfica de Shel Silverstein, invita a una reflexión íntima sobre la felicidad, el amor y la autenticidad personal.<br>Una propuesta escénica de teatro de objetos y luz en negativo. Concebida con hilos de neón y luz negra, aporta una dimensión adicional de belleza y originalidad, transformando la poesía visual del libro en un lenguaje escénico minimalista.<br><br><strong>Público Objetivo</strong><br>• Familiares: a partir de 6 años<br>• Escolares: a partir de 8 años<br>• Ideal para espacios culturales, festivales o eventos educativos<br>• <strong>Duración</strong>: 55 minutos`,lpqf_syn_title:"Sinopsis",lpqf_synopsis:`Un Círculo incompleto emprende un viaje creyendo que necesita otra parte para ser feliz, hasta descubrir que la autenticidad y el camino importan más que la meta. En otro lugar, la Parte Que Falta espera encajar en alguien, incluso en las criaturas completas. Descubre que sentirse plenos no se consigue añadiendo algo externo, sino cultivando nuestro interior.`,lpqf_para2:`Es una metáfora de la vida y las relaciones humanas, tan sencilla como poderosa, que habla de la libertad y el respeto hacia las personas. Hay partes que no quieren ser de nadie y prefieren caminar solas. Partes que no se sujetan bien y se pierden, otras que se sujetan con demasiada fuerza y se rompen. Partes que por más que se insista no encajan. Otras que no están dispuestas a perder su identidad.<br><br>La puesta en escena habla con tanta economía que interpretas el camino que más te conviene: puede abordar temas como la búsqueda, el amor, la amistad, las relaciones, proyección, idealización, soledad, rechazo, superación, aspiraciones, deseos, necesidades, consciencia, plenitud, simplicidad, pone en tela de juicio la cultura del éxito; exigencias atemporales y modernas que tanto saturan a adultos y a niños de hoy. En lo profundo, a nadie le faltan partes. Todos somos seres valiosos y completos.`,lpqf_ficha_title:`FICHA ARTÍSTICA`,lpqf_ficha:`EQUIPO ARTÍSTICO<br> Narrador y voces (off) — Jesús Alves Reguera, Antonio Orellana<br> Manipuladores — Agustín Salvago, J. Carlos Sánchez, Antonella Siano, Fefa Toledo<br><br>EQUIPO TÉCNICO<br> diseño y construcción de marionetas — José Antonio Reguera<br> atrezzo/escenografía — Nadezhda Neyra Cano<br> música — Alba Rapela, IA generation<br> sonidos — «Lanzarote» Antonio Orellana<br> costura — Mª Antonia Landa<br> diseño gráfico — Daniel García<br> fotografía — Felipe de la Cruz<br><br> producción — <span class='brand'>Asociación Cultural LA TEGALA ESCÉNICA</span><br> dirección y adaptación — ANTONIO ORELLANA`},
-  en: {nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
-        lpqf_title:"The Missing Piece",lpqf_intro:`<em>The Missing Piece</em> premiered on 18 October 2024 at Harionetas Puppet Theatre Festival.<br>A family show for children and teens that blends visual and emotional storytelling.<br>This stage adaptation of Shel Silverstein’s picture book invites an intimate reflection on happiness, love and personal authenticity.<br>A scenic proposal of object theatre and negative light. Conceived with neon threads and blacklight, it adds an extra dimension of beauty and originality, turning the book’s visual poetry into a minimalist stage language.<br><br><strong>Target Audience</strong><br>• Family shows: 6+<br>• School performances: 8+<br>• Ideal for cultural venues, festivals and educational events<br>• <strong>Running time</strong>: 55 minutes`,lpqf_syn_title:"Synopsis",lpqf_synopsis:`An incomplete Circle sets off believing it needs another piece to be happy, only to discover that authenticity — and the path — matter more than the goal. Elsewhere, the Missing Piece longs to fit into someone, even into complete beings. It discovers that fulfilment is not achieved by adding something external, but by cultivating our inner self.`,lpqf_para2:`A metaphor of life and human relationships: simple yet powerful — about freedom and respect. Some pieces don’t want to belong to anyone and walk alone. Some slip away; others are held too tightly and break. Some never fit, no matter how hard you try; others refuse to lose their identity.<br><br>The staging speaks with such economy that the audience completes the journey that suits them best. It touches on search, love, friendship, relationships, projection, idealisation, loneliness, rejection, resilience, aspirations, desires, needs, awareness, fulfilment and simplicity — questioning the culture of success that overwhelms both adults and children today. Deep down, no one is missing pieces. We are all valuable and complete.`,lpqf_ficha_title:`CAST & CREW`,lpqf_ficha:`ARTISTIC TEAM<br> Narration & voices (off) — Jesús Alves Reguera, Antonio Orellana<br> Puppeteers — Agustín Salvago, J. Carlos Sánchez, Antonella Siano, Fefa Toledo<br><br>TECHNICAL TEAM<br> Puppet design & build — José Antonio Reguera<br> Props/Scenography — Nadezhda Neyra Cano<br> Music — Alba Rapela, AI generation<br> Soundscapes — “Lanzarote” Antonio Orellana<br> Wardrobe — Mª Antonia Landa<br> Graphic design — Daniel García<br> Photography — Felipe de la Cruz<br><br> Production — <span class='brand'>La Tegala Escénica Cultural Association</span><br> Direction & adaptation — ANTONIO ORELLANA`},
-  fr: {nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
-        lpqf_title:"La Partie Manquante",lpqf_intro:`<em>La Partie Manquante</em> a été créée le 18 octobre 2024 au Festival Harionetas (théâtre de marionnettes).<br>Un spectacle familial pour l’enfance et l’adolescence, mêlant narration visuelle et émotion.<br>Cette adaptation scénique du livre de Shel Silverstein invite à une réflexion intime sur le bonheur, l’amour et l’authenticité personnelle.<br>Une proposition d’objets et de lumière en négatif. Conçue avec des fils néon et la lumière noire, elle ajoute une dimension de beauté et d’originalité, transformant la poésie visuelle du livre en un langage scénique minimaliste.<br><br><strong>Public</strong><br>• Familial : dès 6 ans<br>• Scolaire : dès 8 ans<br>• Idéal pour lieux culturels, festivals et événements éducatifs<br>• <strong>Durée</strong> : 55 minutes`,lpqf_syn_title:"Synopsis",lpqf_synopsis:`Un Cercle incomplet part en quête pensant avoir besoin d’une autre partie pour être heureux, mais découvre que l’authenticité — et le chemin — comptent plus que la destination. Ailleurs, la Partie Manquante veut s’emboîter dans quelqu’un, même chez les êtres « complets ». Elle découvre que la plénitude ne vient pas d’un ajout extérieur, mais d’un travail intérieur.`,lpqf_para2:`Une métaphore de la vie et des relations humaines : simple et puissante — sur la liberté et le respect. Certaines « parties » ne veulent appartenir à personne et avancent seules. D’autres glissent ou, serrées trop fort, se brisent. Il en est qui n’entrent jamais, quoi qu’on tente ; d’autres refusent de perdre leur identité.<br><br>La mise en scène parle avec une telle économie que chacun complète le voyage à sa manière. Elle aborde la quête, l’amour, l’amitié, les relations, la projection, l’idéalisation, la solitude, le rejet, le dépassement, les aspirations, les désirs, les besoins, la conscience, la plénitude, la simplicité — et interroge la culture de la réussite qui sature adultes et enfants. Au fond, il ne manque de « parties » à personne. Nous sommes tous précieux et complets.`,lpqf_ficha_title:`ÉQUIPE ARTISTIQUE & TECHNIQUE`,lpqf_ficha:`ÉQUIPE ARTISTIQUE<br> Narration & voix (off) — Jesús Alves Reguera, Antonio Orellana<br> Marionnettistes — Agustín Salvago, J. Carlos Sánchez, Antonella Siano, Fefa Toledo<br><br>ÉQUIPE TECHNIQUE<br> Conception & fabrication des marionnettes — José Antonio Reguera<br> Accessoires/Scénographie — Nadezhda Neyra Cano<br> Musique — Alba Rapela, génération IA<br> Paysages sonores — « Lanzarote » Antonio Orellana<br> Costumes — Mª Antonia Landa<br> Graphisme — Daniel García<br> Photographie — Felipe de la Cruz<br><br> Production — <span class='brand'>Association Culturelle La Tegala Escénica</span><br> Mise en scène & adaptation — ANTONIO ORELLANA`},
-  de: {nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-        lpqf_title:"Das Fehlende Stück",lpqf_intro:`<em>Das Fehlende Stück</em> wurde am 18. Oktober 2024 beim Harionetas Festival uraufgeführt.<br>Ein Familienspektakel für Kinder und Jugendliche, das visuelles und emotionales Erzählen verbindet.<br>Diese Bühnenadaption des Bilderbuchs von Shel Silverstein lädt zu einer intimen Reflexion über Glück, Liebe und Authentizität ein.<br>Ein Vorschlag des Objekttheaters mit Negativ‑Licht. Mit Neonfäden und Schwarzlicht konzipiert, verleiht es eine zusätzliche Dimension von Schönheit und Originalität und verwandelt die visuelle Poesie des Buches in eine minimalistische Bühnensprache.<br><br><strong>Zielpublikum</strong><br>• Familienvorstellungen: ab 6<br>• Schülervorstellungen: ab 8<br>• Ideal für Kulturorte, Festivals und Bildungs‑Events<br>• <strong>Dauer</strong>: 55 Minuten`,lpqf_syn_title:"Handlung",lpqf_synopsis:`Ein unvollständiger Kreis macht sich auf den Weg, überzeugt, ein weiteres Teil zu brauchen, um glücklich zu sein — und erkennt, dass Authentizität und der Weg wichtiger sind als das Ziel. Anderswo möchte das Fehlende Stück in jemanden passen, sogar in „vollständige“ Wesen. Es erkennt, dass Fülle nicht durch etwas Äußeres entsteht, sondern durch innere Kultivierung.`,lpqf_para2:`Eine Metapher für das Leben und die menschlichen Beziehungen: schlicht und doch kraftvoll — über Freiheit und Respekt. Manche „Teile“ wollen niemandem gehören und gehen allein. Manche entgleiten, andere zerbrechen, wenn man sie zu fest hält. Manche passen trotz aller Versuche nicht; andere wollen ihre Identität nicht verlieren.<br><br>Die Inszenierung spricht mit solcher Ökonomie, dass das Publikum den Weg selbst ergänzt. Sie berührt Suche, Liebe, Freundschaft, Beziehungen, Projektion, Idealisierung, Einsamkeit, Zurückweisung, Überwindung, Bestrebungen, Wünsche, Bedürfnisse, Bewusstheit, Erfüllung und Einfachheit — und stellt die Erfolgskultur infrage, die Kinder wie Erwachsene überfordert. Tief im Innern fehlt niemandem etwas. Wir sind alle wertvoll und vollständig.`,lpqf_ficha_title:`ENSEMBLE & TEAM`,lpqf_ficha:`KÜNSTLERISCHES TEAM<br> Erzählung & Stimmen (Off) — Jesús Alves Reguera, Antonio Orellana<br> Puppenspiel — Agustín Salvago, J. Carlos Sánchez, Antonella Siano, Fefa Toledo<br><br>TECHNISCHES TEAM<br> Entwurf & Bau der Puppen — José Antonio Reguera<br> Ausstattung/Bühnenbild — Nadezhda Neyra Cano<br> Musik — Alba Rapela, KI‑Generierung<br> Klangräume — „Lanzarote“ Antonio Orellana<br> Kostüm — Mª Antonia Landa<br> Grafikdesign — Daniel García<br> Fotografie — Felipe de la Cruz<br><br> Produktion — <span class='brand'>Kulturverein La Tegala Escénica</span><br> Regie & Bearbeitung — ANTONIO ORELLANA`}
+var DICT={{ 
+  es: {{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
+        lpqf_title:"La Parte Que Falta",lpqf_syn_title:"Sinopsis"}},
+  en: {{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
+        lpqf_title:"The Missing Piece",lpqf_syn_title:"Synopsis"}},
+  fr: {{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
+        lpqf_title:"La Partie Manquante",lpqf_syn_title:"Synopsis"}},
+  de: {{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
+        lpqf_title:"Das Fehlende Stück",lpqf_syn_title:"Handlung"}}
 };applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 

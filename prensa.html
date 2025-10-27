@@ -12,15 +12,6 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
-<div class="lang-switch">
-  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
-  <select id="langSel" aria-label="Seleccionar idioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="de">Deutsch</option>
-  </select>
-</div>
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -31,23 +22,13 @@ function applyI18n(dict, lang){
     if(dict[lang][key]) el.innerHTML = dict[lang][key];
   });
 }
-(function(){
-  var sel = document.getElementById('langSel');
-  var saved = localStorage.getItem('lang') || 'es';
-  sel.value = saved;
-  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
-})();
 </script>
 
 <div class="container">
   <h1 data-i18n="press_title">Prensa</h1>
-
   <p>
-    <a class="button-red" data-i18n="press_download" href="assets/dossier_lpqf_2026.pdf" download>
-      Descargar dossier PDF de <em>La Parte Que Falta</em>
-    </a>
+    <a class="button-red" data-i18n="press_download" href="assets/dossier_lpqf_2026.pdf" download>Descargar dossier PDF de <em>La Parte Que Falta</em></a>
   </p>
-
   <ul>
     <li><a target="_blank" rel="noopener" href="https://www.masscultura.com/antonio-daniel-garcia-orellana-la-parte-que-falta/">MassCultura — Entrevista/Reportaje</a></li>
     <li><a target="_blank" rel="noopener" href="https://harionetas.com/project/antonio-orellana-la-parte-que-falta/">Harionetas — Ficha del espectáculo</a></li>
@@ -55,7 +36,6 @@ function applyI18n(dict, lang){
     <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9adp6qDEkeQ">Tráiler — La Parte Que Falta (YouTube)</a></li>
   </ul>
 </div>
-
 <script>
 var DICT={
   es:{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",

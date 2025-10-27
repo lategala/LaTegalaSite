@@ -12,15 +12,6 @@
   <a data-i18n="nav_press" href="prensa.html">Prensa</a>
   <a data-i18n="nav_contact" href="contacto.html">Contacto</a>
 </nav>
-<div class="lang-switch">
-  <label class="small" for="langSel" style="margin-right:6px;">🌐</label>
-  <select id="langSel" aria-label="Seleccionar idioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="de">Deutsch</option>
-  </select>
-</div>
 </div></header>
 <script>
 function applyI18n(dict, lang){
@@ -31,12 +22,6 @@ function applyI18n(dict, lang){
     if(dict[lang][key]) el.innerHTML = dict[lang][key];
   });
 }
-(function(){
-  var sel = document.getElementById('langSel');
-  var saved = localStorage.getItem('lang') || 'es';
-  sel.value = saved;
-  sel.addEventListener('change', function(){ localStorage.setItem('lang', this.value); location.reload(); });
-})();
 </script>
 
 <div class="container quienes">
@@ -49,22 +34,47 @@ function applyI18n(dict, lang){
 
   <div class="card text">
     <p data-i18n="about_header"><strong>Compañía teatral LA TEGALA</strong> &nbsp; Dirección ANTONIO ORELLANA</p>
-    <p class="spaced" data-i18n="about_main">La Tegala Escénica fundada en 2024 en Haría, Lanzarote, toma su nombre de una palabra de origen prehispánico que representa un redil o refugio improvisado de piedra para vigilancia y resguardo del viento. Esta esencia simbólica refleja los valores fundamentales de la compañía: ser un espacio de protección, reunión y creación donde el arte escénico pueda desarrollarse, como un lugar de encuentro para la comunidad y las ideas.<br><br>Bajo la dirección de Antonio Orellana, reconocido dramaturgo, actor y director, La Tegala se propone ser un espacio de creación que combina el talento local con una sólida experiencia profesional para ofrecer montajes teatrales de alto impacto cultural y artístico.<br><br>Orellana aporta a este proyecto más de tres décadas de experiencia en las artes escénicas. En Lanzarote, su labor ha sido fundamental en el impulso del teatro local, con proyectos como la Escuela de Teatro de Haría desde 2021, o la Escuela de Teatro Aspercan Lanzarote en 2023, especializada en inclusión a través del teatro. Y otros proyectos culturales en Canarias como productor, autor y director teatral.<br><br>* La Asociación Cultural La Tegala Escénica, inspirada por este legado y el entusiasmo de la comunidad teatral insular, tiene como misión explorar nuevas formas de expresión artística y fortalecer el teatro isleño desde un enfoque profesional y comprometido. Este proyecto se erige como un círculo artístico que acoge, crea y transforma, consolidándose como un nuevo referente teatral en Lanzarote y las Islas Canarias.</p>
-    <p class="small muted" style="margin-top:1.2em;" data-i18n="about_note"><em>* Licenciado en Filología Hispánica y Máster en Artes del Espectáculo Vivo (Premio Extraordinario) por la Universidad de Sevilla, completó su formación en el Instituto del Teatro de Sevilla y La Sapienza de Roma, trabajando bajo la guía de reconocidos maestros internacionales. A lo largo de su carrera, ha fundado y dirigido compañías teatrales en Madrid, País Vasco, Andalucía y Canarias, consolidando un perfil profesional polifacético que abarca la actuación, la dramaturgia y la dirección. Recibió el Premio de Letras Canarias Benito Pérez Armas, además de los premios nacionales Esperpento, ASSITEJ‑España, Escuela Navarra de Teatro, y más reconocimientos por su labor dramatúrgica y actoral como los premios de la Universidad de Sevilla 'Rafael de Cózar' y la Universidad de Cádiz ‘El Drag’. Como autor, ha publicado, estrenado y traducido a varios idiomas, más de 15 obras de teatro.</em></p>
+    <p class="spaced" data-i18n="about_main">
+      La Tegala Escénica fundada en 2024 en Haría, Lanzarote, toma su nombre de una palabra de origen prehispánico
+      que representa un redil o refugio improvisado de piedra para vigilancia y resguardo del viento. Esta esencia simbólica
+      refleja los valores fundamentales de la compañía: ser un espacio de protección, reunión y creación donde el arte escénico
+      pueda desarrollarse, como un lugar de encuentro para la comunidad y las ideas.<br><br>
+      Bajo la dirección de Antonio Orellana, reconocido dramaturgo, actor y director, La Tegala se propone ser un espacio de
+      creación que combina el talento local con una sólida experiencia profesional para ofrecer montajes teatrales de alto impacto
+      cultural y artístico.<br><br>
+      Orellana aporta a este proyecto más de tres décadas de experiencia en las artes escénicas. En Lanzarote, su labor ha sido
+      fundamental en el impulso del teatro local, con proyectos como la Escuela de Teatro de Haría desde 2021, o la Escuela de
+      Teatro Aspercan Lanzarote en 2023, especializada en inclusión a través del teatro. Y otros proyectos culturales en Canarias
+      como productor, autor y director teatral.<br><br>
+      * La Asociación Cultural La Tegala Escénica, inspirada por este legado y el entusiasmo de la comunidad teatral insular,
+      tiene como misión explorar nuevas formas de expresión artística y fortalecer el teatro isleño desde un enfoque profesional
+      y comprometido. Este proyecto se erige como un círculo artístico que acoge, crea y transforma, consolidándose como un nuevo
+      referente teatral en Lanzarote y las Islas Canarias.
+    </p>
+    <p class="small muted" style="margin-top:1.2em;" data-i18n="about_note">
+      <em>* Licenciado en Filología Hispánica y Máster en Artes del Espectáculo Vivo (Premio Extraordinario) por la
+      Universidad de Sevilla, completó su formación en el Instituto del Teatro de Sevilla y La Sapienza de Roma, trabajando
+      bajo la guía de reconocidos maestros internacionales. A lo largo de su carrera, ha fundado y dirigido compañías
+      teatrales en Madrid, País Vasco, Andalucía y Canarias, consolidando un perfil profesional polifacético que abarca
+      la actuación, la dramaturgia y la dirección. Recibió el Premio de Letras Canarias Benito Pérez Armas, además de los
+      premios nacionales Esperpento, ASSITEJ‑España, Escuela Navarra de Teatro, y más reconocimientos por su labor
+      dramatúrgica y actoral como los premios de la Universidad de Sevilla 'Rafael de Cózar' y la Universidad de Cádiz ‘El Drag’.
+      Como autor, ha publicado, estrenado y traducido a varios idiomas, más de 15 obras de teatro.</em>
+    </p>
   </div>
 </div>
 
 <script>
-var DICT={ 
-  es: {nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
-        about_title:"¿Quiénes somos?",about_header:`<strong>Compañía teatral LA TEGALA</strong> &nbsp; Dirección ANTONIO ORELLANA`,about_main:`La Tegala Escénica fundada en 2024 en Haría, Lanzarote, toma su nombre de una palabra de origen prehispánico que representa un redil o refugio improvisado de piedra para vigilancia y resguardo del viento. Esta esencia simbólica refleja los valores fundamentales de la compañía: ser un espacio de protección, reunión y creación donde el arte escénico pueda desarrollarse, como un lugar de encuentro para la comunidad y las ideas.<br><br>Bajo la dirección de Antonio Orellana, reconocido dramaturgo, actor y director, La Tegala se propone ser un espacio de creación que combina el talento local con una sólida experiencia profesional para ofrecer montajes teatrales de alto impacto cultural y artístico.<br><br>Orellana aporta a este proyecto más de tres décadas de experiencia en las artes escénicas. En Lanzarote, su labor ha sido fundamental en el impulso del teatro local, con proyectos como la Escuela de Teatro de Haría desde 2021, o la Escuela de Teatro Aspercan Lanzarote en 2023, especializada en inclusión a través del teatro. Y otros proyectos culturales en Canarias como productor, autor y director teatral.<br><br>* La Asociación Cultural La Tegala Escénica, inspirada por este legado y el entusiasmo de la comunidad teatral insular, tiene como misión explorar nuevas formas de expresión artística y fortalecer el teatro isleño desde un enfoque profesional y comprometido. Este proyecto se erige como un círculo artístico que acoge, crea y transforma, consolidándose como un nuevo referente teatral en Lanzarote y las Islas Canarias.`,about_note:`<em>* Licenciado en Filología Hispánica y Máster en Artes del Espectáculo Vivo (Premio Extraordinario) por la Universidad de Sevilla, completó su formación en el Instituto del Teatro de Sevilla y La Sapienza de Roma, trabajando bajo la guía de reconocidos maestros internacionales. A lo largo de su carrera, ha fundado y dirigido compañías teatrales en Madrid, País Vasco, Andalucía y Canarias, consolidando un perfil profesional polifacético que abarca la actuación, la dramaturgia y la dirección. Recibió el Premio de Letras Canarias Benito Pérez Armas, además de los premios nacionales Esperpento, ASSITEJ‑España, Escuela Navarra de Teatro, y más reconocimientos por su labor dramatúrgica y actoral como los premios de la Universidad de Sevilla 'Rafael de Cózar' y la Universidad de Cádiz ‘El Drag’. Como autor, ha publicado, estrenado y traducido a varios idiomas, más de 15 obras de teatro.</em>`},
-  en: {nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
-        about_title:"About",about_header:`<strong>LA TEGALA theatre company</strong> &nbsp; Direction: ANTONIO ORELLANA`,about_main:`Founded in 2024 in Haría (Lanzarote), La Tegala Escénica takes its name from a pre‑Hispanic word for a stone fold or improvised shelter used for lookout and wind protection. This symbolic essence reflects the company’s core values: a space for protection, gathering and creation where the performing arts can grow — a meeting place for the community and ideas.<br><br>Under the direction of Antonio Orellana — playwright, actor and director — La Tegala aims to be a creative hub that blends local talent with solid professional experience to deliver productions of strong cultural and artistic impact.<br><br>Orellana brings over three decades of experience in the performing arts. In Lanzarote his work has been key to boosting local theatre, with projects such as the Haría School of Theatre (since 2021) and the Aspercan Lanzarote Theatre School (2023), focused on inclusion through theatre; as well as other cultural initiatives in the Canary Islands as producer, author and stage director.<br><br>* The La Tegala Escénica Cultural Association, inspired by this legacy and by the island’s theatre community, has the mission to explore new forms of artistic expression and to strengthen Canarian theatre with a professional and committed approach. It stands as an artistic circle that welcomes, creates and transforms — consolidating itself as a new theatrical reference in Lanzarote and the Canary Islands.`,about_note:`<em>* BA in Hispanic Philology and MA in Performing Arts (Extraordinary Award) from the University of Seville. Trained at the Seville Theatre Institute and La Sapienza (Rome) with renowned international masters. Founder and director of theatre companies in Madrid, the Basque Country, Andalusia and the Canary Islands. Recipient of the Benito Pérez Armas Canary Islands Prize, the national Esperpento, ASSITEJ‑Spain and Escuela Navarra de Teatro awards, among others, plus distinctions from the Universities of Seville ('Rafael de Cózar') and Cádiz ('El Drag'). Author with more than 15 plays published, premiered and translated.</em>`},
-  fr: {nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
-        about_title:"Qui sommes‑nous ?",about_header:`<strong>Compagnie théâtrale LA TEGALA</strong> &nbsp; Direction : ANTONIO ORELLANA`,about_main:`Fondée en 2024 à Haría (Lanzarote), La Tegala Escénica tire son nom d’un mot préhispanique désignant un enclos de pierre ou un abri improvisé servant de guet et de protection contre le vent. Cette essence symbolique reflète les valeurs de la compagnie : un espace de protection, de rencontre et de création où l’art scénique peut se développer — un lieu d’échange pour la communauté et les idées.<br><br>Sous la direction d’Antonio Orellana — dramaturge, acteur et metteur en scène — La Tegala se veut un espace de création qui conjugue talent local et solide expérience professionnelle pour proposer des montages de fort impact culturel et artistique.<br><br>Orellana apporte plus de trois décennies d’expérience dans les arts de la scène. À Lanzarote, son action a été décisive pour l’essor du théâtre local, avec des projets tels que l’École de Théâtre de Haría (depuis 2021) et l’École de Théâtre Aspercan Lanzarote (2023), spécialisée dans l’inclusion par le théâtre, ainsi que d’autres initiatives culturelles aux Canaries en tant que producteur, auteur et metteur en scène.<br><br>* L’Association Culturelle La Tegala Escénica, inspirée par cet héritage et par l’enthousiasme de la communauté théâtrale insulaire, a pour mission d’explorer de nouvelles formes d’expression artistique et de renforcer le théâtre canarien avec une approche professionnelle et engagée. Elle se dresse comme un cercle artistique qui accueille, crée et transforme, devenant une nouvelle référence théâtrale à Lanzarote et dans les Îles Canaries.`,about_note:`<em>* Licence en Philologie Hispanique et Master en Arts du Spectacle (Prix Extraordinaire) à l’Université de Séville. Formation à l’Institut du Théâtre de Séville et à La Sapienza (Rome) auprès de maîtres internationaux reconnus. Fondateur et directeur de compagnies à Madrid, au Pays Basque, en Andalousie et aux Canaries. Lauréat du Prix Benito Pérez Armas, des prix nationaux Esperpento, ASSITEJ‑Espagne et Escuela Navarra de Teatro, ainsi que des distinctions des Universités de Séville (« Rafael de Cózar ») et de Cadix (« El Drag »). Auteur de plus de 15 pièces publiées, créées et traduites.</em>`},
-  de: {nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
-        about_title:"Über uns",about_header:`<strong>Theaterkompanie LA TEGALA</strong> &nbsp; Leitung: ANTONIO ORELLANA`,about_main:`La Tegala Escénica wurde 2024 in Haría (Lanzarote) gegründet. Der Name stammt aus einem vorhispanischen Wort für einen Steinkraal bzw. ein provisorisches Schutz‑ und Beobachtungsbauwerk gegen den Wind. Diese symbolische Bedeutung spiegelt die Grundwerte der Kompanie wider: ein Raum des Schutzes, der Begegnung und der Kreation, in dem darstellende Kunst wachsen kann — ein Treffpunkt für Gemeinschaft und Ideen.<br><br>Unter der Leitung von Antonio Orellana — Dramatiker, Schauspieler und Regisseur — versteht sich La Tegala als kreativer Ort, der lokales Talent mit fundierter Professionalität verbindet, um Produktionen mit hoher kultureller und künstlerischer Wirkung zu schaffen.<br><br>Orellana bringt über dreißig Jahre Erfahrung in den Darstellenden Künsten mit. Auf Lanzarote war seine Arbeit maßgeblich für die Belebung der lokalen Theaterszene, u. a. mit der Theaterschule Haría (seit 2021) und der Aspercan‑Theaterschule Lanzarote (2023) mit Schwerpunkt Inklusion, sowie weiteren Kulturprojekten auf den Kanaren als Produzent, Autor und Regisseur.<br><br>* Der Kulturverein La Tegala Escénica hat sich — inspiriert von diesem Erbe und der Inselszene — zum Ziel gesetzt, neue Ausdrucksformen zu erkunden und das kanarische Theater professionell und engagiert zu stärken. Als künstlerischer Kreis, der aufnimmt, schafft und verwandelt, etabliert er sich als neue Referenz auf Lanzarote und den Kanarischen Inseln.`,about_note:`<em>* Abschluss in Hispanistik und Master in Darstellenden Künsten (Auszeichnung) an der Universität Sevilla. Ausbildung am Theaterinstitut Sevilla und an der Sapienza in Rom bei renommierten internationalen Lehrern. Gründer und Leiter von Kompanien in Madrid, im Baskenland, in Andalusien und auf den Kanaren. Ausgezeichnet u. a. mit dem Benito‑Pérez‑Armas‑Preis, den nationalen Preisen Esperpento, ASSITEJ‑Spanien und Escuela Navarra de Teatro, sowie Ehrungen der Universitäten Sevilla („Rafael de Cózar“) und Cádiz („El Drag“). Autor von über 15 veröffentlichten, uraufgeführten und übersetzten Stücken.</em>`}
-};applyI18n(DICT, localStorage.getItem('lang')||'es');
+var DICT={{ 
+  es: {{nav_home:"Inicio",nav_shows:"Espectáculos",nav_about:"¿Quiénes somos?",nav_gallery:"Galería",nav_press:"Prensa",nav_contact:"Contacto",
+        about_title:"¿Quiénes somos?"}},
+  en: {{nav_home:"Home",nav_shows:"Shows",nav_about:"About",nav_gallery:"Gallery",nav_press:"Press",nav_contact:"Contact",
+        about_title:"About"}},
+  fr: {{nav_home:"Accueil",nav_shows:"Spectacles",nav_about:"Qui sommes‑nous ?",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Contact",
+        about_title:"Qui sommes‑nous ?"}},
+  de: {{nav_home:"Startseite",nav_shows:"Stücke",nav_about:"Über uns",nav_gallery:"Galerie",nav_press:"Presse",nav_contact:"Kontakt",
+        about_title:"Über uns"}}
+}};applyI18n(DICT, localStorage.getItem('lang')||'es');
 </script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>

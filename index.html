@@ -15,12 +15,23 @@
 <section class="hero">
   <img class="logo" src="assets/logo2.jpg" alt="La Tegala">
   <div class="tagline">Compañía Teatral <span class="brand">La Tegala</span>, Lanzarote.</div>
+  <div class="quote" id="quote"></div>
 </section>
-<div class="container grid">
+<div class="container grid home-grid">
   <a class="card" href="espectaculos.html"><img src="assets/poster.jpg" alt="La Parte Que Falta"><h3>Espectáculos</h3></a>
   <a class="card" href="quienes.html"><img src="assets/director1.jpg" alt="Quiénes somos"><h3>¿Quiénes somos?</h3></a>
   <a class="card" href="galeria.html"><img src="assets/gal3.jpg" alt="Galería"><h3>Galería</h3></a>
 </div>
+<script>
+const quotes=[
+"“Cuando el teatro es necesario, no hay nada más necesario” — Peter Brook",
+"“El mundo es un gran escenario” — William Shakespeare",
+"“Las luces cuentan secretos” — Anónimo",
+"“El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma” — Arthur Miller",
+"“El teatro es poesía que se sale del libro para hacerse humana” — F. G. Lorca",
+];
+const q=document.getElementById('quote');let i=0;function show(){q.textContent=quotes[i%quotes.length];i++;}show();setInterval(show,3200);
+</script>
 
 <footer><div class="container"><div class="copy">© La Tegala Escénica, Lanzarote · <a href="mailto:lategalaescenica@gmail.com">lategalaescenica@gmail.com</a></div></div></footer>
 </body></html>

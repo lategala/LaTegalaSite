@@ -12,7 +12,8 @@
     "title_de": "Festival Harionetas · Haría",
     "summary_de": "Premiere · Sala El Aljibe",
     "title_it": "Festival Harionetas · Haría",
-    "summary_it": "Debutto · Sala El Aljibe"
+    "summary_it": "Debutto · Sala El Aljibe",
+    "published": true
   },
   {
     "project": "lpqf",
@@ -27,7 +28,8 @@
     "title_de": "CIC El Almacén · Arrecife",
     "summary_de": "Kulturprogramm des Cabildo de Lanzarote.",
     "title_it": "CIC El Almacén · Arrecife",
-    "summary_it": "Programmazione culturale del Cabildo de Lanzarote."
+    "summary_it": "Programmazione culturale del Cabildo de Lanzarote.",
+    "published": true
   },
   {
     "project": "lpqf",
@@ -42,7 +44,8 @@
     "title_de": "Theater Víctor Fernández Gopar „El Salinero“",
     "summary_de": "Bildungsprojekt · 4 Vorstellungen für Schulen.",
     "title_it": "Teatro Víctor Fernández Gopar “El Salinero”",
-    "summary_it": "Progetto educativo · 4 recite per la campagna scolastica."
+    "summary_it": "Progetto educativo · 4 recite per la campagna scolastica.",
+    "published": true
   },
   {
     "project": "lpqf",
@@ -57,6 +60,7 @@
     "title_de": "Teatro Guiniguada · Gran Canaria",
     "summary_de": "7. Schau des nichtprofessionellen Theaters.",
     "title_it": "Teatro Guiniguada · Gran Canaria",
-    "summary_it": "VII Rassegna di teatro non professionale."
+    "summary_it": "VII Rassegna di teatro non professionale.",
+    "published": true
   }
 ]

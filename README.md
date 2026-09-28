@@ -24,3 +24,5 @@ Pages CMS puede editar estos archivos y subir material a las carpetas configurad
 
 ## Publicación
 GitHub Pages · rama principal · raíz del repositorio.
+
+Validación automática: activa en Pull Request.

@@ -58,7 +58,7 @@ function wireMail(){
 }
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-async function getData(file){try{const r=await fetch("data/"+file,{cache:"no-store"});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){return null}}
+function loc(x,key){const l=lang();return x[key+"_"+l]??x[key]??""}\nasync function getData(file){try{const r=await fetch("data/"+file,{cache:"no-store"});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){return null}}
 async function hydrateNews(){
  const data=await getData("actualidad.json"); if(!data)return;
  const featured=document.querySelector("[data-news-featured]");

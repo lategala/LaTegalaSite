@@ -15,7 +15,8 @@
     "title_de": "Theaterschule La Graciosa",
     "summary_de": "Interview und Vorstellung des Ausbildungsprojekts.",
     "title_it": "Scuola di Teatro La Graciosa",
-    "summary_it": "Intervista e presentazione del progetto formativo."
+    "summary_it": "Intervista e presentazione del progetto formativo.",
+    "featured_order": 2
   },
   {
     "date": "2026-06-14",
@@ -51,7 +52,8 @@
     "title_de": "Schulkampagne · La Parte Que Falta",
     "summary_de": "El Salinero · vier Vorstellungen für Schulen mit institutioneller Bewertung.",
     "title_it": "Campagna scolastica · La Parte Que Falta",
-    "summary_it": "El Salinero · quattro recite per le scuole con valutazione istituzionale."
+    "summary_it": "El Salinero · quattro recite per le scuole con valutazione istituzionale.",
+    "featured_order": 3
   },
   {
     "date": "2025-05-02",
@@ -69,7 +71,8 @@
     "title_de": "Interview mit Antonio Daniel García Orellana",
     "summary_de": "Interview anlässlich von La Parte Que Falta im CIC El Almacén.",
     "title_it": "Intervista ad Antonio Daniel García Orellana",
-    "summary_it": "Intervista in occasione di La Parte Que Falta al CIC El Almacén."
+    "summary_it": "Intervista in occasione di La Parte Que Falta al CIC El Almacén.",
+    "featured_order": 1
   },
   {
     "date": "2025-05-10",

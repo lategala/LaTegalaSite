@@ -43,8 +43,13 @@ function i18n(){
 function galleries(){
  document.querySelectorAll("[data-lightbox]").forEach(img=>img.addEventListener("click",()=>{const m=document.createElement("div");m.className="lightbox open";m.innerHTML=`<button class="close" aria-label="Cerrar">×</button><img src="${img.src}" alt="${img.alt}">`;m.onclick=e=>{if(e.target===m||e.target.classList.contains("close"))m.remove()};document.body.appendChild(m)}))
 }
+const COUNTER_NS="lategala-escenica-2026";
+function initCounter(){
+ const d=document.createElement("div"); d.className="counterapi"; d.setAttribute("ns",COUNTER_NS); d.setAttribute("action","pageview"); d.setAttribute("key",(location.pathname.split("/").pop()||"index.html")); d.setAttribute("unique","true"); d.setAttribute("invisible","true"); d.setAttribute("noLink","true"); d.style.display="none"; document.body.appendChild(d);
+ if(!document.querySelector('script[data-counterapi]')){const s=document.createElement("script");s.src="https://counterapi.com/c.js?ns="+COUNTER_NS;s.async=true;s.dataset.counterapi="1";document.head.appendChild(s)}
+}
 function track(){
- document.querySelectorAll("[data-track]").forEach(el=>el.addEventListener("click",()=>{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:"event/"+el.dataset.track,title:el.dataset.track,event:true})}}))
+ document.querySelectorAll("[data-track]").forEach(el=>el.addEventListener("click",()=>{const k=encodeURIComponent(el.dataset.track);const img=new Image();img.src="https://counterapi.com/pixel.gif?ns="+COUNTER_NS+"&action=event&key="+k}))
 }
 function mailto(subject,body=""){return "mailto:"+SITE.email+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)}
 function wireMail(){
@@ -70,4 +75,4 @@ async function hydrateVideos(){
  const data=await getData("videos.json"); if(!data)return;
  els.forEach(el=>{const id=el.dataset.videos;el.innerHTML=data.filter(x=>x.project===id).map(x=>`<a class="video" target="_blank" rel="noopener" href="${esc(x.url)}"><span>▶ ${esc(x.title)}<small>${esc(x.source||"Vídeo")}</small></span></a>`).join("")})
 }
-document.addEventListener("DOMContentLoaded",()=>{header();footer();i18n();galleries();track();wireMail();hydrateNews();hydrateTimeline();hydrateVideos()});
+document.addEventListener("DOMContentLoaded",()=>{header();footer();i18n();galleries();track();wireMail();hydrateNews();hydrateTimeline();hydrateVideos();initCounter()});

@@ -31,3 +31,39 @@ footer{border-top:1px solid var(--line);margin-top:60px;background:#0d0e0f}.foot
 img{max-width:100%}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media(prefers-color-scheme:light){.lang{color:#eee}}
+
+/* 2026 polish */
+.hero-logo{width:min(340px,72vw);height:auto;display:block;margin-bottom:22px;mix-blend-mode:screen}
+.hero-kicker{color:var(--gold);font-size:.78rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+.hero-copy{font-size:clamp(1.12rem,2vw,1.42rem);max-width:650px;color:#cbc7c0}
+.hero-visual{min-height:590px;border-radius:28px;border:1px solid var(--line);position:relative;overflow:hidden;text-decoration:none;background:
+radial-gradient(circle at 68% 26%,rgba(201,44,49,.34),transparent 28%),
+radial-gradient(circle at 28% 72%,rgba(198,161,91,.10),transparent 33%),
+linear-gradient(145deg,#08090a,#121315)}
+.hero-visual::before{content:"";position:absolute;inset:8% 10% 21%;border:1px solid rgba(255,255,255,.09);border-radius:50% 47% 52% 46%;transform:rotate(-7deg)}
+.hero-visual::after{content:"";position:absolute;width:52%;height:52%;right:-12%;top:2%;border:1px solid rgba(201,44,49,.24);border-radius:50%;box-shadow:0 0 80px rgba(201,44,49,.08)}
+.hero-visual .hero-caption{z-index:3}
+.hero-visual .hero-caption h2{font-size:clamp(2.7rem,6vw,5.7rem);line-height:.92;margin:.15em 0 .25em}
+.hero-visual .hero-caption p{color:#d3cec7;margin:.3em 0}
+.hero-visual .hero-caption b{display:block;color:var(--gold);font-size:.84rem;letter-spacing:.11em}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{display:inline-flex;align-items:center;border:1px solid #343437;border-radius:999px;padding:8px 12px;text-decoration:none;color:#d8d5cf;font-size:.83rem;background:#101113}.chip:hover{border-color:#666;color:#fff}
+.professional{background:linear-gradient(180deg,rgba(255,255,255,.015),transparent)}
+.quote{font-family:Georgia,serif;font-size:clamp(1.45rem,3vw,2.5rem);line-height:1.25;margin:0;max-width:620px}.quote cite{display:block;font-family:Inter,system-ui,sans-serif;font-size:.78rem;color:var(--gold);font-style:normal;letter-spacing:.09em;text-transform:uppercase;margin-top:18px}
+.press-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}.press{border:1px solid var(--line);border-radius:18px;padding:22px;background:#101113}.press .source{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);font-weight:750}.press a{text-decoration:none}.press h3{font-family:Georgia,serif;font-weight:400;font-size:1.4rem;margin:.45em 0}.press p{color:#9e9a94;margin:0}
+.art-card{border:1px solid var(--line);border-radius:22px;min-height:420px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 72% 24%,rgba(201,44,49,.25),transparent 30%),
+radial-gradient(circle at 20% 82%,rgba(198,161,91,.10),transparent 30%),#0f1012}
+.art-card .art-word{position:absolute;left:24px;right:24px;bottom:24px;font-family:Georgia,serif;font-size:clamp(2.3rem,6vw,5rem);line-height:.9;letter-spacing:-.04em}
+.art-card .art-meta{position:absolute;top:24px;left:24px;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:750}
+.art-card.island{background:
+radial-gradient(ellipse at 70% 38%,rgba(87,119,132,.18),transparent 31%),
+radial-gradient(ellipse at 22% 76%,rgba(198,161,91,.13),transparent 34%),#101113}
+.art-card.island::after{content:"";position:absolute;left:-10%;right:-10%;bottom:28%;height:1px;background:rgba(255,255,255,.18);transform:rotate(-3deg);box-shadow:0 26px 0 rgba(255,255,255,.06)}
+.art-card.haria{background:
+radial-gradient(circle at 25% 28%,rgba(198,161,91,.16),transparent 27%),
+radial-gradient(circle at 75% 72%,rgba(201,44,49,.18),transparent 28%),#101113}
+.art-card.haria::after{content:"";position:absolute;inset:16% 18%;border:1px solid rgba(255,255,255,.11);border-radius:44% 56% 42% 58%;transform:rotate(12deg)}
+.placeholder-note{border:1px dashed #3b3b3d;border-radius:16px;padding:22px;color:#aaa;background:rgba(255,255,255,.015)}
+.resource-disabled{opacity:.55}
+@media(max-width:980px){.press-grid{grid-template-columns:1fr}.hero-visual{min-height:480px}}
+@media(max-width:650px){.hero-logo{width:min(280px,78vw)}.hero-visual{min-height:390px}.art-card{min-height:330px}.press{padding:18px}}

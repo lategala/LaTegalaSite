@@ -7,7 +7,15 @@
     "url": "https://www.youtube.com/watch?v=hwaQSM5VQpg",
     "featured": true,
     "type": "TV",
-    "project": "La Graciosa"
+    "project": "La Graciosa",
+    "title_en": "La Graciosa Theatre School",
+    "summary_en": "Interview and presentation of the training project.",
+    "title_fr": "École de théâtre La Graciosa",
+    "summary_fr": "Entretien et présentation du projet de formation.",
+    "title_de": "Theaterschule La Graciosa",
+    "summary_de": "Interview und Vorstellung des Ausbildungsprojekts.",
+    "title_it": "Scuola di Teatro La Graciosa",
+    "summary_it": "Intervista e presentazione del progetto formativo."
   },
   {
     "date": "2026-06-14",
@@ -17,7 +25,15 @@
     "url": "https://www3.gobiernodecanarias.org/noticias/el-teatro-guiniguada-epicentro-de-la-escena-amateur-canaria-durante-junio/",
     "featured": false,
     "type": "Programación",
-    "project": "La Parte Que Falta"
+    "project": "La Parte Que Falta",
+    "title_en": "La Parte Que Falta · Teatro Guiniguada",
+    "summary_en": "7th Canary Islands Non-Professional Theatre Showcase.",
+    "title_fr": "La Parte Que Falta · Teatro Guiniguada",
+    "summary_fr": "VIIe Rencontre de théâtre non professionnel des Canaries.",
+    "title_de": "La Parte Que Falta · Teatro Guiniguada",
+    "summary_de": "7. Kanarische Schau des nichtprofessionellen Theaters.",
+    "title_it": "La Parte Que Falta · Teatro Guiniguada",
+    "summary_it": "VII Rassegna di teatro non professionale delle Canarie."
   },
   {
     "date": "2026-05-19",
@@ -27,7 +43,15 @@
     "url": "https://www.facebook.com/cabildodelanzarote/posts/-el-teatro-v%C3%ADctor-fern%C3%A1ndez-gopar-el-salinero-se-llen%C3%B3-de-ilusi%C3%B3n-emociones-y-mu/1447328387424184/",
     "featured": true,
     "type": "Proyecto educativo",
-    "project": "La Parte Que Falta"
+    "project": "La Parte Que Falta",
+    "title_en": "School campaign · La Parte Que Falta",
+    "summary_en": "El Salinero · four performances for schools, with an institutional assessment of the campaign.",
+    "title_fr": "Campagne scolaire · La Parte Que Falta",
+    "summary_fr": "El Salinero · quatre représentations pour les établissements scolaires, avec bilan institutionnel.",
+    "title_de": "Schulkampagne · La Parte Que Falta",
+    "summary_de": "El Salinero · vier Vorstellungen für Schulen mit institutioneller Bewertung.",
+    "title_it": "Campagna scolastica · La Parte Que Falta",
+    "summary_it": "El Salinero · quattro recite per le scuole con valutazione istituzionale."
   },
   {
     "date": "2025-05-02",
@@ -37,7 +61,15 @@
     "url": "https://www.masscultura.com/antonio-daniel-garcia-orellana-la-parte-que-falta/?srsltid=AU7gw4WbCkeanf5WgcBTPOkuAJxT-2ViRX_gYrPdTaNonIkurWYiijzO",
     "featured": true,
     "type": "Entrevista",
-    "project": "La Tegala"
+    "project": "La Tegala",
+    "title_en": "Interview with Antonio Daniel García Orellana",
+    "summary_en": "Interview on the occasion of La Parte Que Falta at CIC El Almacén.",
+    "title_fr": "Entretien avec Antonio Daniel García Orellana",
+    "summary_fr": "Entretien à l’occasion de La Parte Que Falta au CIC El Almacén.",
+    "title_de": "Interview mit Antonio Daniel García Orellana",
+    "summary_de": "Interview anlässlich von La Parte Que Falta im CIC El Almacén.",
+    "title_it": "Intervista ad Antonio Daniel García Orellana",
+    "summary_it": "Intervista in occasione di La Parte Que Falta al CIC El Almacén."
   },
   {
     "date": "2025-05-10",
@@ -47,7 +79,15 @@
     "url": "https://culturalanzarote.com/eventos/la-parte-que-falta-un-circulo-en-busca-de-la-felicidad/",
     "featured": false,
     "type": "Programación",
-    "project": "La Parte Que Falta"
+    "project": "La Parte Que Falta",
+    "title_en": "La Parte Que Falta · CIC El Almacén",
+    "summary_en": "Cultural programme of the Cabildo de Lanzarote.",
+    "title_fr": "La Parte Que Falta · CIC El Almacén",
+    "summary_fr": "Programmation culturelle du Cabildo de Lanzarote.",
+    "title_de": "La Parte Que Falta · CIC El Almacén",
+    "summary_de": "Kulturprogramm des Cabildo de Lanzarote.",
+    "title_it": "La Parte Que Falta · CIC El Almacén",
+    "summary_it": "Programmazione culturale del Cabildo de Lanzarote."
   },
   {
     "date": "2024-10-18",
@@ -57,7 +97,15 @@
     "url": "https://harionetas.com/project/antonio-orellana-la-parte-que-falta/",
     "featured": false,
     "type": "Estreno",
-    "project": "La Parte Que Falta"
+    "project": "La Parte Que Falta",
+    "title_en": "La Parte Que Falta · premiere",
+    "summary_en": "Haría Puppet Theatre Festival.",
+    "title_fr": "La Parte Que Falta · création",
+    "summary_fr": "Festival de théâtre de marionnettes de Haría.",
+    "title_de": "La Parte Que Falta · Premiere",
+    "summary_de": "Puppentheaterfestival Haría.",
+    "title_it": "La Parte Que Falta · debutto",
+    "summary_it": "Festival di teatro di figura di Haría."
   },
   {
     "date": "2024-10-16",
@@ -67,6 +115,14 @@
     "url": "https://www.biosferadigital.com/articulo/biosferatv/compania-teatral-tegala-estrena-harionetas/20241016120721144931.html",
     "featured": false,
     "type": "TV",
-    "project": "La Parte Que Falta"
+    "project": "La Parte Que Falta",
+    "title_en": "La Tegala premieres at Harionetas",
+    "summary_en": "Interview before the premiere of La Parte Que Falta.",
+    "title_fr": "La Tegala crée au festival Harionetas",
+    "summary_fr": "Entretien avant la création de La Parte Que Falta.",
+    "title_de": "La Tegala feiert Premiere bei Harionetas",
+    "summary_de": "Interview vor der Premiere von La Parte Que Falta.",
+    "title_it": "La Tegala debutta a Harionetas",
+    "summary_it": "Intervista prima del debutto de La Parte Que Falta."
   }
 ]

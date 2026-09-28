@@ -16,7 +16,8 @@
     "summary_de": "Interview und Vorstellung des Ausbildungsprojekts.",
     "title_it": "Scuola di Teatro La Graciosa",
     "summary_it": "Intervista e presentazione del progetto formativo.",
-    "featured_order": 2
+    "featured_order": 2,
+    "published": true
   },
   {
     "date": "2026-06-14",
@@ -34,7 +35,8 @@
     "title_de": "La Parte Que Falta · Teatro Guiniguada",
     "summary_de": "7. Kanarische Schau des nichtprofessionellen Theaters.",
     "title_it": "La Parte Que Falta · Teatro Guiniguada",
-    "summary_it": "VII Rassegna di teatro non professionale delle Canarie."
+    "summary_it": "VII Rassegna di teatro non professionale delle Canarie.",
+    "published": true
   },
   {
     "date": "2026-05-19",
@@ -53,7 +55,8 @@
     "summary_de": "El Salinero · vier Vorstellungen für Schulen mit institutioneller Bewertung.",
     "title_it": "Campagna scolastica · La Parte Que Falta",
     "summary_it": "El Salinero · quattro recite per le scuole con valutazione istituzionale.",
-    "featured_order": 3
+    "featured_order": 3,
+    "published": true
   },
   {
     "date": "2025-05-02",
@@ -72,7 +75,8 @@
     "summary_de": "Interview anlässlich von La Parte Que Falta im CIC El Almacén.",
     "title_it": "Intervista ad Antonio Daniel García Orellana",
     "summary_it": "Intervista in occasione di La Parte Que Falta al CIC El Almacén.",
-    "featured_order": 1
+    "featured_order": 1,
+    "published": true
   },
   {
     "date": "2025-05-10",
@@ -90,7 +94,8 @@
     "title_de": "La Parte Que Falta · CIC El Almacén",
     "summary_de": "Kulturprogramm des Cabildo de Lanzarote.",
     "title_it": "La Parte Que Falta · CIC El Almacén",
-    "summary_it": "Programmazione culturale del Cabildo de Lanzarote."
+    "summary_it": "Programmazione culturale del Cabildo de Lanzarote.",
+    "published": true
   },
   {
     "date": "2024-10-18",
@@ -108,7 +113,8 @@
     "title_de": "La Parte Que Falta · Premiere",
     "summary_de": "Puppentheaterfestival Haría.",
     "title_it": "La Parte Que Falta · debutto",
-    "summary_it": "Festival di teatro di figura di Haría."
+    "summary_it": "Festival di teatro di figura di Haría.",
+    "published": true
   },
   {
     "date": "2024-10-16",
@@ -126,6 +132,7 @@
     "title_de": "La Tegala feiert Premiere bei Harionetas",
     "summary_de": "Interview vor der Premiere von La Parte Que Falta.",
     "title_it": "La Tegala debutta a Harionetas",
-    "summary_it": "Intervista prima del debutto de La Parte Que Falta."
+    "summary_it": "Intervista prima del debutto de La Parte Que Falta.",
+    "published": true
   }
 ]

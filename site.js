@@ -62,7 +62,7 @@ function loc(x,key){const l=lang();return x[key+"_"+l]??x[key]??""}\nasync funct
 async function hydrateNews(){
  const data=await getData("actualidad.json"); if(!data)return;
  const featured=document.querySelector("[data-news-featured]");
- if(featured){featured.innerHTML=data.filter(x=>x.featured).slice(0,3).map(x=>`<div class="card"><div class="card-body"><div class="card-label">${esc(x.source)}</div><h3>${esc(loc(x,"title"))}</h3><p>${esc(loc(x,"summary"))}</p><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div></div>`).join("")}
+ if(featured){featured.innerHTML=data.filter(x=>x.featured).sort((a,b)=>(a.featured_order??99)-(b.featured_order??99)).slice(0,3).map(x=>`<div class="card"><div class="card-body"><div class="card-label">${esc(x.source)}</div><h3>${esc(loc(x,"title"))}</h3><p>${esc(loc(x,"summary"))}</p><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div></div>`).join("")}
  const list=document.querySelector("[data-news-list]");
  if(list){list.innerHTML=data.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(x=>`<div class="press-card"><div class="source">${esc(x.source)}</div><div><h3>${esc(loc(x,"title"))}</h3><p>${esc(x.date)} · ${esc(loc(x,"summary"))}</p></div><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div>`).join("")}
 }

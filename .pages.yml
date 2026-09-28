@@ -1,0 +1,73 @@
+media:
+  - name: images
+    label: Fotografías
+    input: assets/uploads/images
+    output: /LaTegalaSite/assets/uploads/images
+    rename: safe
+    categories: [image]
+  - name: docs
+    label: Documentos
+    input: downloads/uploads
+    output: /LaTegalaSite/downloads/uploads
+    rename: safe
+    categories: [document, compressed]
+
+content:
+  - name: actualidad
+    label: Actualidad / Prensa
+    type: file
+    path: data/actualidad.json
+    format: json
+    list: true
+    fields:
+      - { name: date, label: Fecha, type: date, required: true }
+      - { name: source, label: Medio / fuente, type: string, required: true }
+      - { name: title, label: Título, type: string, required: true }
+      - { name: summary, label: Resumen, type: text }
+      - { name: url, label: Enlace, type: string, required: true }
+      - { name: featured, label: Destacar en portada, type: boolean }
+      - { name: type, label: Tipo, type: string }
+      - { name: project, label: Proyecto, type: string }
+  - name: trayectoria
+    label: Trayectoria / Actuaciones
+    type: file
+    path: data/trayectoria.json
+    format: json
+    list: true
+    fields:
+      - { name: project, label: Proyecto, type: string, required: true }
+      - { name: date, label: Fecha visible, type: string, required: true }
+      - { name: title, label: Lugar / hito, type: string, required: true }
+      - { name: summary, label: Descripción, type: text }
+      - { name: url, label: Enlace, type: string }
+  - name: videos
+    label: Vídeos
+    type: file
+    path: data/videos.json
+    format: json
+    list: true
+    fields:
+      - { name: project, label: Proyecto, type: string, required: true }
+      - { name: title, label: Título, type: string, required: true }
+      - { name: source, label: Plataforma, type: string }
+      - { name: url, label: Enlace, type: string, required: true }
+  - name: settings
+    label: Datos generales
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - { name: email, label: Correo, type: string }
+      - { name: phone, label: Teléfono, type: string }
+      - { name: whatsapp, label: WhatsApp (internacional), type: string }
+      - { name: instagram, label: Instagram, type: string }
+      - { name: facebook, label: Facebook, type: string }
+      - { name: location, label: Localización, type: string }
+
+settings:
+  commit:
+    identity: user
+    templates:
+      create: "content: add {path}"
+      update: "content: update {path}"
+      delete: "content: remove {path}"

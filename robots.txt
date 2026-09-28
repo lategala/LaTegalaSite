@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /estadisticas.html
+Sitemap: https://lategala.github.io/LaTegalaSite/sitemap.xml

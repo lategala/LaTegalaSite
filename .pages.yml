@@ -1,0 +1,216 @@
+media:
+  - name: images
+    label: Fotografías
+    input: assets/uploads/images
+    output: /LaTegalaSite/assets/uploads/images
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+  - name: docs
+    label: Documentos
+    input: downloads/uploads
+    output: /LaTegalaSite/downloads/uploads
+    rename: safe
+    extensions: [pdf, zip]
+    categories: [document, compressed]
+
+content:
+  - name: actualidad
+    label: Actualidad / Prensa
+    type: file
+    path: data/actualidad.json
+    format: json
+    list: true
+    fields:
+      - { name: date, label: Fecha, type: date, required: true }
+      - { name: source, label: Medio / fuente, type: string, required: true }
+      - { name: title, label: Título (ES), type: string, required: true }
+      - { name: summary, label: Resumen (ES), type: text }
+      - { name: url, label: Enlace, type: string, required: true }
+      - { name: type, label: Tipo, type: string }
+      - { name: project, label: Proyecto, type: string }
+      - { name: featured, label: Destacar en portada, type: boolean }
+      - { name: featured_order, label: Orden en portada, type: number }
+      - { name: published, label: Publicado, type: boolean }
+      - { name: title_en, label: Título EN, type: string }
+      - { name: summary_en, label: Resumen EN, type: text }
+      - { name: title_fr, label: Título FR, type: string }
+      - { name: summary_fr, label: Resumen FR, type: text }
+      - { name: title_de, label: Título DE, type: string }
+      - { name: summary_de, label: Resumen DE, type: text }
+      - { name: title_it, label: Título IT, type: string }
+      - { name: summary_it, label: Resumen IT, type: text }
+
+  - name: trayectoria
+    label: Trayectoria / Actuaciones
+    type: file
+    path: data/trayectoria.json
+    format: json
+    list: true
+    fields:
+      - name: project
+        label: Proyecto
+        type: select
+        required: true
+        options:
+          values:
+            - { name: lpqf, label: La Parte Que Falta }
+            - { name: qd, label: "¡Qué Diablos!" }
+            - { name: ligazon, label: Ligazón }
+            - { name: caleidoscopio, label: Caleidoscopio }
+            - { name: haria, label: Escuela de Haría }
+            - { name: graciosa, label: Escuela La Graciosa }
+      - { name: date, label: Fecha visible, type: string, required: true }
+      - { name: title, label: Lugar / hito (ES), type: string, required: true }
+      - { name: summary, label: Descripción (ES), type: text }
+      - { name: url, label: Enlace, type: string }
+      - { name: published, label: Publicado, type: boolean }
+      - { name: title_en, label: Título EN, type: string }
+      - { name: summary_en, label: Resumen EN, type: text }
+      - { name: title_fr, label: Título FR, type: string }
+      - { name: summary_fr, label: Resumen FR, type: text }
+      - { name: title_de, label: Título DE, type: string }
+      - { name: summary_de, label: Resumen DE, type: text }
+      - { name: title_it, label: Título IT, type: string }
+      - { name: summary_it, label: Resumen IT, type: text }
+
+  - name: videos
+    label: Vídeos
+    type: file
+    path: data/videos.json
+    format: json
+    list: true
+    fields:
+      - name: project
+        label: Proyecto
+        type: select
+        required: true
+        options:
+          values:
+            - { name: lpqf, label: La Parte Que Falta }
+            - { name: qd, label: "¡Qué Diablos!" }
+            - { name: haria, label: Escuela de Haría }
+            - { name: graciosa, label: Escuela La Graciosa }
+            - { name: general, label: General }
+      - { name: title, label: Título (ES), type: string, required: true }
+      - { name: source, label: Plataforma / medio, type: string }
+      - { name: url, label: Enlace, type: string, required: true }
+      - { name: published, label: Publicado, type: boolean }
+      - { name: title_en, label: Título EN, type: string }
+      - { name: title_fr, label: Título FR, type: string }
+      - { name: title_de, label: Título DE, type: string }
+      - { name: title_it, label: Título IT, type: string }
+
+  - name: galerias
+    label: Fotografías / Galerías
+    type: file
+    path: data/galerias.json
+    format: json
+    list: true
+    fields:
+      - name: project
+        label: Proyecto
+        type: select
+        required: true
+        options:
+          values:
+            - { name: lpqf, label: La Parte Que Falta }
+            - { name: qd, label: "¡Qué Diablos!" }
+            - { name: ligazon, label: Ligazón }
+            - { name: caleidoscopio, label: Caleidoscopio }
+            - { name: haria, label: Escuela de Haría }
+            - { name: graciosa, label: Escuela La Graciosa }
+      - { name: title, label: Título / descripción, type: string, required: true }
+      - name: image
+        label: Fotografía para web
+        type: image
+        required: true
+        options:
+          media: images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: download
+        label: Original HD para descarga (opcional)
+        type: image
+        options:
+          media: images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - { name: credit, label: Crédito fotográfico, type: string }
+      - { name: order, label: Orden, type: number }
+      - { name: published, label: Publicado, type: boolean }
+      - { name: title_en, label: Título EN, type: string }
+      - { name: title_fr, label: Título FR, type: string }
+      - { name: title_de, label: Título DE, type: string }
+      - { name: title_it, label: Título IT, type: string }
+
+  - name: documentos
+    label: Centro profesional / Documentos
+    type: file
+    path: data/documentos.json
+    format: json
+    list: true
+    fields:
+      - name: project
+        label: Proyecto
+        type: select
+        required: true
+        options:
+          values:
+            - { name: lpqf, label: La Parte Que Falta }
+            - { name: qd, label: "¡Qué Diablos!" }
+            - { name: ligazon, label: Ligazón }
+            - { name: caleidoscopio, label: Caleidoscopio }
+            - { name: haria, label: Escuela de Haría }
+            - { name: graciosa, label: Escuela La Graciosa }
+            - { name: antonio, label: Antonio Orellana }
+      - { name: title, label: Título (ES), type: string, required: true }
+      - { name: description, label: Descripción (ES), type: text }
+      - { name: kind, label: Tipo de recurso, type: string }
+      - name: status
+        label: Estado
+        type: select
+        options:
+          values:
+            - { name: available, label: Disponible }
+            - { name: pending, label: En preparación }
+      - { name: status_label, label: Texto de estado, type: string }
+      - name: file
+        label: Archivo PDF / ZIP
+        type: file
+        options:
+          media: docs
+          extensions: [pdf, zip]
+          rename: safe
+      - { name: preview, label: Página de vista previa (opcional), type: string }
+      - { name: order, label: Orden, type: number }
+      - { name: published, label: Publicado, type: boolean }
+      - { name: title_en, label: Título EN, type: string }
+      - { name: description_en, label: Descripción EN, type: text }
+      - { name: title_fr, label: Título FR, type: string }
+      - { name: description_fr, label: Descripción FR, type: text }
+      - { name: title_de, label: Título DE, type: string }
+      - { name: description_de, label: Descripción DE, type: text }
+      - { name: title_it, label: Título IT, type: string }
+      - { name: description_it, label: Descripción IT, type: text }
+
+  - name: settings
+    label: Datos generales
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - { name: email, label: Correo, type: string }
+      - { name: phone, label: Teléfono, type: string }
+      - { name: whatsapp, label: WhatsApp (internacional), type: string }
+      - { name: instagram, label: Instagram, type: string }
+      - { name: facebook, label: Facebook, type: string }
+      - { name: location, label: Localización, type: string }
+
+settings:
+  commit:
+    identity: user
+    templates:
+      create: "content: add {path}"
+      update: "content: update {path}"
+      delete: "content: remove {path}"

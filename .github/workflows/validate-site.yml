@@ -1,0 +1,24 @@
+name: Validate and package site
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate local links and assets
+        run: python scripts/validate_site.py
+      - name: Package final site
+        run: |
+          mkdir -p dist
+          zip -r dist/LaTegalaSite_2026.zip . -x ".git/*" "dist/*"
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaTegalaSite_2026
+          path: dist/LaTegalaSite_2026.zip
+          if-no-files-found: error

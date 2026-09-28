@@ -4,76 +4,120 @@
     "title": "Archivo audiovisual 01",
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 01",
+    "title_fr": "Archive vidéo 01",
+    "title_de": "Videoarchiv 01",
+    "title_it": "Archivio video 01"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 02",
     "url": "https://youtu.be/zyVlAMK4GdU",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 02",
+    "title_fr": "Archive vidéo 02",
+    "title_de": "Videoarchiv 02",
+    "title_it": "Archivio video 02"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 03",
     "url": "https://youtu.be/h8k2dEwKL68",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 03",
+    "title_fr": "Archive vidéo 03",
+    "title_de": "Videoarchiv 03",
+    "title_it": "Archivio video 03"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 04",
     "url": "https://youtu.be/ECw5X-Jr3CE",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 04",
+    "title_fr": "Archive vidéo 04",
+    "title_de": "Videoarchiv 04",
+    "title_it": "Archivio video 04"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 05",
     "url": "https://youtu.be/Q2ej73rR8Ks",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 05",
+    "title_fr": "Archive vidéo 05",
+    "title_de": "Videoarchiv 05",
+    "title_it": "Archivio video 05"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 06",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 06",
+    "title_fr": "Archive vidéo 06",
+    "title_de": "Videoarchiv 06",
+    "title_it": "Archivio video 06"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 07",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 07",
+    "title_fr": "Archive vidéo 07",
+    "title_de": "Videoarchiv 07",
+    "title_it": "Archivio video 07"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 08",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 08",
+    "title_fr": "Archive vidéo 08",
+    "title_de": "Videoarchiv 08",
+    "title_it": "Archivio video 08"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 09",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 09",
+    "title_fr": "Archive vidéo 09",
+    "title_de": "Videoarchiv 09",
+    "title_it": "Archivio video 09"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 10",
     "url": "https://youtu.be/HiFLp48VSJI",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 10",
+    "title_fr": "Archive vidéo 10",
+    "title_de": "Videoarchiv 10",
+    "title_it": "Archivio video 10"
   },
   {
     "project": "haria",
     "title": "Archivo audiovisual 11",
     "url": "https://youtu.be/7IBluyxcAhk",
     "source": "YouTube",
-    "published": true
+    "published": true,
+    "title_en": "Video archive 11",
+    "title_fr": "Archive vidéo 11",
+    "title_de": "Videoarchiv 11",
+    "title_it": "Archivio video 11"
   }
 ]

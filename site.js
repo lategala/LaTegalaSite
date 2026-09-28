@@ -49,7 +49,8 @@ function initCounter(){
  if(!document.querySelector('script[data-counterapi]')){const s=document.createElement("script");s.src="https://counterapi.com/c.js?ns="+COUNTER_NS;s.async=true;s.dataset.counterapi="1";document.head.appendChild(s)}
 }
 function track(){
- document.querySelectorAll("[data-track]").forEach(el=>el.addEventListener("click",()=>{const k=encodeURIComponent(el.dataset.track);const img=new Image();img.src="https://counterapi.com/pixel.gif?ns="+COUNTER_NS+"&action=event&key="+k}))
+ const seen=new Set();
+ document.querySelectorAll("[data-track],a[download]").forEach(el=>{if(seen.has(el))return;seen.add(el);el.addEventListener("click",()=>{const raw=el.dataset.track||("download-"+(el.getAttribute("href")||"file").split("/").pop());const k=encodeURIComponent(raw);const img=new Image();img.src="https://counterapi.com/pixel.gif?ns="+COUNTER_NS+"&action=event&key="+k})})
 }
 function mailto(subject,body=""){return "mailto:"+SITE.email+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)}
 function wireMail(){

@@ -16,11 +16,11 @@ const NAV={
 };
 const PAGES=["index.html","espectaculos.html","formacion.html","quienes.html","documentacion.html","actualidad.html","contacto.html"];
 const COMMON={
-  es:{skip:"Saltar al contenido",open:"Abrir menú",close:"Cerrar menú",view:"Ver",download:"Descargar",more:"Más información",video:"Vídeo",pending:"En preparación",empty:"Material en preparación"},
-  en:{skip:"Skip to content",open:"Open menu",close:"Close menu",view:"View",download:"Download",more:"More information",video:"Video",pending:"In preparation",empty:"Material in preparation"},
-  fr:{skip:"Aller au contenu",open:"Ouvrir le menu",close:"Fermer le menu",view:"Voir",download:"Télécharger",more:"Plus d’informations",video:"Vidéo",pending:"En préparation",empty:"Matériel en préparation"},
-  de:{skip:"Zum Inhalt",open:"Menü öffnen",close:"Menü schließen",view:"Ansehen",download:"Herunterladen",more:"Mehr Informationen",video:"Video",pending:"In Vorbereitung",empty:"Material in Vorbereitung"},
-  it:{skip:"Vai al contenuto",open:"Apri menu",close:"Chiudi menu",view:"Visualizza",download:"Scarica",more:"Maggiori informazioni",video:"Video",pending:"In preparazione",empty:"Materiale in preparazione"}
+  es:{skip:"Saltar al contenido",open:"Abrir menú",close:"Cerrar menú",view:"Ver",download:"Descargar",more:"Más información",video:"Vídeo",pending:"En preparación",empty:"Material en preparación",register:"Inscripción",email:"Correo",days:"Días",children:"Niños +10",youth:"Jóvenes 12–16",adults:"Adultos",place:"Lugar",free:"Actividad gratuita · plazas limitadas.",join:"Inscribirme",info:"Solicitar información",poster:"Descargar cartel"},
+  en:{skip:"Skip to content",open:"Open menu",close:"Close menu",view:"View",download:"Download",more:"More information",video:"Video",pending:"In preparation",empty:"Material in preparation",register:"Registration",email:"Email",days:"Days",children:"Children 10+",youth:"Young people 12–16",adults:"Adults",place:"Venue",free:"Free activity · limited places.",join:"Register",info:"Request information",poster:"Download poster"},
+  fr:{skip:"Aller au contenu",open:"Ouvrir le menu",close:"Fermer le menu",view:"Voir",download:"Télécharger",more:"Plus d’informations",video:"Vidéo",pending:"En préparation",empty:"Matériel en préparation",register:"Inscription",email:"E-mail",days:"Jours",children:"Enfants 10+",youth:"Jeunes 12–16",adults:"Adultes",place:"Lieu",free:"Activité gratuite · places limitées.",join:"S’inscrire",info:"Demander des informations",poster:"Télécharger l’affiche"},
+  de:{skip:"Zum Inhalt",open:"Menü öffnen",close:"Menü schließen",view:"Ansehen",download:"Herunterladen",more:"Mehr Informationen",video:"Video",pending:"In Vorbereitung",empty:"Material in Vorbereitung",register:"Anmeldung",email:"E-Mail",days:"Tage",children:"Kinder 10+",youth:"Jugendliche 12–16",adults:"Erwachsene",place:"Ort",free:"Kostenlos · begrenzte Plätze.",join:"Anmelden",info:"Information anfragen",poster:"Plakat herunterladen"},
+  it:{skip:"Vai al contenuto",open:"Apri menu",close:"Chiudi menu",view:"Visualizza",download:"Scarica",more:"Maggiori informazioni",video:"Video",pending:"In preparazione",empty:"Materiale in preparazione",register:"Iscrizione",email:"Email",days:"Giorni",children:"Bambini 10+",youth:"Giovani 12–16",adults:"Adulti",place:"Luogo",free:"Attività gratuita · posti limitati.",join:"Iscriviti",info:"Richiedi informazioni",poster:"Scarica il cartellone"}
 };
 
 function lang(){ return localStorage.getItem("lang") || "es"; }
@@ -93,7 +93,7 @@ function i18n(){
   document.documentElement.lang=l;
   const dict=(window.PAGE_I18N&&window.PAGE_I18N[l])||(window.PAGE_I18N&&window.PAGE_I18N.es)||{};
   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(dict[k]!=null)el.innerHTML=dict[k];});
-  document.querySelectorAll("[data-i18n-attr]").forEach(el=>{const pair=el.dataset.i18nAttr.split(":");if(dict[pair[1]]!=null)el.setAttribute(pair[0],dict[pair[1]]);});
+  document.querySelectorAll("[data-i18n-attr]").forEach(el=>{const pair=el.dataset.i18nAttr.split(":");if(dict[pair[1]]!=null)el.setAttribute(pair[0],dict[pair[1]]);});\n  document.querySelectorAll("[data-common]").forEach(el=>{const k=el.dataset.common;if(common()[k]!=null)el.textContent=common()[k];});
 }
 
 function galleries(){

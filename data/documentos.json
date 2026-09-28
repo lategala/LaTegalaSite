@@ -8,7 +8,15 @@
     "kind": "Dossier",
     "status": "available",
     "order": 1,
-    "published": true
+    "published": true,
+    "title_en": "Artistic dossier",
+    "title_fr": "Dossier artistique",
+    "title_de": "Künstlerisches Dossier",
+    "title_it": "Dossier artistico",
+    "description_en": "PDF · original document",
+    "description_fr": "PDF · document original",
+    "description_de": "PDF · Originaldokument",
+    "description_it": "PDF · documento originale"
   },
   {
     "project": "lpqf",
@@ -19,7 +27,15 @@
     "kind": "Ficha",
     "status": "available",
     "order": 2,
-    "published": true
+    "published": true,
+    "title_en": "Artistic and technical sheet",
+    "title_fr": "Fiche artistique et technique",
+    "title_de": "Künstlerische und technische Angaben",
+    "title_it": "Scheda artistica e tecnica",
+    "description_en": "Printable view, ready to save as PDF",
+    "description_fr": "Vue imprimable, prête à enregistrer en PDF",
+    "description_de": "Druckansicht, als PDF speicherbar",
+    "description_it": "Vista stampabile, salvabile come PDF"
   },
   {
     "project": "lpqf",
@@ -30,7 +46,15 @@
     "kind": "Rider",
     "status": "available",
     "order": 3,
-    "published": true
+    "published": true,
+    "title_en": "Technical rider",
+    "title_fr": "Fiche technique",
+    "title_de": "Technischer Rider",
+    "title_it": "Rider tecnico",
+    "description_en": "Stage, lighting, sound, safety and logistics requirements",
+    "description_fr": "Besoins scéniques, lumière, son, sécurité et logistique",
+    "description_de": "Bühne, Licht, Ton, Sicherheit und Logistik",
+    "description_it": "Esigenze di scena, luci, audio, sicurezza e logistica"
   },
   {
     "project": "lpqf",
@@ -41,7 +65,15 @@
     "kind": "Guía didáctica",
     "status": "available",
     "order": 4,
-    "published": true
+    "published": true,
+    "title_en": "Educational guide 2026",
+    "title_fr": "Guide pédagogique 2026",
+    "title_de": "Pädagogischer Leitfaden 2026",
+    "title_it": "Guida didattica 2026",
+    "description_en": "Primary Years 3–6 · adaptable to Secondary",
+    "description_fr": "Primaire 3e–6e · adaptable au secondaire",
+    "description_de": "Klassen 3–6 · an Sekundarstufe anpassbar",
+    "description_it": "3ª–6ª primaria · adattabile alla secondaria"
   },
   {
     "project": "qd",
@@ -53,7 +85,15 @@
     "status": "pending",
     "status_label": "Pendiente de archivo",
     "order": 1,
-    "published": true
+    "published": true,
+    "title_en": "Artistic dossier",
+    "title_fr": "Dossier artistique",
+    "title_de": "Künstlerisches Dossier",
+    "title_it": "Dossier artistico",
+    "description_en": "Original PDF supplied; pending transfer to the repository",
+    "description_fr": "PDF original fourni ; transfert vers le dépôt en attente",
+    "description_de": "Original-PDF vorhanden; Übertragung ins Repository ausstehend",
+    "description_it": "PDF originale fornito; trasferimento al repository in attesa"
   },
   {
     "project": "qd",
@@ -64,7 +104,15 @@
     "kind": "Ficha",
     "status": "available",
     "order": 2,
-    "published": true
+    "published": true,
+    "title_en": "Artistic and technical sheet",
+    "title_fr": "Fiche artistique et technique",
+    "title_de": "Künstlerische und technische Angaben",
+    "title_it": "Scheda artistica e tecnica",
+    "description_en": "Printable view, ready to save as PDF",
+    "description_fr": "Vue imprimable, prête à enregistrer en PDF",
+    "description_de": "Druckansicht, als PDF speicherbar",
+    "description_it": "Vista stampabile, salvabile come PDF"
   },
   {
     "project": "qd",
@@ -75,7 +123,15 @@
     "kind": "Rider",
     "status": "available",
     "order": 3,
-    "published": true
+    "published": true,
+    "title_en": "Lighting rider · available page",
+    "title_fr": "Fiche lumière · page disponible",
+    "title_de": "Licht-Rider · verfügbare Seite",
+    "title_it": "Rider luci · pagina disponibile",
+    "description_en": "Partial documentation; not presented as a complete rider",
+    "description_fr": "Documentation partielle ; ne remplace pas la fiche technique complète",
+    "description_de": "Teildokumentation; kein vollständiger Rider",
+    "description_it": "Documentazione parziale; non sostituisce il rider completo"
   },
   {
     "project": "qd",
@@ -87,7 +143,15 @@
     "status": "pending",
     "status_label": "Pendiente de archivo",
     "order": 4,
-    "published": true
+    "published": true,
+    "title_en": "HD photographs",
+    "title_fr": "Photographies HD",
+    "title_de": "HD-Fotografien",
+    "title_it": "Fotografie HD",
+    "description_en": "Originals supplied; pending transfer to the repository",
+    "description_fr": "Originaux fournis ; transfert vers le dépôt en attente",
+    "description_de": "Originale vorhanden; Übertragung ins Repository ausstehend",
+    "description_it": "Originali forniti; trasferimento al repository in attesa"
   },
   {
     "project": "qd",
@@ -99,6 +163,14 @@
     "status": "pending",
     "status_label": "Próximamente",
     "order": 5,
-    "published": true
+    "published": true,
+    "title_en": "Trailer",
+    "title_fr": "Bande-annonce",
+    "title_de": "Trailer",
+    "title_it": "Trailer",
+    "description_en": "Resource not yet available",
+    "description_fr": "Ressource pas encore disponible",
+    "description_de": "Ressource noch nicht verfügbar",
+    "description_it": "Risorsa non ancora disponibile"
   }
 ]

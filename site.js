@@ -93,7 +93,8 @@ function i18n(){
   document.documentElement.lang=l;
   const dict=(window.PAGE_I18N&&window.PAGE_I18N[l])||(window.PAGE_I18N&&window.PAGE_I18N.es)||{};
   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(dict[k]!=null)el.innerHTML=dict[k];});
-  document.querySelectorAll("[data-i18n-attr]").forEach(el=>{const pair=el.dataset.i18nAttr.split(":");if(dict[pair[1]]!=null)el.setAttribute(pair[0],dict[pair[1]]);});\n  document.querySelectorAll("[data-common]").forEach(el=>{const k=el.dataset.common;if(common()[k]!=null)el.textContent=common()[k];});
+  document.querySelectorAll("[data-i18n-attr]").forEach(el=>{const pair=el.dataset.i18nAttr.split(":");if(dict[pair[1]]!=null)el.setAttribute(pair[0],dict[pair[1]]);});
+  document.querySelectorAll("[data-common]").forEach(el=>{const k=el.dataset.common;if(common()[k]!=null)el.textContent=common()[k];});
 }
 
 function galleries(){

@@ -62,18 +62,18 @@ async function getData(file){try{const r=await fetch("data/"+file,{cache:"no-sto
 async function hydrateNews(){
  const data=await getData("actualidad.json"); if(!data)return;
  const featured=document.querySelector("[data-news-featured]");
- if(featured){featured.innerHTML=data.filter(x=>x.featured).slice(0,3).map(x=>`<div class="card"><div class="card-body"><div class="card-label">${esc(x.source)}</div><h3>${esc(x.title)}</h3><p>${esc(x.summary)}</p><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div></div>`).join("")}
+ if(featured){featured.innerHTML=data.filter(x=>x.featured).slice(0,3).map(x=>`<div class="card"><div class="card-body"><div class="card-label">${esc(x.source)}</div><h3>${esc(loc(x,"title"))}</h3><p>${esc(loc(x,"summary"))}</p><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div></div>`).join("")}
  const list=document.querySelector("[data-news-list]");
- if(list){list.innerHTML=data.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(x=>`<div class="press-card"><div class="source">${esc(x.source)}</div><div><h3>${esc(x.title)}</h3><p>${esc(x.date)} · ${esc(x.summary)}</p></div><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div>`).join("")}
+ if(list){list.innerHTML=data.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(x=>`<div class="press-card"><div class="source">${esc(x.source)}</div><div><h3>${esc(loc(x,"title"))}</h3><p>${esc(x.date)} · ${esc(loc(x,"summary"))}</p></div><a class="btn view" target="_blank" rel="noopener" href="${esc(x.url)}">Ver</a></div>`).join("")}
 }
 async function hydrateTimeline(){
  const els=document.querySelectorAll("[data-timeline]"); if(!els.length)return;
  const data=await getData("trayectoria.json"); if(!data)return;
- els.forEach(el=>{const id=el.dataset.timeline;el.innerHTML=data.filter(x=>x.project===id).map(x=>`<div class="event"><div class="date">${esc(x.date)}</div><div class="rail"><div class="dot"></div></div><div class="content"><h3>${esc(x.title)}</h3><p>${esc(x.summary)}</p>${x.url?`<a target="_blank" rel="noopener" href="${esc(x.url)}">Más información ↗</a>`:""}</div></div>`).join("")})
+ els.forEach(el=>{const id=el.dataset.timeline;el.innerHTML=data.filter(x=>x.project===id).map(x=>`<div class="event"><div class="date">${esc(x.date)}</div><div class="rail"><div class="dot"></div></div><div class="content"><h3>${esc(loc(x,"title"))}</h3><p>${esc(loc(x,"summary"))}</p>${x.url?`<a target="_blank" rel="noopener" href="${esc(x.url)}">Más información ↗</a>`:""}</div></div>`).join("")})
 }
 async function hydrateVideos(){
  const els=document.querySelectorAll("[data-videos]"); if(!els.length)return;
  const data=await getData("videos.json"); if(!data)return;
- els.forEach(el=>{const id=el.dataset.videos;el.innerHTML=data.filter(x=>x.project===id).map(x=>`<a class="video" target="_blank" rel="noopener" href="${esc(x.url)}"><span>▶ ${esc(x.title)}<small>${esc(x.source||"Vídeo")}</small></span></a>`).join("")})
+ els.forEach(el=>{const id=el.dataset.videos;el.innerHTML=data.filter(x=>x.project===id).map(x=>`<a class="video" target="_blank" rel="noopener" href="${esc(x.url)}"><span>▶ ${esc(loc(x,"title"))}<small>${esc(x.source||"Vídeo")}</small></span></a>`).join("")})
 }
 document.addEventListener("DOMContentLoaded",()=>{header();footer();i18n();galleries();track();wireMail();hydrateNews();hydrateTimeline();hydrateVideos();initCounter()});

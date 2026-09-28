@@ -1,0 +1,104 @@
+[
+  {
+    "project": "lpqf",
+    "title": "Dossier artístico",
+    "description": "PDF · documento original",
+    "file": "assets/dossier_lpqf_2026.pdf",
+    "preview": "assets/dossier_lpqf_2026.pdf",
+    "kind": "Dossier",
+    "status": "available",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "Ficha artística y técnica",
+    "description": "Vista preparada para impresión o guardado como PDF",
+    "file": "",
+    "preview": "ficha-lpqf.html",
+    "kind": "Ficha",
+    "status": "available",
+    "order": 2,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "Rider técnico",
+    "description": "Necesidades escénicas, iluminación, sonido, seguridad y logística",
+    "file": "",
+    "preview": "rider-lpqf.html",
+    "kind": "Rider",
+    "status": "available",
+    "order": 3,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "Guía didáctica 2026",
+    "description": "3.º–6.º de Primaria · adaptable a ESO",
+    "file": "",
+    "preview": "guia-lpqf.html",
+    "kind": "Guía didáctica",
+    "status": "available",
+    "order": 4,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "Dossier artístico",
+    "description": "PDF original facilitado; pendiente de transferencia al repositorio",
+    "file": "",
+    "preview": "",
+    "kind": "Dossier",
+    "status": "pending",
+    "status_label": "Pendiente de archivo",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "Ficha artística y técnica",
+    "description": "Vista preparada para impresión o guardado como PDF",
+    "file": "",
+    "preview": "ficha-que-diablos.html",
+    "kind": "Ficha",
+    "status": "available",
+    "order": 2,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "Rider de iluminación · página disponible",
+    "description": "Documentación parcial; no se presenta como rider completo",
+    "file": "",
+    "preview": "rider-que-diablos-parcial.html",
+    "kind": "Rider",
+    "status": "available",
+    "order": 3,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "Fotografías HD",
+    "description": "Originales facilitados; pendientes de transferencia al repositorio",
+    "file": "",
+    "preview": "",
+    "kind": "Fotografías",
+    "status": "pending",
+    "status_label": "Pendiente de archivo",
+    "order": 4,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "Tráiler",
+    "description": "Recurso todavía no disponible",
+    "file": "",
+    "preview": "",
+    "kind": "Vídeo",
+    "status": "pending",
+    "status_label": "Próximamente",
+    "order": 5,
+    "published": true
+  }
+]

@@ -65,6 +65,14 @@
   },
   {
     "project": "haria",
+    "date": "2021",
+    "title": "Inicio de la Escuela de Teatro de Haría",
+    "summary": "Inicio del proyecto continuado de formación teatral en Haría.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
     "date": "2022",
     "title": "Entremeses de Cervantes",
     "summary": "Trabajo escénico de la Escuela de Teatro de Haría con textos de Miguel de Cervantes.",
@@ -76,6 +84,14 @@
     "date": "26 ABR 2023",
     "title": "La Principita",
     "summary": "Montaje de la Escuela de Teatro de Haría inspirado en la obra de Antoine de Saint-Exupéry.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2023",
+    "title": "VI Festival Internacional de Teatro de Bolsillo",
+    "summary": "Participación de la Escuela con el monólogo «En el fin del mundo», de Karl Valentin, reconocido con el 3.º premio.",
     "url": "",
     "published": true
   },
@@ -97,10 +113,26 @@
   },
   {
     "project": "haria",
+    "date": "2024",
+    "title": "La Cabeza del Bautista · La rosa de papel",
+    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
     "date": "2 JUN 2024",
     "title": "Caleidoscopio",
     "summary": "Serie de monólogos sobre la complejidad y la fragilidad de las personas · Sala Teatro La Tegala.",
     "url": "https://www.ayuntamientodeharia.com/haria/el-ayuntamiento-de-haria-presenta-la-obra-de-teatro-caleidoscopio/",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Noche de Finaos",
+    "summary": "Participación de la Escuela de Teatro de Haría en la Noche de Finaos.",
+    "url": "",
     "published": true
   },
   {
@@ -133,38 +165,6 @@
     "title": "Curso 2026–2027",
     "summary": "Inicio del nuevo curso · grupos de niños +10 y adultos · lunes y miércoles.",
     "url": "https://culturaharia.com/escuela-de-teatro/",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2021",
-    "title": "Inicio de la Escuela de Teatro de Haría",
-    "summary": "Inicio del proyecto continuado de formación teatral en Haría.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "Noche de Finaos",
-    "summary": "Participación de la Escuela de Teatro de Haría en la Noche de Finaos.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2023",
-    "title": "VI Festival Internacional de Teatro de Bolsillo",
-    "summary": "Participación de la Escuela con el monólogo «En el fin del mundo», de Karl Valentin, reconocido con el 3.º premio.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "La Cabeza del Bautista · La rosa de papel",
-    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
-    "url": "",
     "published": true
   }
 ]

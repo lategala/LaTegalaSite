@@ -135,24 +135,6 @@
     "published": true
   },
   {
-    "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 5",
-    "image": "assets/uploads/images/qd-05.webp",
-    "download": "assets/uploads/images/qd-05.webp",
-    "credit": "José David García",
-    "order": 5,
-    "published": true
-  },
-  {
-    "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 6",
-    "image": "assets/uploads/images/qd-06.webp",
-    "download": "assets/uploads/images/qd-06.webp",
-    "credit": "José David García",
-    "order": 6,
-    "published": true
-  },
-  {
     "project": "haria",
     "title": "Escuela de Teatro de Haría · archivo visual 01",
     "image": "assets/uploads/images/haria-01.webp",

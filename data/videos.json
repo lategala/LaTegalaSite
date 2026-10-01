@@ -1,7 +1,7 @@
 [
   {
     "project": "haria",
-    "title": "El Sueño de una Noche de Verano",
+    "title": "Audiovisual 01 · El Sueño de una Noche de Verano",
     "year": "2025",
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
@@ -11,7 +11,7 @@
   },
   {
     "project": "haria",
-    "title": "La Rosa de Papel",
+    "title": "Audiovisual 02 · La Rosa de Papel",
     "year": "2024",
     "url": "https://youtu.be/zyVlAMK4GdU",
     "source": "YouTube",
@@ -20,7 +20,7 @@
   },
   {
     "project": "haria",
-    "title": "La Cabeza del Bautista",
+    "title": "Audiovisual 03 · La Cabeza del Bautista",
     "year": "2024",
     "url": "https://youtu.be/h8k2dEwKL68",
     "source": "YouTube",
@@ -29,7 +29,7 @@
   },
   {
     "project": "haria",
-    "title": "A solas con la verdad",
+    "title": "Audiovisual 04 · A solas con la verdad",
     "year": "2025",
     "url": "https://youtu.be/ECw5X-Jr3CE",
     "source": "YouTube",
@@ -38,7 +38,7 @@
   },
   {
     "project": "haria",
-    "title": "El pastor bromista",
+    "title": "Audiovisual 05 · El Pastor Bromista · Escuela de Teatro Aspercán Lanzarote + Escuela de Teatro de Haría",
     "url": "https://youtu.be/Q2ej73rR8Ks",
     "source": "YouTube",
     "order": 5,
@@ -46,7 +46,7 @@
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte III",
+    "title": "Audiovisual 06 · Caleidoscopio (III)",
     "year": "2024",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
@@ -56,7 +56,7 @@
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte II",
+    "title": "Audiovisual 07 · Caleidoscopio (II)",
     "year": "2024",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
@@ -66,7 +66,7 @@
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte I",
+    "title": "Audiovisual 08 · Caleidoscopio",
     "year": "2024",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
@@ -76,7 +76,7 @@
   },
   {
     "project": "haria",
-    "title": "Ligazón",
+    "title": "Audiovisual 09 · Ligazón",
     "year": "2024",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
@@ -86,18 +86,20 @@
   },
   {
     "project": "haria",
-    "title": "Promo CantaHaria",
+    "title": "Audiovisual 10 · Promo documental CantaHaría",
     "url": "https://youtu.be/HiFLp48VSJI",
     "source": "YouTube",
     "order": 10,
-    "published": true
+    "published": true,
+    "year": "2022"
   },
   {
     "project": "haria",
-    "title": "ÍCARO · resumen",
+    "title": "Audiovisual 11 · Promo Ícaro (Antonio Orellana)",
     "url": "https://youtu.be/7IBluyxcAhk",
     "source": "YouTube",
     "order": 11,
-    "published": true
+    "published": true,
+    "year": "2020"
   }
 ]

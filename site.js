@@ -52,7 +52,7 @@ function header(){
   if(!mount) return;
   const l=lang(), here=location.pathname.split("/").pop()||"index.html", names=NAV[l]||NAV.es, c=common();
   mount.innerHTML=`<a class="skip" href="#contenido">${c.skip}</a><header><div class="wrap navbar">
-    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo2.jpg" alt="La Tegala Escénica"></a>
+    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo-tegala-dark.png" alt="La Tegala Escénica"></a>
     <nav class="navlinks" id="nav" aria-label="Navegación principal">${PAGES.map((p,i)=>`<a href="${p}" ${here===p?'aria-current="page"':''}>${names[i]}</a>`).join("")}</nav>
     <select class="lang" id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option></select>
     <button class="menu-btn" id="menu" aria-label="${c.open}" aria-expanded="false" aria-controls="nav">☰</button>
@@ -82,7 +82,7 @@ function footer(){
     it:["Spettacoli","Formazione","Documenti","Contatti"]
   }[lang()]||["Espectáculos","Formación","Documentación","Contacto"];
   mount.innerHTML=`<footer><div class="wrap footer">
-    <div><img src="assets/logo2.jpg" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
+    <div><img src="assets/logo-tegala-dark.png" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
     <div class="footer-nav"><a href="espectaculos.html">${labels[0]}</a><a href="formacion.html">${labels[1]}</a><a href="documentacion.html">${labels[2]}</a><a href="contacto.html">${labels[3]}</a><a target="_blank" rel="noopener" href="${esc(SITE.instagram)}">Instagram</a><a target="_blank" rel="noopener" href="${esc(SITE.facebook)}">Facebook</a></div>
     <div class="footer-bottom">© La Tegala Escénica, Lanzarote · ${esc(SITE.email)}</div>
   </div></footer>`;
@@ -169,9 +169,16 @@ async function hydrateVideos(){
   const data=await getData("videos.json"); if(!Array.isArray(data))return;
   els.forEach(el=>{
     const id=el.dataset.videos;
-    const rows=data.filter(x=>x.project===id&&x.published!==false);
+    const rows=data.filter(x=>x.project===id&&x.published!==false).sort((a,b)=>(a.order??99)-(b.order??99));
     if(!rows.length)return;
-    el.innerHTML=rows.map(x=>`<a class="video" target="_blank" rel="noopener" href="${esc(x.url)}"><span>▶ ${esc(loc(x,"title"))}<small>${esc(x.source||common().video)}</small></span></a>`).join("");
+    el.innerHTML=rows.map(x=>{
+      const title=esc(loc(x,"title"));
+      const poster=x.poster?String(x.poster):"";
+      const cls=poster?"video has-poster":"video";
+      const style=poster?` style="--video-poster:url('${esc(poster)}')"`:"";
+      const year=x.year?`<small class="year">${esc(x.year)}</small>`:"";
+      return `<a class="${cls}" target="_blank" rel="noopener" href="${esc(x.url)}"${style}><span>${year}▶ <em>${title}</em><small>${esc(x.source||common().video)}</small></span></a>`;
+    }).join("");
   });
 }
 
@@ -211,12 +218,41 @@ async function hydrateDocuments(){
   });
 }
 
+function initQuoteRotator(){
+  const box=document.getElementById("rotating-quote"); if(!box)return;
+  const quotes=[
+    {text:"Cuando el teatro es necesario, no hay nada más necesario",author:"Peter Brook"},
+    {text:"El mundo es un gran escenario",author:"William Shakespeare"},
+    {text:"Las luces cuentan secretos",author:"Anónimo"},
+    {text:"El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma",author:"Arthur Miller"},
+    {text:"El teatro es poesía que se sale del libro para hacerse humana",author:"Federico García Lorca"}
+  ];
+  let current=4, hoverCount=0;
+  const textEl=box.querySelector(".quote-text"), authorEl=box.querySelector(".quote-author");
+  const change=()=>{
+    current=(current+1)%quotes.length;
+    box.classList.add("is-changing");
+    window.setTimeout(()=>{
+      textEl.textContent="“"+quotes[current].text+".”";
+      authorEl.textContent=quotes[current].author;
+      box.classList.remove("is-changing");
+    },180);
+  };
+  box.addEventListener("mouseenter",()=>{
+    hoverCount+=1;
+    if(hoverCount%2===0)change();
+  });
+  box.addEventListener("click",change);
+  box.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();change();}});
+}
+
 async function init(){
   await loadSettings();
   header();
   footer();
   i18n();
   wireMail();
+  initQuoteRotator();
   initTracking();
   await Promise.all([hydrateNews(),hydrateTimeline(),hydrateVideos(),hydrateGalleries(),hydrateDocuments()]);
   galleries();

@@ -1,0 +1,24 @@
+name: Inspect Haría YouTube titles
+on:
+  push:
+    branches: [refine-2026-10-01]
+    paths:
+      - '.github/workflows/inspect-youtube.yml'
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch oEmbed titles
+        shell: python
+        run: |
+          import json, urllib.parse, urllib.request
+          ids = ["zZC0sLs8-Vs","zyVlAMK4GdU","h8k2dEwKL68","ECw5X-Jr3CE","Q2ej73rR8Ks","_ha1d7tUBZk","wZGdh2hZlo4","D0KYKLmRxto","THIadNzTiAk","HiFLp48VSJI","7IBluyxcAhk"]
+          for vid in ids:
+              url = "https://www.youtube.com/oembed?" + urllib.parse.urlencode({"url":"https://www.youtube.com/watch?v="+vid,"format":"json"})
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as r:
+                      data=json.load(r)
+                  print(vid + "\t" + data.get("title","") + "\t" + data.get("author_name",""))
+              except Exception as e:
+                  print(vid + "\tERROR\t" + repr(e))

@@ -52,7 +52,7 @@ function header(){
   if(!mount) return;
   const l=lang(), here=location.pathname.split("/").pop()||"index.html", names=NAV[l]||NAV.es, c=common();
   mount.innerHTML=`<a class="skip" href="#contenido">${c.skip}</a><header><div class="wrap navbar">
-    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo-tegala-dark.png" alt="La Tegala Escénica"></a>
+    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo-tegala-dark.jpg" alt="La Tegala Escénica"></a>
     <nav class="navlinks" id="nav" aria-label="Navegación principal">${PAGES.map((p,i)=>`<a href="${p}" ${here===p?'aria-current="page"':''}>${names[i]}</a>`).join("")}</nav>
     <select class="lang" id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option></select>
     <button class="menu-btn" id="menu" aria-label="${c.open}" aria-expanded="false" aria-controls="nav">☰</button>
@@ -82,7 +82,7 @@ function footer(){
     it:["Spettacoli","Formazione","Documenti","Contatti"]
   }[lang()]||["Espectáculos","Formación","Documentación","Contacto"];
   mount.innerHTML=`<footer><div class="wrap footer">
-    <div><img src="assets/logo-tegala-dark.png" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
+    <div><img src="assets/logo-tegala-dark.jpg" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
     <div class="footer-nav"><a href="espectaculos.html">${labels[0]}</a><a href="formacion.html">${labels[1]}</a><a href="documentacion.html">${labels[2]}</a><a href="contacto.html">${labels[3]}</a><a target="_blank" rel="noopener" href="${esc(SITE.instagram)}">Instagram</a><a target="_blank" rel="noopener" href="${esc(SITE.facebook)}">Facebook</a></div>
     <div class="footer-bottom">© La Tegala Escénica, Lanzarote · ${esc(SITE.email)}</div>
   </div></footer>`;

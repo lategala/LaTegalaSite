@@ -1,7 +1,7 @@
 name: Validate site
 on:
   push:
-    branches: [main, refine-2026-10-01]
+    branches: [main, refine-2026-10-01, final-refine-2026-10-01]
 permissions:
   contents: read
 jobs:

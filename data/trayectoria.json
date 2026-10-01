@@ -75,8 +75,8 @@
     "project": "haria",
     "date": "2022",
     "title": "Entremeses de Cervantes",
-    "summary": "Trabajo escénico de la Escuela de Teatro de Haría con textos de Miguel de Cervantes.",
-    "url": "",
+    "summary": "Primer montaje de la Escuela de Teatro de Haría · entremeses y piezas breves de Miguel de Cervantes y tradición del teatro breve.",
+    "url": "https://www.canariasdiario.com/programacion-para-las-fiestas-de-san-juan-bautista-de-haria-2022",
     "published": true
   },
   {
@@ -84,6 +84,14 @@
     "date": "2023",
     "title": "La Principita",
     "summary": "Montaje de la Escuela de Teatro de Haría inspirado en la obra de Antoine de Saint-Exupéry.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2023",
+    "title": "Noche de Finaos",
+    "summary": "Participación de la Escuela de Teatro de Haría en la programación de la Noche de Finaos durante el curso 2023–2024.",
     "url": "",
     "published": true
   },
@@ -98,25 +106,9 @@
   {
     "project": "haria",
     "date": "2024",
-    "title": "Karl Valentin Bar",
-    "summary": "Montaje de la Escuela de Teatro de Haría.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
     "title": "Ligazón · Retablo de la avaricia, la lujuria y la muerte",
     "summary": "Trabajo sobre Valle-Inclán y el esperpento, con preestreno de Ligazón en Escénica 2024 y ampliación posterior del Retablo.",
     "url": "https://www.ecoentradas.com/elegirsesion/2149",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "La Cabeza del Bautista · La rosa de papel",
-    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
-    "url": "",
     "published": true
   },
   {
@@ -130,8 +122,32 @@
   {
     "project": "haria",
     "date": "2024",
+    "title": "La Cabeza del Bautista · La rosa de papel",
+    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Muestra de Teatro Escolar · «Un placer en el agua»",
+    "summary": "Participación de alumnado de 3.º de ESO del IES Haría en la Muestra Escolar de Lanzarote.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
     "title": "Noche de Finaos",
-    "summary": "Participación de la Escuela de Teatro de Haría en la Noche de Finaos.",
+    "summary": "Participación escénica de la Escuela de Teatro de Haría en la Noche de Finaos.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Karl Valentin Bar",
+    "summary": "Montaje de la Escuela de Teatro de Haría a partir del universo cómico de Karl Valentin.",
     "url": "",
     "published": true
   },

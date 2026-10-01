@@ -100,218 +100,101 @@
   },
   {
     "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 1",
-    "image": "assets/uploads/images/qd-01.webp",
-    "download": "assets/uploads/images/qd-01.webp",
-    "credit": "José David García",
-    "order": 1,
-    "published": true
-  },
-  {
-    "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 2",
-    "image": "assets/uploads/images/qd-02.webp",
-    "download": "assets/uploads/images/qd-02.webp",
-    "credit": "José David García",
-    "order": 2,
-    "published": true
-  },
-  {
-    "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 3",
-    "image": "assets/uploads/images/qd-03.webp",
-    "download": "assets/uploads/images/qd-03.webp",
-    "credit": "José David García",
-    "order": 3,
-    "published": true
-  },
-  {
-    "project": "qd",
-    "title": "¡Qué Diablos! · imagen oficial 4",
-    "image": "assets/uploads/images/qd-04.webp",
-    "download": "assets/uploads/images/qd-04.webp",
-    "credit": "José David García",
-    "order": 4,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 01",
-    "image": "assets/uploads/images/haria-01.webp",
-    "download": "assets/uploads/images/haria-01.webp",
+    "title": "¡Qué Diablos! · cartel oficial",
+    "image": "assets/public-qd.jpg",
+    "download": "assets/public-qd.jpg",
     "credit": "",
     "order": 1,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 02",
-    "image": "assets/uploads/images/haria-02.webp",
-    "download": "assets/uploads/images/haria-02.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 1",
+    "image": "assets/ligazon1.jpg",
+    "download": "assets/ligazon1.jpg",
+    "credit": "",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 2",
+    "image": "assets/ligazon2.jpg",
+    "download": "assets/ligazon2.jpg",
     "credit": "",
     "order": 2,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 03",
-    "image": "assets/uploads/images/haria-03.webp",
-    "download": "assets/uploads/images/haria-03.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 3",
+    "image": "assets/ligazon3.jpg",
+    "download": "assets/ligazon3.jpg",
     "credit": "",
     "order": 3,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 04",
-    "image": "assets/uploads/images/haria-04.webp",
-    "download": "assets/uploads/images/haria-04.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 4",
+    "image": "assets/ligazon4.jpg",
+    "download": "assets/ligazon4.jpg",
     "credit": "",
     "order": 4,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 05",
-    "image": "assets/uploads/images/haria-05.webp",
-    "download": "assets/uploads/images/haria-05.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 5",
+    "image": "assets/ligazon5.jpg",
+    "download": "assets/ligazon5.jpg",
     "credit": "",
     "order": 5,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 06",
-    "image": "assets/uploads/images/haria-06.webp",
-    "download": "assets/uploads/images/haria-06.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 6",
+    "image": "assets/ligazon6.jpg",
+    "download": "assets/ligazon6.jpg",
     "credit": "",
     "order": 6,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 07",
-    "image": "assets/uploads/images/haria-07.webp",
-    "download": "assets/uploads/images/haria-07.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 7",
+    "image": "assets/ligazon7.jpg",
+    "download": "assets/ligazon7.jpg",
     "credit": "",
     "order": 7,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 08",
-    "image": "assets/uploads/images/haria-08.webp",
-    "download": "assets/uploads/images/haria-08.webp",
+    "title": "Escuela de Teatro de Haría · El sueño de una noche de verano · cartel",
+    "image": "assets/public-sueno.jpg",
+    "download": "assets/public-sueno.jpg",
     "credit": "",
     "order": 8,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 09",
-    "image": "assets/uploads/images/haria-09.webp",
-    "download": "assets/uploads/images/haria-09.webp",
+    "title": "Escuela de Teatro de Haría · Caleidoscopio · cartel",
+    "image": "assets/public-caleidoscopio.jpg",
+    "download": "assets/public-caleidoscopio.jpg",
     "credit": "",
     "order": 9,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 10",
-    "image": "assets/uploads/images/haria-10.webp",
-    "download": "assets/uploads/images/haria-10.webp",
+    "title": "Escuela de Teatro de Haría · Ligazón · cartel",
+    "image": "assets/ligazon_poster.jpg",
+    "download": "assets/ligazon_poster.jpg",
     "credit": "",
     "order": 10,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 11",
-    "image": "assets/uploads/images/haria-11.webp",
-    "download": "assets/uploads/images/haria-11.webp",
-    "credit": "",
-    "order": 11,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 12",
-    "image": "assets/uploads/images/haria-12.webp",
-    "download": "assets/uploads/images/haria-12.webp",
-    "credit": "",
-    "order": 12,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 13",
-    "image": "assets/uploads/images/haria-13.webp",
-    "download": "assets/uploads/images/haria-13.webp",
-    "credit": "",
-    "order": 13,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 14",
-    "image": "assets/uploads/images/haria-14.webp",
-    "download": "assets/uploads/images/haria-14.webp",
-    "credit": "",
-    "order": 14,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 15",
-    "image": "assets/uploads/images/haria-15.webp",
-    "download": "assets/uploads/images/haria-15.webp",
-    "credit": "",
-    "order": 15,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 16",
-    "image": "assets/uploads/images/haria-16.webp",
-    "download": "assets/uploads/images/haria-16.webp",
-    "credit": "",
-    "order": 16,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 17",
-    "image": "assets/uploads/images/haria-17.webp",
-    "download": "assets/uploads/images/haria-17.webp",
-    "credit": "",
-    "order": 17,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 18",
-    "image": "assets/uploads/images/haria-18.webp",
-    "download": "assets/uploads/images/haria-18.webp",
-    "credit": "",
-    "order": 18,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 19",
-    "image": "assets/uploads/images/haria-19.webp",
-    "download": "assets/uploads/images/haria-19.webp",
-    "credit": "",
-    "order": 19,
-    "published": true
-  },
-  {
-    "project": "haria",
-    "title": "Escuela de Teatro de Haría · archivo visual 20",
-    "image": "assets/uploads/images/haria-20.webp",
-    "download": "assets/uploads/images/haria-20.webp",
-    "credit": "",
-    "order": 20,
     "published": true
   }
 ]

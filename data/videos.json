@@ -1,123 +1,103 @@
 [
   {
     "project": "haria",
-    "title": "Archivo audiovisual 01",
+    "title": "El Sueño de una Noche de Verano",
+    "year": "2025",
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 01",
-    "title_fr": "Archive vidéo 01",
-    "title_de": "Videoarchiv 01",
-    "title_it": "Archivio video 01"
+    "poster": "assets/public-sueno.jpg",
+    "order": 1,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 02",
+    "title": "La Rosa de Papel",
+    "year": "2024",
     "url": "https://youtu.be/zyVlAMK4GdU",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 02",
-    "title_fr": "Archive vidéo 02",
-    "title_de": "Videoarchiv 02",
-    "title_it": "Archivio video 02"
+    "order": 2,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 03",
+    "title": "La Cabeza del Bautista",
+    "year": "2024",
     "url": "https://youtu.be/h8k2dEwKL68",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 03",
-    "title_fr": "Archive vidéo 03",
-    "title_de": "Videoarchiv 03",
-    "title_it": "Archivio video 03"
+    "order": 3,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 04",
+    "title": "A solas con la verdad",
+    "year": "2025",
     "url": "https://youtu.be/ECw5X-Jr3CE",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 04",
-    "title_fr": "Archive vidéo 04",
-    "title_de": "Videoarchiv 04",
-    "title_it": "Archivio video 04"
+    "order": 4,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 05",
+    "title": "El pastor bromista",
     "url": "https://youtu.be/Q2ej73rR8Ks",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 05",
-    "title_fr": "Archive vidéo 05",
-    "title_de": "Videoarchiv 05",
-    "title_it": "Archivio video 05"
+    "order": 5,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 06",
+    "title": "Caleidoscopio · parte III",
+    "year": "2024",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 06",
-    "title_fr": "Archive vidéo 06",
-    "title_de": "Videoarchiv 06",
-    "title_it": "Archivio video 06"
+    "poster": "assets/public-caleidoscopio.jpg",
+    "order": 6,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 07",
+    "title": "Caleidoscopio · parte II",
+    "year": "2024",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 07",
-    "title_fr": "Archive vidéo 07",
-    "title_de": "Videoarchiv 07",
-    "title_it": "Archivio video 07"
+    "poster": "assets/public-caleidoscopio.jpg",
+    "order": 7,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 08",
+    "title": "Caleidoscopio · parte I",
+    "year": "2024",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 08",
-    "title_fr": "Archive vidéo 08",
-    "title_de": "Videoarchiv 08",
-    "title_it": "Archivio video 08"
+    "poster": "assets/public-caleidoscopio.jpg",
+    "order": 8,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 09",
+    "title": "Ligazón",
+    "year": "2024",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 09",
-    "title_fr": "Archive vidéo 09",
-    "title_de": "Videoarchiv 09",
-    "title_it": "Archivio video 09"
+    "poster": "assets/uploads/images/ligazon-cartel.jpg",
+    "order": 9,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 10",
+    "title": "Promo CantaHaria",
     "url": "https://youtu.be/HiFLp48VSJI",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 10",
-    "title_fr": "Archive vidéo 10",
-    "title_de": "Videoarchiv 10",
-    "title_it": "Archivio video 10"
+    "order": 10,
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Archivo audiovisual 11",
+    "title": "ÍCARO · resumen",
     "url": "https://youtu.be/7IBluyxcAhk",
     "source": "YouTube",
-    "published": true,
-    "title_en": "Video archive 11",
-    "title_fr": "Archive vidéo 11",
-    "title_de": "Videoarchiv 11",
-    "title_it": "Archivio video 11"
+    "order": 11,
+    "published": true
   }
 ]

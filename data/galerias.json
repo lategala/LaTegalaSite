@@ -97,5 +97,104 @@
     "credit": "",
     "order": 7,
     "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · cartel oficial",
+    "image": "assets/public-qd.jpg",
+    "download": "assets/public-qd.jpg",
+    "credit": "",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 1",
+    "image": "assets/ligazon1.jpg",
+    "download": "assets/ligazon1.jpg",
+    "credit": "",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 2",
+    "image": "assets/ligazon2.jpg",
+    "download": "assets/ligazon2.jpg",
+    "credit": "",
+    "order": 2,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 3",
+    "image": "assets/ligazon3.jpg",
+    "download": "assets/ligazon3.jpg",
+    "credit": "",
+    "order": 3,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 4",
+    "image": "assets/ligazon4.jpg",
+    "download": "assets/ligazon4.jpg",
+    "credit": "",
+    "order": 4,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 5",
+    "image": "assets/ligazon5.jpg",
+    "download": "assets/ligazon5.jpg",
+    "credit": "",
+    "order": 5,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 6",
+    "image": "assets/ligazon6.jpg",
+    "download": "assets/ligazon6.jpg",
+    "credit": "",
+    "order": 6,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 7",
+    "image": "assets/ligazon7.jpg",
+    "download": "assets/ligazon7.jpg",
+    "credit": "",
+    "order": 7,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · El sueño de una noche de verano · cartel",
+    "image": "assets/public-sueno.jpg",
+    "download": "assets/public-sueno.jpg",
+    "credit": "",
+    "order": 8,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Caleidoscopio · cartel",
+    "image": "assets/public-caleidoscopio.jpg",
+    "download": "assets/public-caleidoscopio.jpg",
+    "credit": "",
+    "order": 9,
+    "published": true
+  },
+  {
+    "project": "haria",
+    "title": "Escuela de Teatro de Haría · Ligazón · cartel",
+    "image": "assets/ligazon_poster.jpg",
+    "download": "assets/ligazon_poster.jpg",
+    "credit": "",
+    "order": 10,
+    "published": true
   }
 ]

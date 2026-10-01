@@ -4,7 +4,7 @@ const SITE={
   wa:"34605447210",
   instagram:"https://www.instagram.com/lategalaescenica/",
   facebook:"https://www.facebook.com/profile.php?id=61594400188184",
-  location:"Tahiche · Teguise · Lanzarote"
+  location:"Teguise · Lanzarote"
 };
 
 const NAV={
@@ -47,12 +47,66 @@ async function loadSettings(){
   if(x.location) SITE.location=x.location;
 }
 
+
+const ZONES={
+  "espectaculos.html":{cls:"zone-shows",key:"shows"},
+  "la-parte-que-falta.html":{cls:"zone-shows",key:"lpqf"},
+  "que-diablos.html":{cls:"zone-shows",key:"qd"},
+  "ligazon.html":{cls:"zone-shows",key:"ligazon"},
+  "caleidoscopio.html":{cls:"zone-shows",key:"caleidoscopio"},
+  "formacion.html":{cls:"zone-training",key:"training"},
+  "escuela-haria.html":{cls:"zone-haria",key:"haria"},
+  "escuela-graciosa.html":{cls:"zone-graciosa",key:"graciosa"},
+  "antonio-orellana.html":{cls:"zone-antonio",key:"antonio"},
+  "documentacion.html":{cls:"zone-docs",key:"docs"},
+  "actualidad.html":{cls:"zone-news",key:"news"},
+  "quienes.html":{cls:"zone-about",key:"about"},
+  "contacto.html":{cls:"zone-contact",key:"contact"}
+};
+const ZONE_LABELS={
+ es:{shows:"ESPECTÁCULOS",lpqf:"ESPECTÁCULOS · LA PARTE QUE FALTA",qd:"ESPECTÁCULOS · ¡QUÉ DIABLOS!",ligazon:"ESPECTÁCULOS · LIGAZÓN",caleidoscopio:"ESPECTÁCULOS · CALEIDOSCOPIO",training:"FORMACIÓN",haria:"FORMACIÓN · ESCUELA DE TEATRO DE HARÍA",graciosa:"FORMACIÓN · ESCUELA DE TEATRO LA GRACIOSA",antonio:"FORMACIÓN · ANTONIO ORELLANA",docs:"CENTRO PROFESIONAL",news:"ACTUALIDAD / PRENSA",about:"LA TEGALA",contact:"CONTACTO"},
+ en:{shows:"SHOWS",lpqf:"SHOWS · LA PARTE QUE FALTA",qd:"SHOWS · ¡QUÉ DIABLOS!",ligazon:"SHOWS · LIGAZÓN",caleidoscopio:"SHOWS · CALEIDOSCOPIO",training:"TRAINING",haria:"TRAINING · HARÍA THEATRE SCHOOL",graciosa:"TRAINING · LA GRACIOSA THEATRE SCHOOL",antonio:"TRAINING · ANTONIO ORELLANA",docs:"PROFESSIONAL CENTRE",news:"NEWS / PRESS",about:"LA TEGALA",contact:"CONTACT"},
+ fr:{shows:"SPECTACLES",lpqf:"SPECTACLES · LA PARTE QUE FALTA",qd:"SPECTACLES · ¡QUÉ DIABLOS!",ligazon:"SPECTACLES · LIGAZÓN",caleidoscopio:"SPECTACLES · CALEIDOSCOPIO",training:"FORMATION",haria:"FORMATION · ÉCOLE DE THÉÂTRE DE HARÍA",graciosa:"FORMATION · ÉCOLE DE THÉÂTRE LA GRACIOSA",antonio:"FORMATION · ANTONIO ORELLANA",docs:"CENTRE PROFESSIONNEL",news:"ACTUALITÉ / PRESSE",about:"LA TEGALA",contact:"CONTACT"},
+ de:{shows:"PRODUKTIONEN",lpqf:"PRODUKTIONEN · LA PARTE QUE FALTA",qd:"PRODUKTIONEN · ¡QUÉ DIABLOS!",ligazon:"PRODUKTIONEN · LIGAZÓN",caleidoscopio:"PRODUKTIONEN · CALEIDOSCOPIO",training:"AUSBILDUNG",haria:"AUSBILDUNG · THEATERSCHULE HARÍA",graciosa:"AUSBILDUNG · THEATERSCHULE LA GRACIOSA",antonio:"AUSBILDUNG · ANTONIO ORELLANA",docs:"PROFI-BEREICH",news:"AKTUELLES / PRESSE",about:"LA TEGALA",contact:"KONTAKT"},
+ it:{shows:"SPETTACOLI",lpqf:"SPETTACOLI · LA PARTE QUE FALTA",qd:"SPETTACOLI · ¡QUÉ DIABLOS!",ligazon:"SPETTACOLI · LIGAZÓN",caleidoscopio:"SPETTACOLI · CALEIDOSCOPIO",training:"FORMAZIONE",haria:"FORMAZIONE · SCUOLA DI TEATRO DI HARÍA",graciosa:"FORMAZIONE · SCUOLA DI TEATRO LA GRACIOSA",antonio:"FORMAZIONE · ANTONIO ORELLANA",docs:"CENTRO PROFESSIONALE",news:"ATTUALITÀ / STAMPA",about:"LA TEGALA",contact:"CONTATTI"}
+};
+function applyZone(){
+  const here=location.pathname.split("/").pop()||"index.html";
+  const z=ZONES[here];
+  if(!z)return;
+  document.body.classList.add(z.cls);
+  const bar=document.createElement("div");
+  bar.className="context-bar";
+  bar.innerHTML='<div class="wrap"><span>'+esc((ZONE_LABELS[lang()]||ZONE_LABELS.es)[z.key])+'</span></div>';
+  const header=document.querySelector("header");
+  if(header) header.insertAdjacentElement("afterend",bar);
+}
+const QUOTES=[
+  {q:"Cuando el teatro es necesario, no hay nada más necesario",a:"Peter Brook"},
+  {q:"El mundo es un gran escenario",a:"William Shakespeare"},
+  {q:"Las luces cuentan secretos",a:"Anónimo"},
+  {q:"El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma",a:"Arthur Miller"},
+  {q:"El teatro es poesía que se sale del libro para hacerse humana",a:"Federico García Lorca"}
+];
+function initQuoteCycle(){
+  const box=document.querySelector("[data-quote-cycle]");
+  if(!box)return;
+  let idx=4, enters=0;
+  const render=()=>{box.querySelector("[data-quote-text]").textContent="“"+QUOTES[idx].q+".”";box.querySelector("[data-quote-author]").textContent=QUOTES[idx].a;};
+  render();
+  box.addEventListener("mouseenter",()=>{
+    enters++;
+    box.classList.add("ocean-hover");
+    if(enters%2===0){idx=(idx+1)%QUOTES.length;render();}
+  });
+  box.addEventListener("mouseleave",()=>box.classList.remove("ocean-hover"));
+}
 function header(){
   const mount=document.getElementById("site-header");
   if(!mount) return;
   const l=lang(), here=location.pathname.split("/").pop()||"index.html", names=NAV[l]||NAV.es, c=common();
   mount.innerHTML=`<a class="skip" href="#contenido">${c.skip}</a><header><div class="wrap navbar">
-    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo2.jpg" alt="La Tegala Escénica"></a>
+    <a class="brandmark" href="index.html" aria-label="La Tegala Escénica · Inicio"><img src="assets/logo-tegala-dark.jpg" alt="La Tegala Escénica"></a>
     <nav class="navlinks" id="nav" aria-label="Navegación principal">${PAGES.map((p,i)=>`<a href="${p}" ${here===p?'aria-current="page"':''}>${names[i]}</a>`).join("")}</nav>
     <select class="lang" id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option></select>
     <button class="menu-btn" id="menu" aria-label="${c.open}" aria-expanded="false" aria-controls="nav">☰</button>
@@ -82,7 +136,7 @@ function footer(){
     it:["Spettacoli","Formazione","Documenti","Contatti"]
   }[lang()]||["Espectáculos","Formación","Documentación","Contacto"];
   mount.innerHTML=`<footer><div class="wrap footer">
-    <div><img src="assets/logo2.jpg" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
+    <div><img src="assets/logo-tegala-dark.jpg" alt="La Tegala Escénica"><p class="muted">${esc(SITE.location)}<br><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a> · <a href="https://wa.me/${esc(SITE.wa)}">${esc(SITE.phone)}</a></p></div>
     <div class="footer-nav"><a href="espectaculos.html">${labels[0]}</a><a href="formacion.html">${labels[1]}</a><a href="documentacion.html">${labels[2]}</a><a href="contacto.html">${labels[3]}</a><a target="_blank" rel="noopener" href="${esc(SITE.instagram)}">Instagram</a><a target="_blank" rel="noopener" href="${esc(SITE.facebook)}">Facebook</a></div>
     <div class="footer-bottom">© La Tegala Escénica, Lanzarote · ${esc(SITE.email)}</div>
   </div></footer>`;
@@ -169,9 +223,16 @@ async function hydrateVideos(){
   const data=await getData("videos.json"); if(!Array.isArray(data))return;
   els.forEach(el=>{
     const id=el.dataset.videos;
-    const rows=data.filter(x=>x.project===id&&x.published!==false);
+    const rows=data.filter(x=>x.project===id&&x.published!==false).sort((a,b)=>(a.order??99)-(b.order??99));
     if(!rows.length)return;
-    el.innerHTML=rows.map(x=>`<a class="video" target="_blank" rel="noopener" href="${esc(x.url)}"><span>▶ ${esc(loc(x,"title"))}<small>${esc(x.source||common().video)}</small></span></a>`).join("");
+    el.innerHTML=rows.map(x=>{
+      const title=esc(loc(x,"title"));
+      const poster=x.poster?String(x.poster):"";
+      const cls=poster?"video has-poster":"video";
+      const style=poster?` style="--video-poster:url('${esc(poster)}')"`:"";
+      const year=x.year?`<small class="year">${esc(x.year)}</small>`:"";
+      return `<a class="${cls}" target="_blank" rel="noopener" href="${esc(x.url)}"${style}><span>${year}▶ <em>${title}</em><small>${esc(x.source||common().video)}</small></span></a>`;
+    }).join("");
   });
 }
 
@@ -211,15 +272,73 @@ async function hydrateDocuments(){
   });
 }
 
+function initQuoteRotator(){
+  const box=document.getElementById("rotating-quote"); if(!box)return;
+  const quotes=[
+    {text:"Cuando el teatro es necesario, no hay nada más necesario",author:"Peter Brook"},
+    {text:"El mundo es un gran escenario",author:"William Shakespeare"},
+    {text:"Las luces cuentan secretos",author:"Anónimo"},
+    {text:"El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma",author:"Arthur Miller"},
+    {text:"El teatro es poesía que se sale del libro para hacerse humana",author:"Federico García Lorca"}
+  ];
+  let current=4, hoverCount=0;
+  const textEl=box.querySelector(".quote-text"), authorEl=box.querySelector(".quote-author");
+  const change=()=>{
+    current=(current+1)%quotes.length;
+    box.classList.add("is-changing");
+    window.setTimeout(()=>{
+      textEl.textContent="“"+quotes[current].text+".”";
+      authorEl.textContent=quotes[current].author;
+      box.classList.remove("is-changing");
+    },180);
+  };
+  box.addEventListener("mouseenter",()=>{
+    hoverCount+=1;
+    if(hoverCount%2===0)change();
+  });
+  box.addEventListener("click",change);
+  box.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();change();}});
+}
+
+function italicizeWorkTitles(){
+  const root=document.querySelector("main"); if(!root)return;
+  const re=/(El [Ss]ueño de una [Nn]oche de [Vv]erano|Retablo de la avaricia, la lujuria y la muerte|La [Cc]abeza del Bautista|La [Rr]osa de papel|La Parte Que Falta|¡Qué Diablos!|Mi mayor en mi menor|A solas con la verdad|Karl Valentin Bar|La Principita|De IMPROviso|Caleidoscopio|Ligazón|Paso a paso)/g;
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  const nodes=[];
+  while(walker.nextNode()){
+    const n=walker.currentNode;
+    const p=n.parentElement;
+    if(!p||p.closest("script,style,em,i,textarea,code,pre"))continue;
+    re.lastIndex=0;
+    if(re.test(n.nodeValue))nodes.push(n);
+  }
+  nodes.forEach(n=>{
+    const text=n.nodeValue;
+    const frag=document.createDocumentFragment();
+    let last=0, m;
+    re.lastIndex=0;
+    while((m=re.exec(text))!==null){
+      if(m.index>last)frag.appendChild(document.createTextNode(text.slice(last,m.index)));
+      const em=document.createElement("em"); em.textContent=m[0]; frag.appendChild(em);
+      last=m.index+m[0].length;
+    }
+    if(last<text.length)frag.appendChild(document.createTextNode(text.slice(last)));
+    n.replaceWith(frag);
+  });
+}
 async function init(){
   await loadSettings();
   header();
+  applyZone();
   footer();
   i18n();
+  initQuoteCycle();
   wireMail();
+  initQuoteRotator();
   initTracking();
   await Promise.all([hydrateNews(),hydrateTimeline(),hydrateVideos(),hydrateGalleries(),hydrateDocuments()]);
   galleries();
+  italicizeWorkTitles();
   initCounter();
 }
 document.addEventListener("DOMContentLoaded",init);

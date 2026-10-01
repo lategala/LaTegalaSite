@@ -72,7 +72,7 @@ with tempfile.TemporaryDirectory() as td:
     td=Path(td)
     for page in htmls:
         txt=page.read_text(encoding="utf-8")
-        scripts=re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>',txt,re.I|re.S)
+        scripts=re.findall(r'<script(?![^>]*\bsrc=)(?![^>]*application/ld\+json)[^>]*>(.*?)</script>',txt,re.I|re.S)
         for i,script in enumerate(scripts):
             if script.strip():
                 f=td/f"{page.stem}-{i}.js"; f.write_text(script,encoding="utf-8"); js_targets.append(f)

@@ -123,7 +123,7 @@ em{font-family:inherit}
 .portal-qd::before{background-image:url("assets/qd-poster.jpg");background-position:center 18%}
 .portal-shows::before{background-image:url("assets/poster.jpg");background-position:center 35%}
 .portal-training::before{background-image:url("assets/haria-2026-poster.jpg");background-position:center 34%}
-.portal-company::before{background-image:url("assets/logo-tegala-dark.png");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
+.portal-company::before{background-image:url("assets/logo-tegala-dark.jpg");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
 .portal-card{min-height:250px;border-color:rgba(127,96,72,.34)}
 .portal-card .card-body{min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(to top,rgba(9,9,10,.88),rgba(9,9,10,.02))}
 .portal-card .card-label{color:#b99a74}

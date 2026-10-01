@@ -47,6 +47,53 @@ async function loadSettings(){
   if(x.location) SITE.location=x.location;
 }
 
+
+const ZONES={
+  "espectaculos.html":{cls:"zone-shows",label:"ESPECTÁCULOS"},
+  "la-parte-que-falta.html":{cls:"zone-shows",label:"ESPECTÁCULOS · LA PARTE QUE FALTA"},
+  "que-diablos.html":{cls:"zone-shows",label:"ESPECTÁCULOS · ¡QUÉ DIABLOS!"},
+  "ligazon.html":{cls:"zone-shows",label:"ESPECTÁCULOS · LIGAZÓN"},
+  "caleidoscopio.html":{cls:"zone-shows",label:"ESPECTÁCULOS · CALEIDOSCOPIO"},
+  "formacion.html":{cls:"zone-training",label:"FORMACIÓN"},
+  "escuela-haria.html":{cls:"zone-haria",label:"FORMACIÓN · ESCUELA DE TEATRO DE HARÍA"},
+  "escuela-graciosa.html":{cls:"zone-graciosa",label:"FORMACIÓN · ESCUELA DE TEATRO LA GRACIOSA"},
+  "antonio-orellana.html":{cls:"zone-antonio",label:"FORMACIÓN · ANTONIO ORELLANA"},
+  "documentacion.html":{cls:"zone-docs",label:"CENTRO PROFESIONAL"},
+  "actualidad.html":{cls:"zone-news",label:"ACTUALIDAD / PRENSA"},
+  "quienes.html":{cls:"zone-about",label:"LA TEGALA"},
+  "contacto.html":{cls:"zone-contact",label:"CONTACTO"}
+};
+function applyZone(){
+  const here=location.pathname.split("/").pop()||"index.html";
+  const z=ZONES[here];
+  if(!z)return;
+  document.body.classList.add(z.cls);
+  const bar=document.createElement("div");
+  bar.className="context-bar";
+  bar.innerHTML='<div class="wrap"><span>'+esc(z.label)+'</span></div>';
+  const header=document.querySelector("header");
+  if(header) header.insertAdjacentElement("afterend",bar);
+}
+const QUOTES=[
+  {q:"Cuando el teatro es necesario, no hay nada más necesario",a:"Peter Brook"},
+  {q:"El mundo es un gran escenario",a:"William Shakespeare"},
+  {q:"Las luces cuentan secretos",a:"Anónimo"},
+  {q:"El teatro no puede desaparecer: es donde la humanidad se enfrenta a sí misma",a:"Arthur Miller"},
+  {q:"El teatro es poesía que se sale del libro para hacerse humana",a:"Federico García Lorca"}
+];
+function initQuoteCycle(){
+  const box=document.querySelector("[data-quote-cycle]");
+  if(!box)return;
+  let idx=4, enters=0;
+  const render=()=>{box.querySelector("[data-quote-text]").textContent="“"+QUOTES[idx].q+".”";box.querySelector("[data-quote-author]").textContent=QUOTES[idx].a;};
+  render();
+  box.addEventListener("mouseenter",()=>{
+    enters++;
+    box.classList.add("ocean-hover");
+    if(enters%2===0){idx=(idx+1)%QUOTES.length;render();}
+  });
+  box.addEventListener("mouseleave",()=>box.classList.remove("ocean-hover"));
+}
 function header(){
   const mount=document.getElementById("site-header");
   if(!mount) return;
@@ -249,8 +296,10 @@ function initQuoteRotator(){
 function italicizeWorkTitles(){\n  const root=document.querySelector("main"); if(!root)return;\n  const re=/(El sueño de una noche de verano|Retablo de la avaricia, la lujuria y la muerte|La cabeza del Bautista|La rosa de papel|La Parte Que Falta|¡Qué Diablos!|Mi mayor en mi menor|A solas con la verdad|Karl Valentin Bar|La Principita|De IMPROviso|Caleidoscopio|Ligazón|Paso a paso)/g;\n  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);\n  const nodes=[];\n  while(walker.nextNode()){\n    const n=walker.currentNode;\n    const p=n.parentElement;\n    if(!p||p.closest("script,style,em,i,textarea,code,pre"))continue;\n    re.lastIndex=0;\n    if(re.test(n.nodeValue)){nodes.push(n);}\n  }\n  nodes.forEach(n=>{\n    const text=n.nodeValue;\n    const frag=document.createDocumentFragment();\n    let last=0;\n    re.lastIndex=0;\n    let m;\n    while((m=re.exec(text))!==null){\n      if(m.index>last)frag.appendChild(document.createTextNode(text.slice(last,m.index)));\n      const em=document.createElement("em"); em.textContent=m[0]; frag.appendChild(em);\n      last=m.index+m[0].length;\n    }\n    if(last<text.length)frag.appendChild(document.createTextNode(text.slice(last)));\n    n.replaceWith(frag);\n  });\n}\nasync function init(){
   await loadSettings();
   header();
+  applyZone();
   footer();
   i18n();
+  initQuoteCycle();
   wireMail();
   initQuoteRotator();
   initTracking();

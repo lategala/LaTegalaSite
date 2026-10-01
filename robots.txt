@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /panel-lategala-8f4a2.html
-Disallow: /.github/
+
 Sitemap: https://lategala.github.io/LaTegalaSite/sitemap.xml

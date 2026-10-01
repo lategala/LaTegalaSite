@@ -120,7 +120,7 @@ em{font-family:inherit}
 .portal-backdrop::after,.portal-card::after,.company-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(10,10,11,.72),rgba(91,61,40,.16) 54%,rgba(10,10,11,.84));z-index:0}
 .portal-backdrop>* ,.portal-card>* ,.company-visual>*{position:relative;z-index:2}
 .portal-backdrop:hover::before,.portal-card:hover::before{opacity:.24;transform:scale(1.06)}
-.portal-qd::before{background-image:url("assets/public-qd.jpg");background-position:center 36%;opacity:.20;filter:saturate(.78) sepia(.06)}
+.portal-qd::before{background-image:url("assets/uploads/images/que-diablos/cartel-que-diablos.jpg");background-position:center 34%;opacity:.60;filter:saturate(.90) contrast(1.03)}
 .portal-shows::before{background-image:url("assets/poster.jpg");background-position:center 35%}
 .portal-training::before{background-image:url("assets/public-sueno.jpg");background-position:center 34%}
 .portal-company::before{background-image:url("assets/logo-tegala-dark.jpg");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
@@ -254,15 +254,23 @@ repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transpa
 .qd-visual.compact .art-word{font-size:clamp(2.7rem,5vw,4.8rem)}
 
 /* Final Qué Diablos visual integration */
-.hero-visual.portal-qd::before{background-image:none;opacity:0}
-.hero-visual.portal-qd::after{background:linear-gradient(to top,rgba(7,7,8,.86) 8%,rgba(7,7,8,.20) 54%,rgba(7,7,8,.30))}
+.hero-visual.portal-qd::before{background-image:url("assets/uploads/images/que-diablos/cartel-que-diablos.jpg");background-position:center 34%;opacity:.60;filter:saturate(.90) contrast(1.03);inset:0;border:0;border-radius:0;transform:scale(1.015)}
+.hero-visual.portal-qd::after{inset:0;width:auto;height:auto;right:0;top:0;border:0;border-radius:0;box-shadow:none;background:linear-gradient(to top,rgba(7,7,8,.84) 7%,rgba(7,7,8,.30) 58%,rgba(7,7,8,.24))}
 .premiere-badge{display:inline-flex;align-items:center;width:max-content;padding:7px 11px;border:1px solid rgba(198,161,91,.52);border-radius:999px;background:rgba(12,12,13,.55);backdrop-filter:blur(8px);color:#efd69f!important}
 .qd-poster-card{position:relative;overflow:hidden;background:#0c0d0f}
 .qd-poster-card img{opacity:.72;filter:saturate(.88);transition:opacity .45s ease,transform .55s ease}
 .card:hover .qd-poster-card img{opacity:.88;transform:scale(1.015)}
 .qd-poster-card .art-meta{position:absolute;z-index:2;left:16px;bottom:16px;top:auto;padding:6px 9px;border-radius:999px;background:rgba(5,6,8,.72);backdrop-filter:blur(7px);color:#ecd39c}
 .qd-official-poster{box-shadow:0 22px 70px rgba(0,0,0,.28)}
-.qd-official-poster img{opacity:.62}
-.qd-official-poster:hover img{opacity:.76}
+.qd-official-poster img{opacity:.88}
+.qd-official-poster:hover img{opacity:.96}
 .qd-official-poster .poster-download{position:absolute;z-index:4;right:18px;bottom:18px;width:42px;height:42px;display:grid;place-items:center;background:rgba(8,9,10,.74);backdrop-filter:blur(8px);font-size:1.25rem}
 .material-intro{max-width:780px;margin-bottom:24px}
+
+.qd-official-poster{min-height:610px;background:#0b0c0e}
+.qd-official-poster img{object-fit:cover;object-position:center top}
+.gallery[data-gallery="qd"] figure img{object-position:center}
+@media(max-width:650px){
+  .hero-visual.portal-qd::before{background-position:center 29%;opacity:.56}
+  .qd-official-poster{min-height:520px}
+}

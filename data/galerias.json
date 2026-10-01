@@ -187,5 +187,50 @@
     "credit": "",
     "order": 10,
     "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 1",
+    "image": "assets/uploads/images/que-diablos/foto-01.jpg",
+    "download": "assets/uploads/images/que-diablos/foto-01.jpg",
+    "credit": "José David García",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 2",
+    "image": "assets/uploads/images/que-diablos/foto-02.jpg",
+    "download": "assets/uploads/images/que-diablos/foto-02.jpg",
+    "credit": "José David García",
+    "order": 2,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 3",
+    "image": "assets/uploads/images/que-diablos/foto-03.jpg",
+    "download": "assets/uploads/images/que-diablos/foto-03.jpg",
+    "credit": "José David García",
+    "order": 3,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 4",
+    "image": "assets/uploads/images/que-diablos/foto-04.jpg",
+    "download": "assets/uploads/images/que-diablos/foto-04.jpg",
+    "credit": "José David García",
+    "order": 4,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · imagen promocional",
+    "image": "assets/uploads/images/que-diablos/foto-05.jpg",
+    "download": "assets/uploads/images/que-diablos/foto-05.jpg",
+    "credit": "José David García",
+    "order": 5,
+    "published": true
   }
 ]

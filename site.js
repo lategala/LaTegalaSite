@@ -49,19 +49,26 @@ async function loadSettings(){
 
 
 const ZONES={
-  "espectaculos.html":{cls:"zone-shows",label:"ESPECTÁCULOS"},
-  "la-parte-que-falta.html":{cls:"zone-shows",label:"ESPECTÁCULOS · LA PARTE QUE FALTA"},
-  "que-diablos.html":{cls:"zone-shows",label:"ESPECTÁCULOS · ¡QUÉ DIABLOS!"},
-  "ligazon.html":{cls:"zone-shows",label:"ESPECTÁCULOS · LIGAZÓN"},
-  "caleidoscopio.html":{cls:"zone-shows",label:"ESPECTÁCULOS · CALEIDOSCOPIO"},
-  "formacion.html":{cls:"zone-training",label:"FORMACIÓN"},
-  "escuela-haria.html":{cls:"zone-haria",label:"FORMACIÓN · ESCUELA DE TEATRO DE HARÍA"},
-  "escuela-graciosa.html":{cls:"zone-graciosa",label:"FORMACIÓN · ESCUELA DE TEATRO LA GRACIOSA"},
-  "antonio-orellana.html":{cls:"zone-antonio",label:"FORMACIÓN · ANTONIO ORELLANA"},
-  "documentacion.html":{cls:"zone-docs",label:"CENTRO PROFESIONAL"},
-  "actualidad.html":{cls:"zone-news",label:"ACTUALIDAD / PRENSA"},
-  "quienes.html":{cls:"zone-about",label:"LA TEGALA"},
-  "contacto.html":{cls:"zone-contact",label:"CONTACTO"}
+  "espectaculos.html":{cls:"zone-shows",key:"shows"},
+  "la-parte-que-falta.html":{cls:"zone-shows",key:"lpqf"},
+  "que-diablos.html":{cls:"zone-shows",key:"qd"},
+  "ligazon.html":{cls:"zone-shows",key:"ligazon"},
+  "caleidoscopio.html":{cls:"zone-shows",key:"caleidoscopio"},
+  "formacion.html":{cls:"zone-training",key:"training"},
+  "escuela-haria.html":{cls:"zone-haria",key:"haria"},
+  "escuela-graciosa.html":{cls:"zone-graciosa",key:"graciosa"},
+  "antonio-orellana.html":{cls:"zone-antonio",key:"antonio"},
+  "documentacion.html":{cls:"zone-docs",key:"docs"},
+  "actualidad.html":{cls:"zone-news",key:"news"},
+  "quienes.html":{cls:"zone-about",key:"about"},
+  "contacto.html":{cls:"zone-contact",key:"contact"}
+};
+const ZONE_LABELS={
+ es:{shows:"ESPECTÁCULOS",lpqf:"ESPECTÁCULOS · LA PARTE QUE FALTA",qd:"ESPECTÁCULOS · ¡QUÉ DIABLOS!",ligazon:"ESPECTÁCULOS · LIGAZÓN",caleidoscopio:"ESPECTÁCULOS · CALEIDOSCOPIO",training:"FORMACIÓN",haria:"FORMACIÓN · ESCUELA DE TEATRO DE HARÍA",graciosa:"FORMACIÓN · ESCUELA DE TEATRO LA GRACIOSA",antonio:"FORMACIÓN · ANTONIO ORELLANA",docs:"CENTRO PROFESIONAL",news:"ACTUALIDAD / PRENSA",about:"LA TEGALA",contact:"CONTACTO"},
+ en:{shows:"SHOWS",lpqf:"SHOWS · LA PARTE QUE FALTA",qd:"SHOWS · ¡QUÉ DIABLOS!",ligazon:"SHOWS · LIGAZÓN",caleidoscopio:"SHOWS · CALEIDOSCOPIO",training:"TRAINING",haria:"TRAINING · HARÍA THEATRE SCHOOL",graciosa:"TRAINING · LA GRACIOSA THEATRE SCHOOL",antonio:"TRAINING · ANTONIO ORELLANA",docs:"PROFESSIONAL CENTRE",news:"NEWS / PRESS",about:"LA TEGALA",contact:"CONTACT"},
+ fr:{shows:"SPECTACLES",lpqf:"SPECTACLES · LA PARTE QUE FALTA",qd:"SPECTACLES · ¡QUÉ DIABLOS!",ligazon:"SPECTACLES · LIGAZÓN",caleidoscopio:"SPECTACLES · CALEIDOSCOPIO",training:"FORMATION",haria:"FORMATION · ÉCOLE DE THÉÂTRE DE HARÍA",graciosa:"FORMATION · ÉCOLE DE THÉÂTRE LA GRACIOSA",antonio:"FORMATION · ANTONIO ORELLANA",docs:"CENTRE PROFESSIONNEL",news:"ACTUALITÉ / PRESSE",about:"LA TEGALA",contact:"CONTACT"},
+ de:{shows:"PRODUKTIONEN",lpqf:"PRODUKTIONEN · LA PARTE QUE FALTA",qd:"PRODUKTIONEN · ¡QUÉ DIABLOS!",ligazon:"PRODUKTIONEN · LIGAZÓN",caleidoscopio:"PRODUKTIONEN · CALEIDOSCOPIO",training:"AUSBILDUNG",haria:"AUSBILDUNG · THEATERSCHULE HARÍA",graciosa:"AUSBILDUNG · THEATERSCHULE LA GRACIOSA",antonio:"AUSBILDUNG · ANTONIO ORELLANA",docs:"PROFI-BEREICH",news:"AKTUELLES / PRESSE",about:"LA TEGALA",contact:"KONTAKT"},
+ it:{shows:"SPETTACOLI",lpqf:"SPETTACOLI · LA PARTE QUE FALTA",qd:"SPETTACOLI · ¡QUÉ DIABLOS!",ligazon:"SPETTACOLI · LIGAZÓN",caleidoscopio:"SPETTACOLI · CALEIDOSCOPIO",training:"FORMAZIONE",haria:"FORMAZIONE · SCUOLA DI TEATRO DI HARÍA",graciosa:"FORMAZIONE · SCUOLA DI TEATRO LA GRACIOSA",antonio:"FORMAZIONE · ANTONIO ORELLANA",docs:"CENTRO PROFESSIONALE",news:"ATTUALITÀ / STAMPA",about:"LA TEGALA",contact:"CONTATTI"}
 };
 function applyZone(){
   const here=location.pathname.split("/").pop()||"index.html";
@@ -70,7 +77,7 @@ function applyZone(){
   document.body.classList.add(z.cls);
   const bar=document.createElement("div");
   bar.className="context-bar";
-  bar.innerHTML='<div class="wrap"><span>'+esc(z.label)+'</span></div>';
+  bar.innerHTML='<div class="wrap"><span>'+esc((ZONE_LABELS[lang()]||ZONE_LABELS.es)[z.key])+'</span></div>';
   const header=document.querySelector("header");
   if(header) header.insertAdjacentElement("afterend",bar);
 }

@@ -65,6 +65,14 @@
   },
   {
     "project": "haria",
+    "date": "2021",
+    "title": "Inicio de la Escuela de Teatro de Haría",
+    "summary": "Inicio del proyecto continuado de formación teatral en Haría.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
     "date": "2022",
     "title": "Entremeses de Cervantes",
     "summary": "Primer montaje de la Escuela de Teatro de Haría · entremeses y piezas breves de Miguel de Cervantes y tradición del teatro breve.",
@@ -76,6 +84,22 @@
     "date": "2023",
     "title": "La Principita",
     "summary": "Montaje de la Escuela de Teatro de Haría inspirado en la obra de Antoine de Saint-Exupéry.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2023",
+    "title": "Noche de Finaos",
+    "summary": "Participación de la Escuela de Teatro de Haría en la programación de la Noche de Finaos durante el curso 2023–2024.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2023",
+    "title": "VI Festival Internacional de Teatro de Bolsillo",
+    "summary": "Participación de la Escuela con el monólogo «En el fin del mundo», de Karl Valentin, reconocido con el 3.º premio.",
     "url": "",
     "published": true
   },
@@ -93,6 +117,38 @@
     "title": "Caleidoscopio",
     "summary": "Serie de monólogos sobre la complejidad y la fragilidad de las personas · Sala Teatro La Tegala.",
     "url": "https://www.ayuntamientodeharia.com/haria/el-ayuntamiento-de-haria-presenta-la-obra-de-teatro-caleidoscopio/",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "La Cabeza del Bautista · La rosa de papel",
+    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Muestra de Teatro Escolar · «Un placer en el agua»",
+    "summary": "Participación de alumnado de 3.º de ESO del IES Haría en la Muestra Escolar de Lanzarote.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Noche de Finaos",
+    "summary": "Participación escénica de la Escuela de Teatro de Haría en la Noche de Finaos.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Karl Valentin Bar",
+    "summary": "Montaje de la Escuela de Teatro de Haría a partir del universo cómico de Karl Valentin.",
+    "url": "",
     "published": true
   },
   {
@@ -125,54 +181,6 @@
     "title": "Curso 2026–2027",
     "summary": "Inicio del nuevo curso · grupos de niños +10 y adultos · lunes y miércoles.",
     "url": "https://culturaharia.com/escuela-de-teatro/",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2021",
-    "title": "Inicio de la Escuela de Teatro de Haría",
-    "summary": "Inicio del proyecto continuado de formación teatral en Haría.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2023",
-    "title": "Noche de Finaos",
-    "summary": "Participación de la Escuela de Teatro de Haría en la programación de la Noche de Finaos durante el curso 2023–2024.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2023",
-    "title": "VI Festival Internacional de Teatro de Bolsillo",
-    "summary": "Participación de la Escuela con el monólogo «En el fin del mundo», de Karl Valentin, reconocido con el 3.º premio.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "La Cabeza del Bautista · La rosa de papel",
-    "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "Noche de Finaos",
-    "summary": "Participación escénica de la Escuela de Teatro de Haría en la Noche de Finaos.",
-    "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "2024",
-    "title": "Karl Valentin Bar",
-    "summary": "Montaje de la Escuela de Teatro de Haría a partir del universo cómico de Karl Valentin.",
-    "url": "",
     "published": true
   }
 ]

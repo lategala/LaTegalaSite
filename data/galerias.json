@@ -99,15 +99,6 @@
     "published": true
   },
   {
-    "project": "qd",
-    "title": "¡Qué Diablos! · cartel oficial",
-    "image": "assets/public-qd.jpg",
-    "download": "assets/public-qd.jpg",
-    "credit": "",
-    "order": 1,
-    "published": true
-  },
-  {
     "project": "haria",
     "title": "Escuela de Teatro de Haría · Ligazón · archivo escénico 1",
     "image": "assets/ligazon1.jpg",

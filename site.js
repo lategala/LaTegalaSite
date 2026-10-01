@@ -246,7 +246,7 @@ function initQuoteRotator(){
   box.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();change();}});
 }
 
-async function init(){
+function italicizeWorkTitles(){\n  const root=document.querySelector("main"); if(!root)return;\n  const re=/(El sueño de una noche de verano|Retablo de la avaricia, la lujuria y la muerte|La cabeza del Bautista|La rosa de papel|La Parte Que Falta|¡Qué Diablos!|Mi mayor en mi menor|A solas con la verdad|Karl Valentin Bar|La Principita|De IMPROviso|Caleidoscopio|Ligazón|Paso a paso)/g;\n  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);\n  const nodes=[];\n  while(walker.nextNode()){\n    const n=walker.currentNode;\n    const p=n.parentElement;\n    if(!p||p.closest("script,style,em,i,textarea,code,pre"))continue;\n    re.lastIndex=0;\n    if(re.test(n.nodeValue)){nodes.push(n);}\n  }\n  nodes.forEach(n=>{\n    const text=n.nodeValue;\n    const frag=document.createDocumentFragment();\n    let last=0;\n    re.lastIndex=0;\n    let m;\n    while((m=re.exec(text))!==null){\n      if(m.index>last)frag.appendChild(document.createTextNode(text.slice(last,m.index)));\n      const em=document.createElement("em"); em.textContent=m[0]; frag.appendChild(em);\n      last=m.index+m[0].length;\n    }\n    if(last<text.length)frag.appendChild(document.createTextNode(text.slice(last)));\n    n.replaceWith(frag);\n  });\n}\nasync function init(){
   await loadSettings();
   header();
   footer();
@@ -256,6 +256,7 @@ async function init(){
   initTracking();
   await Promise.all([hydrateNews(),hydrateTimeline(),hydrateVideos(),hydrateGalleries(),hydrateDocuments()]);
   galleries();
+  italicizeWorkTitles();
   initCounter();
 }
 document.addEventListener("DOMContentLoaded",init);

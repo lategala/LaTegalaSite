@@ -78,7 +78,7 @@
   {
     "project": "qd",
     "title": "Dossier artístico",
-    "description": "PDF · dossier artístico completo",
+    "description": "PDF · dossier artístico completo · 7 páginas",
     "file": "downloads/uploads/dossier-que-diablos.pdf",
     "preview": "downloads/uploads/dossier-que-diablos.pdf",
     "kind": "Dossier",
@@ -136,7 +136,7 @@
   {
     "project": "qd",
     "title": "Material gráfico",
-    "description": "Material gráfico y galería del espectáculo",
+    "description": "Galería oficial con fotografías en alta resolución y descarga individual",
     "file": "",
     "preview": "que-diablos.html#galeria",
     "kind": "Fotografías",

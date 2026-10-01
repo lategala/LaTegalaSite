@@ -6,7 +6,8 @@
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
     "order": 1,
-    "published": true
+    "published": true,
+    "poster": "assets/uploads/images/haria-poster-sueno.webp"
   },
   {
     "project": "haria",
@@ -33,7 +34,8 @@
     "url": "https://youtu.be/ECw5X-Jr3CE",
     "source": "YouTube",
     "order": 4,
-    "published": true
+    "published": true,
+    "poster": "assets/uploads/images/haria-poster-asolas.webp"
   },
   {
     "project": "haria",
@@ -49,7 +51,7 @@
     "year": "2024",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
-    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
+    "poster": "assets/uploads/images/haria-poster-caleidoscopio.webp",
     "order": 6,
     "published": true
   },
@@ -59,7 +61,7 @@
     "year": "2024",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
-    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
+    "poster": "assets/uploads/images/haria-poster-caleidoscopio.webp",
     "order": 7,
     "published": true
   },
@@ -69,7 +71,7 @@
     "year": "2024",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
-    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
+    "poster": "assets/uploads/images/haria-poster-caleidoscopio.webp",
     "order": 8,
     "published": true
   },
@@ -79,7 +81,7 @@
     "year": "2024",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
-    "poster": "assets/uploads/images/haria-cartel-ligazon.webp",
+    "poster": "assets/uploads/images/haria-poster-ligazon.webp",
     "order": 9,
     "published": true
   },

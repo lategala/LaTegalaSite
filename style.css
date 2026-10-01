@@ -120,9 +120,9 @@ em{font-family:inherit}
 .portal-backdrop::after,.portal-card::after,.company-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(10,10,11,.72),rgba(91,61,40,.16) 54%,rgba(10,10,11,.84));z-index:0}
 .portal-backdrop>* ,.portal-card>* ,.company-visual>*{position:relative;z-index:2}
 .portal-backdrop:hover::before,.portal-card:hover::before{opacity:.24;transform:scale(1.06)}
-.portal-qd::before{background-image:url("assets/qd-poster.jpg");background-position:center 18%}
+.portal-qd::before{background-image:url("assets/public-qd.jpg");background-position:center 18%}
 .portal-shows::before{background-image:url("assets/poster.jpg");background-position:center 35%}
-.portal-training::before{background-image:url("assets/haria-2026-poster.jpg");background-position:center 34%}
+.portal-training::before{background-image:url("assets/public-sueno.jpg");background-position:center 34%}
 .portal-company::before{background-image:url("assets/logo-tegala-dark.jpg");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
 .portal-card{min-height:250px;border-color:rgba(127,96,72,.34)}
 .portal-card .card-body{min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(to top,rgba(9,9,10,.88),rgba(9,9,10,.02))}
@@ -171,8 +171,8 @@ em{font-family:inherit}
   .company-visual{min-height:300px}
 }
 
-.portal-haria::before{background-image:url("assets/haria-2026-poster.jpg");background-position:center 28%;opacity:.18}
-.portal-graciosa::before{background-image:url("assets/graciosa-poster.jpg");background-position:center 32%;opacity:.18}
+.portal-haria::before{background-image:url("assets/public-sueno.jpg");background-position:center 28%;opacity:.18}
+.portal-graciosa::before{background-image:url("https://i.ytimg.com/vi/0CFUcP9McAk/hqdefault.jpg");background-position:center 32%;opacity:.18}
 .portrait-soft{position:relative}
 .portrait-soft img{opacity:.58;filter:saturate(.72);transition:opacity .55s ease,filter .55s ease,transform .55s ease}
 .card:hover .portrait-soft img{opacity:.72;filter:saturate(.9);transform:scale(1.02)}

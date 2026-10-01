@@ -1,0 +1,32 @@
+name: Inspect public artwork
+on:
+  push:
+    branches: [refine-2026-10-01]
+    paths:
+      - '.github/workflows/inspect-artwork.yml'
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect social and event metadata
+        shell: python
+        run: |
+          import re, urllib.request
+          urls=[
+            "https://www.instagram.com/lategalaescenica/",
+            "https://www.facebook.com/profile.php?id=61594400188184",
+            "https://www.ecoentradas.com/elegirzona/3590",
+            "https://cultura.icdcultural.org/programacion-guiniguada/la-parte-que-falta"
+          ]
+          for url in urls:
+            print("\nURL",url)
+            try:
+              req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+              html=urllib.request.urlopen(req,timeout=25).read().decode("utf-8","ignore")
+              for prop in ["og:image","twitter:image","og:title"]:
+                m=re.search(r'<meta[^>]+(?:property|name)=["\']'+re.escape(prop)+r'["\'][^>]+content=["\']([^"\']+)',html,re.I)
+                if not m:
+                  m=re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']'+re.escape(prop)+r'["\']',html,re.I)
+                print(prop, m.group(1) if m else "-")
+            except Exception as e:
+              print("ERROR",repr(e))

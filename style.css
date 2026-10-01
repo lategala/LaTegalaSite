@@ -120,7 +120,7 @@ em{font-family:inherit}
 .portal-backdrop::after,.portal-card::after,.company-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(10,10,11,.72),rgba(91,61,40,.16) 54%,rgba(10,10,11,.84));z-index:0}
 .portal-backdrop>* ,.portal-card>* ,.company-visual>*{position:relative;z-index:2}
 .portal-backdrop:hover::before,.portal-card:hover::before{opacity:.24;transform:scale(1.06)}
-.portal-qd::before{background-image:url("assets/public-qd.jpg");background-position:center 18%}
+.portal-qd::before{background-image:radial-gradient(circle at 78% 24%,rgba(222,153,45,.42),transparent 24%),radial-gradient(circle at 24% 64%,rgba(24,74,137,.58),transparent 32%),linear-gradient(145deg,#101d38 0%,#172d50 38%,#151419 64%,#4d2918 100%);background-position:center}
 .portal-shows::before{background-image:url("assets/poster.jpg");background-position:center 35%}
 .portal-training::before{background-image:url("assets/public-sueno.jpg");background-position:center 34%}
 .portal-company::before{background-image:url("assets/logo-tegala-dark.jpg");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
@@ -236,3 +236,19 @@ body.zone-shows h1,body.zone-shows h2,body.zone-shows h3{color:var(--zone-headin
 .gallery.archive-general figure:first-child{grid-row:auto}
 @media(max-width:980px){.context-bar{top:78px}.gallery.archive-general{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:650px){.context-bar{top:68px}.show-card-grid{grid-template-columns:1fr}.portal-card,.portal-card .card-body{min-height:280px}.gallery.archive-general{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}}
+
+.qd-visual{position:relative;min-height:560px;border:1px solid rgba(198,161,91,.24);border-radius:22px;overflow:hidden;background:
+radial-gradient(circle at 73% 21%,rgba(235,164,55,.48),transparent 22%),
+radial-gradient(circle at 18% 66%,rgba(25,73,133,.66),transparent 34%),
+radial-gradient(circle at 60% 78%,rgba(102,45,25,.48),transparent 29%),
+linear-gradient(145deg,#0b1730,#182d4e 38%,#17151a 66%,#4c2919);}
+.qd-visual::before{content:"";position:absolute;inset:0;background:
+radial-gradient(ellipse at 50% 105%,rgba(0,0,0,.8) 0 24%,transparent 25%),
+repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transparent 9px 32px);opacity:.7}
+.qd-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,6,9,.76),transparent 58%)}
+.qd-visual .art-meta,.qd-visual .art-word,.qd-visual .qd-visual-sub{position:absolute;z-index:2}
+.qd-visual .art-meta{left:24px;top:24px;color:#ead7a9}
+.qd-visual .art-word{left:24px;right:24px;bottom:76px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.1rem,7vw,6.4rem);line-height:.8;color:#e4ad4a;text-shadow:0 4px 26px rgba(0,0,0,.45)}
+.qd-visual .qd-visual-sub{left:26px;right:26px;bottom:27px;color:#d9d3c8;letter-spacing:.04em}
+.qd-visual.compact{min-height:430px;border-radius:0;border:0}
+.qd-visual.compact .art-word{font-size:clamp(2.7rem,5vw,4.8rem)}

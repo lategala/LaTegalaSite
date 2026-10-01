@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-              - name: Validate site structure and scripts
+      - name: Validate site structure and scripts
         run: python scripts/validate_site.py
       - name: Package final ZIP
         if: success()
         run: |
-          zip -r LaTegalaSite_2026_FINAL.zip . -x ".git/*" ".github/workflows/expand-site.yml" ".github/workflows/inspect-zip.yml" "zip-contents.txt" "__write_test.txt" "LaTegalaSite.zip"
+          zip -r LaTegalaSite_2026_FINAL.zip . -x ".git/*" ".github/workflows/inspect-*.yml" "LaTegalaSite_2026_FINAL.zip"
       - name: Upload final ZIP
         if: success()
         uses: actions/upload-artifact@v4

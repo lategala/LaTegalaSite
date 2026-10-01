@@ -62,5 +62,77 @@
     "title_it": "Teatro Guiniguada · Gran Canaria",
     "summary_it": "VII Rassegna di teatro non professionale.",
     "published": true
+  },
+  {
+    "project": "haria",
+    "date": "12 JUN 2022",
+    "title": "Paso a paso",
+    "summary": "Primer trabajo escénico de la Escuela de Teatro de Haría · piezas breves de Lope de Rueda y Miguel de Cervantes.",
+    "url": "https://www.canariasdiario.com/programacion-para-las-fiestas-de-san-juan-bautista-de-haria-2022",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "26 ABR 2023",
+    "title": "La Principita",
+    "summary": "Montaje de la Escuela de Teatro de Haría inspirado en la obra de Antoine de Saint-Exupéry.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "18 JUN 2023",
+    "title": "Karl Valentin Bar",
+    "summary": "Función de la Escuela de Teatro de Haría · Sala Teatro CSC La Tegala.",
+    "url": "https://www.diariodelanzarote.com/noticia/har%C3%ADa-presenta-una-programaci%C3%B3n-con-casi-medio-centenar-de-actos-para-celebrar-las-fiestas",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Ligazón · Retablo de la avaricia, la lujuria y la muerte",
+    "summary": "Trabajo sobre Valle-Inclán y el esperpento, con preestreno de Ligazón en Escénica 2024 y ampliación posterior del Retablo.",
+    "url": "https://www.ecoentradas.com/elegirsesion/2149",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2 JUN 2024",
+    "title": "Caleidoscopio",
+    "summary": "Serie de monólogos sobre la complejidad y la fragilidad de las personas · Sala Teatro La Tegala.",
+    "url": "https://www.ayuntamientodeharia.com/haria/el-ayuntamiento-de-haria-presenta-la-obra-de-teatro-caleidoscopio/",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "26 ABR 2025",
+    "title": "A solas con la verdad",
+    "summary": "Montaje de la Escuela de Teatro de Haría dentro del Festival Escénica 2025.",
+    "url": "https://www.masscultura.com/festival-escenica-2025-en-haria/",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "19 JUN 2025",
+    "title": "El sueño de una noche de verano",
+    "summary": "Montaje de William Shakespeare dirigido por Antonio Orellana · Sala Teatro La Tegala.",
+    "url": "https://www.ayuntamientodeharia.com/haria/la-escuela-de-teatro-de-haria-representa-el-sueno-de-una-noche-de-verano/",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "7 JUN 2026",
+    "title": "De IMPROviso",
+    "summary": "Muestra de improvisación de la Escuela de Teatro de Haría · Plaza de Haría.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "19 OCT 2026",
+    "title": "Curso 2026–2027",
+    "summary": "Inicio del nuevo curso · grupos de niños +10 y adultos · lunes y miércoles.",
+    "url": "https://culturaharia.com/escuela-de-teatro/",
+    "published": true
   }
 ]

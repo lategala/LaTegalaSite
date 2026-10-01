@@ -170,3 +170,9 @@ em{font-family:inherit}
   .portal-card,.portal-card .card-body{min-height:220px}
   .company-visual{min-height:300px}
 }
+
+.portal-haria::before{background-image:url("assets/haria-2026-poster.jpg");background-position:center 28%;opacity:.18}
+.portal-graciosa::before{background-image:url("assets/graciosa-poster.jpg");background-position:center 32%;opacity:.18}
+.portrait-soft{position:relative}
+.portrait-soft img{opacity:.58;filter:saturate(.72);transition:opacity .55s ease,filter .55s ease,transform .55s ease}
+.card:hover .portrait-soft img{opacity:.72;filter:saturate(.9);transform:scale(1.02)}

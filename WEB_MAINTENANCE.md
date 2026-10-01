@@ -68,9 +68,13 @@ URL pública: https://lategala.github.io/LaTegalaSite/
 
 ## ¡Qué Diablos!
 - Estreno previsto: 30 octubre 2026, 18:00, Teatro Hermanas Manuela y Esperanza Espínola, Teguise.
-- Cartel integrado visualmente.
-- Dossier, ficha artística/técnica y rider parcial enlazados desde el centro profesional.
+- Cartel definitivo: `assets/uploads/images/cartel-que-diablos.jpg`.
+- En portada aparece detrás del bloque del próximo estreno con un 40 % de opacidad (60 % de transparencia).
+- Fotografías oficiales: `que-diablos-01.jpg` a `que-diablos-05.jpg`, con crédito José David García, ampliación y descarga individual.
+- Dossier artístico completo para web: `downloads/uploads/dossier-que-diablos.pdf`.
+- Ficha artística/técnica y rider parcial enlazados desde el centro profesional.
 - La página distingue expresamente el rider parcial del rider completo.
+- El antiguo archivo `assets/public-qd.jpg`, que correspondía a un cartel de Escénica y no a ¡Qué Diablos!, se elimina del sitio.
 
 ## Actualización de contenidos
 El contenido dinámico está separado del diseño:

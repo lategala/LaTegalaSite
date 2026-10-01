@@ -266,3 +266,19 @@ repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transpa
 .qd-official-poster:hover img{opacity:.76}
 .qd-official-poster .poster-download{position:absolute;z-index:4;right:18px;bottom:18px;width:42px;height:42px;display:grid;place-items:center;background:rgba(8,9,10,.74);backdrop-filter:blur(8px);font-size:1.25rem}
 .material-intro{max-width:780px;margin-bottom:24px}
+
+/* Published final Qué Diablos artwork */
+.hero-visual.portal-qd::before{
+  background-image:url("assets/uploads/images/cartel-que-diablos.jpg")!important;
+  background-position:center 34%!important;
+  background-size:cover!important;
+  opacity:.40!important;
+  filter:saturate(.94) contrast(1.02)!important;
+}
+.hero-visual.portal-qd::after{
+  background:linear-gradient(to top,rgba(7,7,8,.86) 5%,rgba(7,7,8,.16) 57%,rgba(7,7,8,.24))!important;
+}
+.qd-official-poster img{opacity:.82}
+.qd-official-poster:hover img{opacity:.92}
+.qd-official-poster .art-meta{background:rgba(6,7,8,.70);padding:7px 10px;border-radius:999px;backdrop-filter:blur(8px);color:#efd59a}
+.gallery[data-gallery="qd"] figure img{object-position:center}

@@ -187,5 +187,70 @@
     "credit": "",
     "order": 10,
     "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 1",
+    "image": "assets/uploads/images/que-diablos-01.jpg",
+    "download": "assets/uploads/images/que-diablos-01.jpg",
+    "credit": "José David García",
+    "order": 1,
+    "published": true,
+    "title_en": "¡Qué Diablos! · official photograph 1",
+    "title_fr": "¡Qué Diablos! · photographie officielle 1",
+    "title_de": "¡Qué Diablos! · offizielles Foto 1",
+    "title_it": "¡Qué Diablos! · fotografia ufficiale 1"
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 2",
+    "image": "assets/uploads/images/que-diablos-02.jpg",
+    "download": "assets/uploads/images/que-diablos-02.jpg",
+    "credit": "José David García",
+    "order": 2,
+    "published": true,
+    "title_en": "¡Qué Diablos! · official photograph 2",
+    "title_fr": "¡Qué Diablos! · photographie officielle 2",
+    "title_de": "¡Qué Diablos! · offizielles Foto 2",
+    "title_it": "¡Qué Diablos! · fotografia ufficiale 2"
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 3",
+    "image": "assets/uploads/images/que-diablos-03.jpg",
+    "download": "assets/uploads/images/que-diablos-03.jpg",
+    "credit": "José David García",
+    "order": 3,
+    "published": true,
+    "title_en": "¡Qué Diablos! · official photograph 3",
+    "title_fr": "¡Qué Diablos! · photographie officielle 3",
+    "title_de": "¡Qué Diablos! · offizielles Foto 3",
+    "title_it": "¡Qué Diablos! · fotografia ufficiale 3"
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 4",
+    "image": "assets/uploads/images/que-diablos-04.jpg",
+    "download": "assets/uploads/images/que-diablos-04.jpg",
+    "credit": "José David García",
+    "order": 4,
+    "published": true,
+    "title_en": "¡Qué Diablos! · official photograph 4",
+    "title_fr": "¡Qué Diablos! · photographie officielle 4",
+    "title_de": "¡Qué Diablos! · offizielles Foto 4",
+    "title_it": "¡Qué Diablos! · fotografia ufficiale 4"
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · fotografía oficial 5",
+    "image": "assets/uploads/images/que-diablos-05.jpg",
+    "download": "assets/uploads/images/que-diablos-05.jpg",
+    "credit": "José David García",
+    "order": 5,
+    "published": true,
+    "title_en": "¡Qué Diablos! · official photograph 5",
+    "title_fr": "¡Qué Diablos! · photographie officielle 5",
+    "title_de": "¡Qué Diablos! · offizielles Foto 5",
+    "title_it": "¡Qué Diablos! · fotografia ufficiale 5"
   }
 ]

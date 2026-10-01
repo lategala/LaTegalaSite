@@ -1,45 +1,31 @@
 [
   {
     "project": "haria",
-    "title": "El sueño de una noche de verano",
+    "title": "El Sueño de una Noche de Verano",
     "year": "2025",
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
     "poster": "assets/public-sueno.jpg",
     "order": 1,
-    "published": true,
-    "title_en": "El sueño de una noche de verano",
-    "title_fr": "El sueño de una noche de verano",
-    "title_de": "El sueño de una noche de verano",
-    "title_it": "El sueño de una noche de verano"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "La rosa de papel",
+    "title": "La Rosa de Papel",
     "year": "2024",
     "url": "https://youtu.be/zyVlAMK4GdU",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/zyVlAMK4GdU/hqdefault.jpg",
     "order": 2,
-    "published": true,
-    "title_en": "La rosa de papel",
-    "title_fr": "La rosa de papel",
-    "title_de": "La rosa de papel",
-    "title_it": "La rosa de papel"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "La cabeza del Bautista",
+    "title": "La Cabeza del Bautista",
     "year": "2024",
     "url": "https://youtu.be/h8k2dEwKL68",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/h8k2dEwKL68/hqdefault.jpg",
     "order": 3,
-    "published": true,
-    "title_en": "La cabeza del Bautista",
-    "title_fr": "La cabeza del Bautista",
-    "title_de": "La cabeza del Bautista",
-    "title_it": "La cabeza del Bautista"
+    "published": true
   },
   {
     "project": "haria",
@@ -47,68 +33,46 @@
     "year": "2025",
     "url": "https://youtu.be/ECw5X-Jr3CE",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/ECw5X-Jr3CE/hqdefault.jpg",
     "order": 4,
-    "published": true,
-    "title_en": "A solas con la verdad",
-    "title_fr": "A solas con la verdad",
-    "title_de": "A solas con la verdad",
-    "title_it": "A solas con la verdad"
+    "published": true
   },
   {
     "project": "haria",
     "title": "El pastor bromista",
     "url": "https://youtu.be/Q2ej73rR8Ks",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/Q2ej73rR8Ks/hqdefault.jpg",
     "order": 5,
-    "published": true,
-    "title_en": "El pastor bromista",
-    "title_fr": "El pastor bromista",
-    "title_de": "El pastor bromista",
-    "title_it": "El pastor bromista"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · Parte III",
+    "title": "Caleidoscopio · parte III",
     "year": "2024",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
     "poster": "assets/public-caleidoscopio.jpg",
     "order": 6,
-    "published": true,
-    "title_en": "Caleidoscopio · Parte III",
-    "title_fr": "Caleidoscopio · Parte III",
-    "title_de": "Caleidoscopio · Parte III",
-    "title_it": "Caleidoscopio · Parte III"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · Parte II",
+    "title": "Caleidoscopio · parte II",
     "year": "2024",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
     "poster": "assets/public-caleidoscopio.jpg",
     "order": 7,
-    "published": true,
-    "title_en": "Caleidoscopio · Parte II",
-    "title_fr": "Caleidoscopio · Parte II",
-    "title_de": "Caleidoscopio · Parte II",
-    "title_it": "Caleidoscopio · Parte II"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · Parte I",
+    "title": "Caleidoscopio · parte I",
     "year": "2024",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
     "poster": "assets/public-caleidoscopio.jpg",
     "order": 8,
-    "published": true,
-    "title_en": "Caleidoscopio · Parte I",
-    "title_fr": "Caleidoscopio · Parte I",
-    "title_de": "Caleidoscopio · Parte I",
-    "title_it": "Caleidoscopio · Parte I"
+    "published": true
   },
   {
     "project": "haria",
@@ -116,39 +80,24 @@
     "year": "2024",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
-    "poster": "assets/ligazon_poster.jpg",
+    "poster": "assets/uploads/images/ligazon-cartel.jpg",
     "order": 9,
-    "published": true,
-    "title_en": "Ligazón",
-    "title_fr": "Ligazón",
-    "title_de": "Ligazón",
-    "title_it": "Ligazón"
+    "published": true
   },
   {
     "project": "haria",
-    "title": "CantaHaría · Promo",
-    "year": "2022",
+    "title": "Promo CantaHaria",
     "url": "https://youtu.be/HiFLp48VSJI",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/HiFLp48VSJI/hqdefault.jpg",
     "order": 10,
-    "published": true,
-    "title_en": "CantaHaría · Promo",
-    "title_fr": "CantaHaría · Promo",
-    "title_de": "CantaHaría · Promo",
-    "title_it": "CantaHaría · Promo"
+    "published": true
   },
   {
     "project": "haria",
     "title": "ÍCARO · resumen",
     "url": "https://youtu.be/7IBluyxcAhk",
     "source": "YouTube",
-    "poster": "https://i.ytimg.com/vi/7IBluyxcAhk/hqdefault.jpg",
     "order": 11,
-    "published": true,
-    "title_en": "ÍCARO · resumen",
-    "title_fr": "ÍCARO · resumen",
-    "title_de": "ÍCARO · resumen",
-    "title_it": "ÍCARO · resumen"
+    "published": true
   }
 ]

@@ -187,5 +187,14 @@
     "credit": "",
     "order": 10,
     "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · cartel oficial",
+    "image": "assets/public-qd.jpg",
+    "download": "assets/public-qd.jpg",
+    "credit": "",
+    "order": 1,
+    "published": true
   }
 ]

@@ -252,3 +252,17 @@ repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transpa
 .qd-visual .qd-visual-sub{left:26px;right:26px;bottom:27px;color:#d9d3c8;letter-spacing:.04em}
 .qd-visual.compact{min-height:430px;border-radius:0;border:0}
 .qd-visual.compact .art-word{font-size:clamp(2.7rem,5vw,4.8rem)}
+
+/* Final Qué Diablos visual integration */
+.hero-visual.portal-qd::before{opacity:.40;filter:saturate(.88) contrast(1.03);background-position:center 28%}
+.hero-visual.portal-qd::after{background:linear-gradient(to top,rgba(7,7,8,.86) 8%,rgba(7,7,8,.20) 54%,rgba(7,7,8,.30))}
+.premiere-badge{display:inline-flex;align-items:center;width:max-content;padding:7px 11px;border:1px solid rgba(198,161,91,.52);border-radius:999px;background:rgba(12,12,13,.55);backdrop-filter:blur(8px);color:#efd69f!important}
+.qd-poster-card{position:relative;overflow:hidden;background:#0c0d0f}
+.qd-poster-card img{opacity:.72;filter:saturate(.88);transition:opacity .45s ease,transform .55s ease}
+.card:hover .qd-poster-card img{opacity:.88;transform:scale(1.015)}
+.qd-poster-card .art-meta{position:absolute;z-index:2;left:16px;bottom:16px;top:auto;padding:6px 9px;border-radius:999px;background:rgba(5,6,8,.72);backdrop-filter:blur(7px);color:#ecd39c}
+.qd-official-poster{box-shadow:0 22px 70px rgba(0,0,0,.28)}
+.qd-official-poster img{opacity:.62}
+.qd-official-poster:hover img{opacity:.76}
+.qd-official-poster .poster-download{position:absolute;z-index:4;right:18px;bottom:18px;width:42px;height:42px;display:grid;place-items:center;background:rgba(8,9,10,.74);backdrop-filter:blur(8px);font-size:1.25rem}
+.material-intro{max-width:780px;margin-bottom:24px}

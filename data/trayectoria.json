@@ -65,26 +65,18 @@
   },
   {
     "project": "haria",
-    "date": "12 JUN 2022",
-    "title": "Paso a paso",
-    "summary": "Primer trabajo escénico de la Escuela de Teatro de Haría · piezas breves de Lope de Rueda y Miguel de Cervantes.",
+    "date": "2022",
+    "title": "Entremeses de Cervantes",
+    "summary": "Primer montaje de la Escuela de Teatro de Haría · entremeses y piezas breves de Miguel de Cervantes y tradición del teatro breve.",
     "url": "https://www.canariasdiario.com/programacion-para-las-fiestas-de-san-juan-bautista-de-haria-2022",
     "published": true
   },
   {
     "project": "haria",
-    "date": "26 ABR 2023",
+    "date": "2023",
     "title": "La Principita",
     "summary": "Montaje de la Escuela de Teatro de Haría inspirado en la obra de Antoine de Saint-Exupéry.",
     "url": "",
-    "published": true
-  },
-  {
-    "project": "haria",
-    "date": "18 JUN 2023",
-    "title": "Karl Valentin Bar",
-    "summary": "Función de la Escuela de Teatro de Haría · Sala Teatro CSC La Tegala.",
-    "url": "https://www.diariodelanzarote.com/noticia/har%C3%ADa-presenta-una-programaci%C3%B3n-con-casi-medio-centenar-de-actos-para-celebrar-las-fiestas",
     "published": true
   },
   {
@@ -164,6 +156,22 @@
     "date": "2024",
     "title": "La Cabeza del Bautista · La rosa de papel",
     "summary": "Muestra pública de dos piezas de Valle-Inclán dentro del trabajo escénico del curso 2023–2024.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Noche de Finaos",
+    "summary": "Participación escénica de la Escuela de Teatro de Haría en la Noche de Finaos.",
+    "url": "",
+    "published": true
+  },
+  {
+    "project": "haria",
+    "date": "2024",
+    "title": "Karl Valentin Bar",
+    "summary": "Montaje de la Escuela de Teatro de Haría a partir del universo cómico de Karl Valentin.",
     "url": "",
     "published": true
   }

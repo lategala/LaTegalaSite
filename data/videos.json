@@ -1,17 +1,16 @@
 [
   {
     "project": "haria",
-    "title": "El Sueño de una Noche de Verano",
+    "title": "El Sueño de una Noche de Verano (W. Shakespeare)",
     "year": "2025",
     "url": "https://youtu.be/zZC0sLs8-Vs",
     "source": "YouTube",
-    "poster": "assets/public-sueno.jpg",
     "order": 1,
     "published": true
   },
   {
     "project": "haria",
-    "title": "La Rosa de Papel",
+    "title": "La Rosa de Papel (Valle-Inclán)",
     "year": "2024",
     "url": "https://youtu.be/zyVlAMK4GdU",
     "source": "YouTube",
@@ -20,7 +19,7 @@
   },
   {
     "project": "haria",
-    "title": "La Cabeza del Bautista",
+    "title": "La Cabeza del Bautista (Valle-Inclán)",
     "year": "2024",
     "url": "https://youtu.be/h8k2dEwKL68",
     "source": "YouTube",
@@ -38,7 +37,7 @@
   },
   {
     "project": "haria",
-    "title": "El pastor bromista",
+    "title": "El Pastor Bromista · Escuela de Teatro Aspercán Lanzarote + Escuela de Teatro de Haría",
     "url": "https://youtu.be/Q2ej73rR8Ks",
     "source": "YouTube",
     "order": 5,
@@ -46,58 +45,60 @@
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte III",
+    "title": "Caleidoscopio (III)",
     "year": "2024",
     "url": "https://youtu.be/_ha1d7tUBZk",
     "source": "YouTube",
-    "poster": "assets/public-caleidoscopio.jpg",
+    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
     "order": 6,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte II",
+    "title": "Caleidoscopio (II)",
     "year": "2024",
     "url": "https://youtu.be/wZGdh2hZlo4",
     "source": "YouTube",
-    "poster": "assets/public-caleidoscopio.jpg",
+    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
     "order": 7,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Caleidoscopio · parte I",
+    "title": "Caleidoscopio",
     "year": "2024",
     "url": "https://youtu.be/D0KYKLmRxto",
     "source": "YouTube",
-    "poster": "assets/public-caleidoscopio.jpg",
+    "poster": "assets/uploads/images/haria-cartel-caleidoscopio.webp",
     "order": 8,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Ligazón",
+    "title": "Ligazón (Valle-Inclán)",
     "year": "2024",
     "url": "https://youtu.be/THIadNzTiAk",
     "source": "YouTube",
-    "poster": "assets/uploads/images/ligazon-cartel.jpg",
+    "poster": "assets/uploads/images/haria-cartel-ligazon.webp",
     "order": 9,
     "published": true
   },
   {
     "project": "haria",
-    "title": "Promo CantaHaria",
+    "title": "Promo documental CantaHaría",
     "url": "https://youtu.be/HiFLp48VSJI",
     "source": "YouTube",
     "order": 10,
-    "published": true
+    "published": true,
+    "year": "2022"
   },
   {
     "project": "haria",
-    "title": "ÍCARO · resumen",
+    "title": "Promo Ícaro (Antonio Orellana)",
     "url": "https://youtu.be/7IBluyxcAhk",
     "source": "YouTube",
     "order": 11,
-    "published": true
+    "published": true,
+    "year": "2020"
   }
 ]

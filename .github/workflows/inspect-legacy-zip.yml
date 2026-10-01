@@ -1,4 +1,5 @@
 name: Inspect legacy assets zip
+# trigger
 on:
   push:
     branches: [refine-2026-10-01]

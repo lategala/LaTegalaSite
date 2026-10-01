@@ -142,7 +142,7 @@
     "kind": "Fotografías",
     "status": "available",
     "status_label": "",
-    "order": 4,
+    "order": 5,
     "published": true,
     "title_en": "Graphic material",
     "title_fr": "Matériel graphique",
@@ -162,7 +162,7 @@
     "kind": "Vídeo",
     "status": "pending",
     "status_label": "Próximamente",
-    "order": 5,
+    "order": 6,
     "published": true,
     "title_en": "Trailer",
     "title_fr": "Bande-annonce",
@@ -172,5 +172,24 @@
     "description_fr": "Ressource pas encore disponible",
     "description_de": "Ressource noch nicht verfügbar",
     "description_it": "Risorsa non ancora disponibile"
+  },
+  {
+    "project": "qd",
+    "title": "Cartel oficial",
+    "description": "JPG · cartel de estreno · 30 de octubre de 2026",
+    "file": "assets/uploads/images/que-diablos/cartel-que-diablos.jpg",
+    "preview": "assets/uploads/images/que-diablos/cartel-que-diablos.jpg",
+    "kind": "Cartel",
+    "status": "available",
+    "order": 4,
+    "published": true,
+    "title_en": "Official poster",
+    "title_fr": "Affiche officielle",
+    "title_de": "Offizielles Plakat",
+    "title_it": "Locandina ufficiale",
+    "description_en": "JPG · premiere poster · 30 October 2026",
+    "description_fr": "JPG · affiche de création · 30 octobre 2026",
+    "description_de": "JPG · Premierenplakat · 30. Oktober 2026",
+    "description_it": "JPG · locandina del debutto · 30 ottobre 2026"
   }
 ]

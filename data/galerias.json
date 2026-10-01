@@ -187,18 +187,5 @@
     "credit": "",
     "order": 10,
     "published": true
-  },
-  {
-    "project": "qd",
-    "title": "¡Qué Diablos! · cartel oficial",
-    "image": "assets/public-qd.jpg",
-    "download": "assets/public-qd.jpg",
-    "credit": "La Tegala Escénica",
-    "order": 1,
-    "published": true,
-    "title_en": "¡Qué Diablos! · official poster",
-    "title_fr": "¡Qué Diablos! · affiche officielle",
-    "title_de": "¡Qué Diablos! · offizielles Plakat",
-    "title_it": "¡Qué Diablos! · locandina ufficiale"
   }
 ]

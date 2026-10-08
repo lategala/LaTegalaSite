@@ -28,7 +28,7 @@
   },
   {
     "project": "lpqf",
-    "title": "La Parte Que Falta · fotografía oficial 4",
+    "title": "La Parte Que Falta · cuatro actores y figuras de neón",
     "image": "gal1.jpg",
     "download": "gal1.jpg",
     "credit": "",
@@ -231,6 +231,69 @@
     "download": "assets/uploads/images/que-diablos/foto-05.jpg",
     "credit": "José David García",
     "order": 5,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "La Parte Que Falta · figuras de neón",
+    "image": "assets/uploads/images/la-parte-que-falta/neones-figuras-01.jpg",
+    "download": "assets/uploads/images/la-parte-que-falta/neones-figuras-01.jpg",
+    "credit": "",
+    "order": 5,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "La Parte Que Falta · figuras geométricas de neón",
+    "image": "assets/uploads/images/la-parte-que-falta/neones-figuras-02.jpg",
+    "download": "assets/uploads/images/la-parte-que-falta/neones-figuras-02.jpg",
+    "credit": "",
+    "order": 6,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "La Parte Que Falta · figura y guitarra de neón",
+    "image": "assets/uploads/images/la-parte-que-falta/neones-figuras-03.jpg",
+    "download": "assets/uploads/images/la-parte-que-falta/neones-figuras-03.jpg",
+    "credit": "",
+    "order": 7,
+    "published": true
+  },
+  {
+    "project": "lpqf",
+    "title": "La Parte Que Falta · escena de neón ¡PLAF!",
+    "image": "assets/uploads/images/la-parte-que-falta/neones-figuras-04.jpg",
+    "download": "assets/uploads/images/la-parte-que-falta/neones-figuras-04.jpg",
+    "credit": "",
+    "order": 8,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · manipuladora de marionetas",
+    "image": "assets/uploads/images/que-diablos/manipuladora.png",
+    "download": "assets/uploads/images/que-diablos/manipuladora.png",
+    "credit": "",
+    "order": 6,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · diablete de Teguise",
+    "image": "assets/uploads/images/que-diablos/diablete-teguise.jpg",
+    "download": "assets/uploads/images/que-diablos/diablete-teguise.jpg",
+    "credit": "",
+    "order": 7,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · marioneta de cabra",
+    "image": "assets/uploads/images/que-diablos/cabra.jpg",
+    "download": "assets/uploads/images/que-diablos/cabra.jpg",
+    "credit": "",
+    "order": 8,
     "published": true
   }
 ]

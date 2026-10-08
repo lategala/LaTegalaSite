@@ -1,6 +1,6 @@
 # La Tegala Escénica · continuidad de la web
 
-Actualizado: 1 de octubre de 2026.
+Actualizado: 8 de octubre de 2026.
 
 ## Objetivo
 Web oficial de la Asociación Cultural La Tegala Escénica, Teguise (Lanzarote).
@@ -71,7 +71,7 @@ URL pública: https://lategala.github.io/LaTegalaSite/
 - Estreno previsto: 30 octubre 2026, 18:00, Teatro Hermanas Manuela y Esperanza Espínola, Teguise.
 - Cartel oficial publicado: `assets/uploads/images/que-diablos/cartel-que-diablos.jpg`.
 - Fotografías oficiales publicadas: `foto-01.jpg` a `foto-05.jpg`, en `assets/uploads/images/que-diablos/`, con ampliación y descarga individual desde la galería.
-- Dossier completo para web publicado: `downloads/uploads/dossier-que-diablos.pdf` (7 páginas).
+- Dossier completo para web publicado: `downloads/uploads/dossier-que-diablos.pdf` (sustituido por el dosier adjunto el 8/10/2026).
 - El cartel aparece en portada como fondo del bloque «Próximo estreno» con aproximadamente 60 % de opacidad, en el catálogo y en la ficha del espectáculo.
 - El antiguo recurso incorrecto `assets/public-qd.jpg` fue eliminado y no debe recuperarse.
 - Ficha artística/técnica y rider parcial enlazados desde el centro profesional.
@@ -90,3 +90,7 @@ El archivo .pages.yml define un gestor de contenidos compatible con Pages CMS pa
 
 ## Regla para futuras conversaciones
 No reconstruir la web desde cero. Leer primero este archivo y el estado actual de la rama main del repositorio lategala/LaTegalaSite. Mantener la estética, arquitectura, descargas y sistema de contenidos. Antes de publicar: crear rama, validar, revisar enlaces/JSON/JavaScript y fusionar a main solo tras validación correcta.
+
+## Galerías · actualización 8/10/2026
+- La Parte Que Falta: `gal1.jpg` sustituida por la fotografía de cuatro actores; añadidas cuatro imágenes de neones y figuras en `assets/uploads/images/la-parte-que-falta/`.
+- ¡Qué Diablos!: añadidas imágenes de manipuladora, cabra y diablete de Teguise. Se conservan los originales adjuntos, la ampliación y la descarga individual.

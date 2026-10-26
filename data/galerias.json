@@ -295,5 +295,41 @@
     "credit": "",
     "order": 8,
     "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · cartel de Fefa y la pardela",
+    "image": "assets/uploads/images/que-diablos/cartel-fefa-pardela.png",
+    "download": "assets/uploads/images/que-diablos/cartel-fefa-pardela.png",
+    "credit": "",
+    "order": 9,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · cartel de Fefa y Aday",
+    "image": "assets/uploads/images/que-diablos/cartel-fefa-aday.png",
+    "download": "assets/uploads/images/que-diablos/cartel-fefa-aday.png",
+    "credit": "",
+    "order": 10,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · cartel de Fefa con QR",
+    "image": "assets/uploads/images/que-diablos/cartel-fefa-qr.png",
+    "download": "assets/uploads/images/que-diablos/cartel-fefa-qr.png",
+    "credit": "",
+    "order": 11,
+    "published": true
+  },
+  {
+    "project": "qd",
+    "title": "¡Qué Diablos! · retratos del elenco",
+    "image": "assets/uploads/images/que-diablos/elenco-retratos.png",
+    "download": "assets/uploads/images/que-diablos/elenco-retratos.png",
+    "credit": "",
+    "order": 12,
+    "published": true
   }
 ]

@@ -1,6 +1,6 @@
 # La Tegala Escénica · continuidad de la web
 
-Actualizado: 8 de octubre de 2026.
+Actualizado: 1 de noviembre de 2026.
 
 ## Objetivo
 Web oficial de la Asociación Cultural La Tegala Escénica, Teguise (Lanzarote).
@@ -74,8 +74,8 @@ URL pública: https://lategala.github.io/LaTegalaSite/
 - Dossier completo para web publicado: `downloads/uploads/dossier-que-diablos.pdf` (sustituido por el dosier adjunto el 8/10/2026).
 - El cartel aparece en portada como fondo del bloque «Próximo estreno» con aproximadamente 60 % de opacidad, en el catálogo y en la ficha del espectáculo.
 - El antiguo recurso incorrecto `assets/public-qd.jpg` fue eliminado y no debe recuperarse.
-- Ficha artística/técnica y rider parcial enlazados desde el centro profesional.
-- La página distingue expresamente el rider parcial del rider completo.
+- Ficha artística/técnica y rider técnico enlazados desde el centro profesional.
+- Rider técnico oficial adjunto (4 páginas, luces, sonido y planos): `downloads/uploads/rider-tecnico-que-diablos.pdf`. Publicado íntegro el 1/11/2026. La antigua página de rider parcial redirige a este PDF. No sustituirlo por documentos generados.
 
 ## Actualización de contenidos
 El contenido dinámico está separado del diseño:

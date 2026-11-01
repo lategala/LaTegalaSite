@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-28",
+    "source": "Biosfera TV · El Magazine",
+    "title": "Antonio Orellana · ¡Qué Diablos!",
+    "summary": "Entrevista a Antonio Orellana sobre la obra ¡Qué Diablos! en El Magazine de Biosfera TV.",
+    "url": "https://www.youtube.com/watch?v=gDQwXKXVciI",
+    "featured": true,
+    "type": "Entrevista",
+    "project": "¡Qué Diablos!",
+    "title_en": "Antonio Orellana · ¡Qué Diablos!",
+    "summary_en": "Interview with Antonio Orellana about ¡Qué Diablos! on Biosfera TV’s El Magazine.",
+    "title_fr": "Antonio Orellana · ¡Qué Diablos!",
+    "summary_fr": "Entretien avec Antonio Orellana sur ¡Qué Diablos! dans El Magazine de Biosfera TV.",
+    "title_de": "Antonio Orellana · ¡Qué Diablos!",
+    "summary_de": "Interview mit Antonio Orellana über ¡Qué Diablos! in El Magazine von Biosfera TV.",
+    "title_it": "Antonio Orellana · ¡Qué Diablos!",
+    "summary_it": "Intervista ad Antonio Orellana su ¡Qué Diablos! a El Magazine di Biosfera TV.",
+    "featured_order": 0,
+    "published": true
+  },
+  {
     "date": "2026-09-17",
     "source": "Biosfera TV",
     "title": "Escuela de Teatro La Graciosa",

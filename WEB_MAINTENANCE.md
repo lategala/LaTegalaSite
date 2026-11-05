@@ -103,3 +103,7 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 
 ## Cartel en Espectáculos · 5/11/2026
 - ¡Qué Diablos!: cartel adjunto con Aday y la pardela en `assets/uploads/images/que-diablos/cartel-catalogo-20261105.jpg`, completo, opacidad 100 %, sin filtros ni zoom al pasar el cursor.
+
+## Archivo visual de La Graciosa · 5/11/2026
+- Incorporadas las 20 fotografías adjuntas de clases, trabajo corporal, máscaras y clown en `assets/uploads/images/escuela-graciosa/`.
+- Registradas en `data/galerias.json` bajo `project: graciosa`, con ampliación y descarga individual de los originales íntegros.

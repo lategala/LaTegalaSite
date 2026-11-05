@@ -286,3 +286,7 @@ repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transpa
 .haria-poster>img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px;cursor:zoom-in}
 .haria-poster figcaption{margin-top:14px;text-align:right}
 @media(max-width:980px){.home-haria-promo{width:100%;max-width:520px;justify-self:center}}
+
+/* Cartel del catálogo: imagen íntegra y colores originales. */
+.shows-grid .card .qd-catalog-poster{aspect-ratio:1414/2000;min-height:0}
+.shows-grid .card .qd-catalog-poster img,.shows-grid .card:hover .qd-catalog-poster img{object-fit:contain;opacity:1;filter:none;transform:none}

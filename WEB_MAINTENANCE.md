@@ -100,3 +100,6 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 - Escuela de Haría: cartel de las dos alumnas, completo, ampliable y descargable.
 - Originales conservados en `assets/uploads/images/escuela-haria/`; QR y logotipos sin recorte.
 - Fecha de inicio actualizada en los cinco idiomas.
+
+## Cartel en Espectáculos · 5/11/2026
+- ¡Qué Diablos!: cartel adjunto con Aday y la pardela en `assets/uploads/images/que-diablos/cartel-catalogo-20261105.jpg`, completo, opacidad 100 %, sin filtros ni zoom al pasar el cursor.

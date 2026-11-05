@@ -331,5 +331,185 @@
     "credit": "",
     "order": 12,
     "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Juego y trabajo en grupo",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-01.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-01.jpg",
+    "credit": "",
+    "order": 1,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Ejercicio de clown con sillas",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-02.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-02.jpg",
+    "credit": "",
+    "order": 2,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Grupo en el taller de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-03.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-03.jpg",
+    "credit": "",
+    "order": 3,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Personajes y vestuario de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-04.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-04.jpg",
+    "credit": "",
+    "order": 4,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Exploración del personaje de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-05.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-05.jpg",
+    "credit": "",
+    "order": 5,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Encuentro de personajes de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-06.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-06.jpg",
+    "credit": "",
+    "order": 6,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Vestuario y caracterización",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-07.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-07.jpg",
+    "credit": "",
+    "order": 7,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Dinámica colectiva de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-08.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-08.jpg",
+    "credit": "",
+    "order": 8,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Retrato del grupo de clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-09.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-09.jpg",
+    "credit": "",
+    "order": 9,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Escucha y trabajo en círculo",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-10.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-10.jpg",
+    "credit": "",
+    "order": 10,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Máscaras y expresión corporal",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-11.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-11.jpg",
+    "credit": "",
+    "order": 11,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Entrenamiento corporal en grupo",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-12.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-12.jpg",
+    "credit": "",
+    "order": 12,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Juego con objetos y clown",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-13.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-13.jpg",
+    "credit": "",
+    "order": 13,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Movimiento y expresión corporal",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-14.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-14.jpg",
+    "credit": "",
+    "order": 14,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Dinámica de escucha colectiva",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-15.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-15.jpg",
+    "credit": "",
+    "order": 15,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Expresión y creación en grupo",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-16.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-16.jpg",
+    "credit": "",
+    "order": 16,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Trabajo de interpretación",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-17.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-17.jpg",
+    "credit": "",
+    "order": 17,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Juego escénico en círculo",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-18.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-18.jpg",
+    "credit": "",
+    "order": 18,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Improvisación y movimiento",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-19.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-19.jpg",
+    "credit": "",
+    "order": 19,
+    "published": true
+  },
+  {
+    "project": "graciosa",
+    "title": "Escuela de Teatro La Graciosa · Creación colectiva",
+    "image": "assets/uploads/images/escuela-graciosa/archivo-visual-20.jpg",
+    "download": "assets/uploads/images/escuela-graciosa/archivo-visual-20.jpg",
+    "credit": "",
+    "order": 20,
+    "published": true
   }
 ]

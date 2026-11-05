@@ -122,7 +122,7 @@ em{font-family:inherit}
 .portal-backdrop:hover::before,.portal-card:hover::before{opacity:.24;transform:scale(1.06)}
 .portal-qd::before{background-image:url("assets/uploads/images/que-diablos/cartel-que-diablos.jpg");background-position:center 34%;opacity:.40;filter:saturate(.90) contrast(1.03)}
 .portal-shows::before{background-image:url("assets/poster.jpg");background-position:center 35%}
-.portal-training::before{background-image:url("assets/public-sueno.jpg");background-position:center 34%}
+.portal-training::before{background-image:url("assets/uploads/images/escuela-haria/cartel-haria-grupo-2026.jpg");background-position:center 34%}
 .portal-company::before{background-image:url("assets/logo-tegala-dark.jpg");background-size:80%;background-repeat:no-repeat;opacity:.10;filter:none}
 .portal-card{min-height:250px;border-color:rgba(127,96,72,.34)}
 .portal-card .card-body{min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(to top,rgba(9,9,10,.88),rgba(9,9,10,.02))}
@@ -171,7 +171,7 @@ em{font-family:inherit}
   .company-visual{min-height:300px}
 }
 
-.portal-haria::before{background-image:url("assets/public-sueno.jpg");background-position:center 28%;opacity:.18}
+.portal-haria::before{background-image:url("assets/uploads/images/escuela-haria/cartel-haria-grupo-2026.jpg");background-position:center 28%;opacity:.18}
 .portal-graciosa::before{background-image:url("https://i.ytimg.com/vi/0CFUcP9McAk/hqdefault.jpg");background-position:center 32%;opacity:.18}
 .portrait-soft{position:relative}
 .portrait-soft img{opacity:.58;filter:saturate(.72);transition:opacity .55s ease,filter .55s ease,transform .55s ease}

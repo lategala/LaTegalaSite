@@ -1,6 +1,6 @@
 # La Tegala Escénica · continuidad de la web
 
-Actualizado: 1 de noviembre de 2026.
+Actualizado: 5 de noviembre de 2026.
 
 ## Objetivo
 Web oficial de la Asociación Cultural La Tegala Escénica, Teguise (Lanzarote).
@@ -52,7 +52,7 @@ URL pública: https://lategala.github.io/LaTegalaSite/
 - El posicionamiento orgánico depende del rastreo e indexación de los buscadores y no puede garantizarse por una fecha concreta.
 
 ## Escuela de Teatro de Haría
-- Inicio curso 2026–2027: 19 de octubre de 2026.
+- Inicio curso 2026–2027: 16 de noviembre de 2026. Sede: CSC El Marinero (Punta Mujeres). Lunes y miércoles, infantil +10 a las 16:30 h y adultos a las 18:00 h.
 - Trabajo: interpretación, improvisación, voz, cuerpo y dramaturgia.
 - Archivo visual simplificado: “Clases y entrenamiento” / “Muestras y montajes”.
 - Videoteca identificada cuando existe información segura:
@@ -94,3 +94,9 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 ## Galerías · actualización 8/10/2026
 - La Parte Que Falta: `gal1.jpg` sustituida por la fotografía de cuatro actores; añadidas cuatro imágenes de neones y figuras en `assets/uploads/images/la-parte-que-falta/`.
 - ¡Qué Diablos!: añadidas imágenes de manipuladora, cabra y diablete de Teguise. Se conservan los originales adjuntos, la ampliación y la descarga individual.
+
+## Publicidad de Haría · 5/11/2026
+- Inicio: cartel del grupo con opacidad del 60 %, completo y enlazado a la escuela; sustituye al destacado anterior de estreno.
+- Escuela de Haría: cartel de las dos alumnas, completo, ampliable y descargable.
+- Originales conservados en `assets/uploads/images/escuela-haria/`; QR y logotipos sin recorte.
+- Fecha de inicio actualizada en los cinco idiomas.

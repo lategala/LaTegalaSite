@@ -111,3 +111,8 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 ## Cartel y colaboradores de La Graciosa · 11/11/2026
 - Cartel adjunto íntegro: `assets/uploads/images/escuela-graciosa/cartel-escuela-graciosa-20261111.jpg`, visible en la ficha de la escuela, ampliable y descargable; también utilizado como fondo del acceso de Formación.
 - Colaboradores mencionados expresamente: Ayuntamiento de Teguise, Teatro de la Danza Lanzarote, Líneas Romero y Travel Film Awards.
+
+## Carteles y colaboradores de Haría · 11/11/2026
+- Adjuntos íntegros: `cartel-haria-alumnas-20261111.jpg` en la escuela y `cartel-haria-grupo-20261111.jpg` en Inicio y los fondos de Formación, dentro de `assets/uploads/images/escuela-haria/`.
+- Se mantienen las opacidades y la descarga del cartel de la escuela.
+- Colaboradores mencionados según indicación: Ayuntamiento de Haría, Instituto Canario de Desarrollo Cultural y Creativo, Líneas Romero y Travel Film Awards.

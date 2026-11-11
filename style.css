@@ -172,7 +172,7 @@ em{font-family:inherit}
 }
 
 .portal-haria::before{background-image:url("assets/uploads/images/escuela-haria/cartel-haria-grupo-2026.jpg");background-position:center 28%;opacity:.18}
-.portal-graciosa::before{background-image:url("https://i.ytimg.com/vi/0CFUcP9McAk/hqdefault.jpg");background-position:center 32%;opacity:.18}
+.portal-graciosa::before{background-image:url("assets/uploads/images/escuela-graciosa/cartel-escuela-graciosa-20261111.jpg");background-position:center 32%;opacity:.18}
 .portrait-soft{position:relative}
 .portrait-soft img{opacity:.58;filter:saturate(.72);transition:opacity .55s ease,filter .55s ease,transform .55s ease}
 .card:hover .portrait-soft img{opacity:.72;filter:saturate(.9);transform:scale(1.02)}
@@ -290,3 +290,7 @@ repeating-radial-gradient(ellipse at 50% 110%,rgba(205,140,58,.11) 0 8px,transpa
 /* Cartel del catálogo: imagen íntegra y colores originales. */
 .shows-grid .card .qd-catalog-poster{aspect-ratio:1414/2000;min-height:0}
 .shows-grid .card .qd-catalog-poster img,.shows-grid .card:hover .qd-catalog-poster img{object-fit:contain;opacity:1;filter:none;transform:none}
+
+.graciosa-poster{margin:0;width:100%;max-width:520px;justify-self:center}
+.graciosa-poster>img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px;cursor:zoom-in}
+.graciosa-poster figcaption{margin-top:14px;text-align:right}

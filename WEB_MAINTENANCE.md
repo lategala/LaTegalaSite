@@ -116,3 +116,7 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 - Adjuntos íntegros: `cartel-haria-alumnas-20261111.jpg` en la escuela y `cartel-haria-grupo-20261111.jpg` en Inicio y los fondos de Formación, dentro de `assets/uploads/images/escuela-haria/`.
 - Se mantienen las opacidades y la descarga del cartel de la escuela.
 - Colaboradores mencionados según indicación: Ayuntamiento de Haría, Instituto Canario de Desarrollo Cultural y Creativo, Líneas Romero y Travel Film Awards.
+
+## Invitación de Francisco Hernández Delgado · 11/11/2026
+- Reproductor de vídeo en `que-diablos.html#invitacion`, presentado como invitación del Cronista Oficial de Teguise. No es el tráiler del espectáculo.
+- MP4 H.264/AAC optimizado para web, reproducción manual y sin descarga anticipada, en `assets/uploads/videos/que-diablos/`.

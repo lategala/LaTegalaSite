@@ -1,6 +1,6 @@
 # La Tegala Escénica · continuidad de la web
 
-Actualizado: 5 de noviembre de 2026.
+Actualizado: 11 de noviembre de 2026.
 
 ## Objetivo
 Web oficial de la Asociación Cultural La Tegala Escénica, Teguise (Lanzarote).
@@ -107,3 +107,7 @@ No reconstruir la web desde cero. Leer primero este archivo y el estado actual d
 ## Archivo visual de La Graciosa · 5/11/2026
 - Incorporadas las 20 fotografías adjuntas de clases, trabajo corporal, máscaras y clown en `assets/uploads/images/escuela-graciosa/`.
 - Registradas en `data/galerias.json` bajo `project: graciosa`, con ampliación y descarga individual de los originales íntegros.
+
+## Cartel y colaboradores de La Graciosa · 11/11/2026
+- Cartel adjunto íntegro: `assets/uploads/images/escuela-graciosa/cartel-escuela-graciosa-20261111.jpg`, visible en la ficha de la escuela, ampliable y descargable; también utilizado como fondo del acceso de Formación.
+- Colaboradores mencionados expresamente: Ayuntamiento de Teguise, Teatro de la Danza Lanzarote, Líneas Romero y Travel Film Awards.
